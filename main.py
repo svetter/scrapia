@@ -58,7 +58,7 @@ for date_pair in dates:
 	
 	sleep_time = sleep_time_base + random.gauss(3 + 2 * random.random(), 3 + 2 * random.random())
 	print("\tWaiting {sleep_time:.2f}s before the next request".format(sleep_time=sleep_time))
-	if not use_cached_response:
+	if not use_cached_response and date_pair != dates[len(dates)-1]:
 		time.sleep(sleep_time)
 
 

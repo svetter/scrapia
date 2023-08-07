@@ -43,7 +43,7 @@ cached_response_filename = 'cached_response.html'
 
 room_infos_all_dates = []
 
-sleep_time_base = 8 + 2 * random.random() + 3 * random.random()
+sleep_time_base = 9 + 3 * random.random()
 
 for date_pair in dates:
 	print("Gathering data for", date_pair)

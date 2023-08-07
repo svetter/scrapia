@@ -88,3 +88,5 @@ with open(results_filename, 'w') as f:
 			
 			room_info_csv_string += datetime.date.today().isoformat()
 			f.write(room_info_csv_string + '\n')
+
+print("\nAll data processed and written to CSV.")

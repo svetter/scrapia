@@ -6,7 +6,7 @@ def extract_room_data(html):
 	soup = BeautifulSoup(html, 'html.parser')
 	
 	form_rooms = soup.find('form', {'id': 'hbFormRooms'})
-	#print(form_rooms.prettify())
+#	print(form_rooms.prettify())
 	
 	room_info = []
 	

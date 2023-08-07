@@ -43,7 +43,7 @@ cached_response_filename = 'cached_response.html'
 
 room_infos_all_dates = []
 
-sleep_time_base = 9 + 3 * random.random()
+sleep_time_base = 8 + 2 * random.random() + 3 * random.random()
 
 for date_pair in dates:
 	print("Gathering data for", date_pair)
@@ -56,7 +56,7 @@ for date_pair in dates:
 	room_info = extract_room_data(html)
 	room_infos_all_dates.append((date_pair, room_info))
 	
-	sleep_time = sleep_time_base + random.gauss(4, 4)
+	sleep_time = sleep_time_base + random.gauss(3 + 2 * random.random(), 3 + 2 * random.random())
 	print("\tWaiting {sleep_time:.2f}s before the next request".format(sleep_time=sleep_time))
 	if not use_cached_response:
 		time.sleep(sleep_time)

@@ -6,7 +6,7 @@ import secrets
 def get_html_data(num_adults, start_date, end_date):
 	# generate session ID
 	sid = secrets.token_hex(16)
-	print("SessionID = " + sid)
+	#print("SessionID = " + sid)
 	
 	# assemble URLs
 	

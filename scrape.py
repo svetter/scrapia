@@ -78,7 +78,7 @@ else:
 sep = '\t'
 
 with open(results_filepath, 'w') as f:
-	f.write(sep.join(["Ankunft", "Abreise", "Beschreibung", "Größe", "Preis", "Verfügbar", "felix-id", "package-id", "room-id", "name-param", "Abgerufen am"]) + '\n')
+	f.write(sep.join(["Check-in date", "Check-out date", "Room description", "Room capacity", "Price", "Number available", "felix-id", "package-id", "room-id", "name-param", "Scrape date"]) + '\n')
 	
 	if use_cached_response:
 		f.write("NOT REAL DATA!\n")

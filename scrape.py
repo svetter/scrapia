@@ -77,7 +77,7 @@ else:
 
 sep = '\t'
 
-with open(results_filepath, 'w') as f:
+with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
 	f.write(sep.join(["Check-in date", "Check-out date", "Room description", "Room capacity", "Price", "Number available", "felix-id", "package-id", "room-id", "name-param", "Scrape date"]) + '\n')
 	
 	if use_cached_response:
@@ -98,6 +98,7 @@ with open(results_filepath, 'w') as f:
 			room_info_csv_string += room_info['name-param'] + sep
 			
 			room_info_csv_string += today
+			
 			f.write(room_info_csv_string + '\n')
 
 print("\nAll data processed and written to CSV.")

@@ -1,3 +1,4 @@
+import os.path
 import random
 import time
 import datetime
@@ -63,10 +64,20 @@ for date_pair in dates:
 
 
 
-results_filename = 'results.csv'
+today = datetime.date.today().isoformat()
+
+if use_cached_response:
+	results_filepath = 'results.csv'
+else:
+	results_filepath = os.path.join('collected_results', today + '.csv')
+	i = 1
+	while os.path.isfile(results_filepath):
+		results_filepath = os.path.join('collected_results', today + '_' + str(i) + '.csv')
+		i += 1
+
 sep = '\t'
 
-with open(results_filename, 'w') as f:
+with open(results_filepath, 'w') as f:
 	f.write(sep.join(["Ankunft", "Abreise", "Beschreibung", "Größe", "Preis", "Verfügbar", "felix-id", "package-id", "room-id", "name-param", "Abgerufen am"]) + '\n')
 	
 	if use_cached_response:
@@ -86,7 +97,7 @@ with open(results_filename, 'w') as f:
 			room_info_csv_string += room_info['room-id'] + sep
 			room_info_csv_string += room_info['name-param'] + sep
 			
-			room_info_csv_string += datetime.date.today().isoformat()
+			room_info_csv_string += today
 			f.write(room_info_csv_string + '\n')
 
 print("\nAll data processed and written to CSV.")

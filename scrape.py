@@ -90,7 +90,7 @@ with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
 			room_info_csv_string += room_info['description'] + sep
 			room_info_csv_string += str(room_info['size']) + sep
 			room_info_csv_string += room_info['meals'] + sep
-			room_info_csv_string += "{price:.2f}€".format(price=room_info['price']).replace('.', ',') + sep
+			room_info_csv_string += "{price:.2f}€".format(price=room_info['price']) + sep
 			room_info_csv_string += str(room_info['num_available']) + sep
 			
 			room_info_csv_string += room_info['felix-id'] + sep

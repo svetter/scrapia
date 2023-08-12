@@ -21,7 +21,7 @@ def parse_csv(filepath):
 		description		= values[2]
 		num_persons		= int(values[3])
 		meals			= values[4]
-		price			= float(values[5].replace(',', '.')[:-1])
+		price			= float(values[5][:-1])
 		num_avail		= int(values[6])
 		felix_id		= values[7]
 		package_id		= values[8]

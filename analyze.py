@@ -149,8 +149,10 @@ for lines in data_by_date_current:
 
 
 plt.rcParams['figure.figsize'] = (10, 5)
+plt.get_current_fig_manager().set_window_title('Room availability analysis – JUFA Hotel Bregenz 2024')
+plt.title("Available rooms (with breakfast) by date and price/person")
 plt.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=4, alpha=1)
-plt.subplots_adjust(left=0.06, right=1.07, top=0.98, bottom=0.12)
+plt.subplots_adjust(left=0.06, right=1.07, top=0.94, bottom=0.12)
 plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 plt.xticks(rotation=45, ha='right')
 plt.colorbar(label="Already booked", location='right', pad=0.025)

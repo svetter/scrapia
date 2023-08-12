@@ -138,13 +138,15 @@ for lines in data_by_date_current:
 		price_bracket = get_price_bracket(price_ind)
 		
 		num_available = num_avail_by_price[price_ind]
+		
 		num_booked = num_avail_by_date_and_price_first[date][price_ind] - num_available
 		num_booked = max(num_booked, 0)
 		
-		plot_x.append(date[8:10] + '.' + date[5:7] + '.')
-		plot_y.append(price_bracket)
-		plot_size.append((num_available * avail_scaling) ** 2)
-		plot_color.append(num_booked)
+		if num_available > 0:
+			plot_x.append(date[8:10] + '.' + date[5:7] + '.')
+			plot_y.append(price_bracket)
+			plot_size.append((num_available * avail_scaling) ** 2)
+			plot_color.append(num_booked)
 
 
 

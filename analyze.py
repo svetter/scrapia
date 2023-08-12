@@ -4,6 +4,10 @@ import matplotlib.ticker as mticker
 
 
 
+filter_price_per_person = 100
+
+
+
 def parse_csv(filepath):
 	result = []
 	
@@ -68,7 +72,8 @@ def filter_lines(lines):
 	result = []
 	
 	for line in lines:
-		if line['size'] >= 4 and line['num_available'] > 0 and line['meals'] == "Übernachtung - Frühstück":
+		price_per_person = line['price'] / line['size']
+		if price_per_person <= filter_price_per_person and line['num_available'] > 0 and line['meals'] == "Übernachtung - Frühstück":
 			result.append(line)
 	
 	return result
@@ -78,16 +83,17 @@ def filter_lines(lines):
 csv_data_current	= filter_lines(parse_last_csv('collected_results'))
 csv_data_first		= filter_lines(parse_first_csv('collected_results'))
 
-prices = [line['price'] for line in (csv_data_current + csv_data_first)]
-min_price = min(prices)
-max_price = max(prices)
-price_rounding = 5
+price_rounding = 1
+prices_per_person = [line['price'] / line['size'] for line in (csv_data_current + csv_data_first)]
+min_price_per_person = min(prices_per_person)
+min_price_per_person_rounded = int((min_price_per_person + price_rounding / 2) / price_rounding) * price_rounding
+max_price_per_person = max(prices_per_person)
 
 def get_price_ind(price):
-	return int((price - min_price) / price_rounding)
+	return int((price - min_price_per_person_rounded + price_rounding / 2) / price_rounding)
 
 def get_price_bracket(price_ind):
-	return price_ind * price_rounding + min_price
+	return price_ind * price_rounding + min_price_per_person_rounded
 
 
 
@@ -107,6 +113,21 @@ data_by_date_first		= sort_data_by_date(csv_data_first)
 
 
 
+num_avail_by_date_and_price_first = {}
+
+for lines in data_by_date_first:
+	date = lines[0]['start_date']
+	
+	num_avail_by_price = [0] * (get_price_ind(max_price_per_person) + 1)
+	
+	for line in lines:
+		price_per_person = line['price'] / line['size']
+		num_avail_by_price[get_price_ind(price_per_person)] += line['num_available']
+	
+	num_avail_by_date_and_price_first[date] = num_avail_by_price
+
+
+
 plot_x = []
 plot_y = []
 plot_size = []
@@ -114,49 +135,38 @@ plot_color = []
 
 avail_scaling = 4
 
-num_avail_by_date_and_price_first = {}
-
-for lines in data_by_date_first:
-	date = lines[0]['start_date']
-	
-	num_avail_by_price = [0] * (get_price_ind(max_price) + 1)
-	
-	for line in lines:
-		num_avail_by_price[get_price_ind(line['price'])] += line['num_available']
-	
-	num_avail_by_date_and_price_first[date] = num_avail_by_price
-
 for lines in data_by_date_current:
 	date = lines[0]['start_date']
 	
-	num_avail_by_price = [0] * (get_price_ind(max_price) + 1)
+	num_avail_by_price = [0] * (get_price_ind(max_price_per_person) + 1)
 	
 	for line in lines:
-		num_avail_by_price[get_price_ind(line['price'])] += line['num_available']
+		price_per_person = line['price'] / line['size']
+		num_avail_by_price[get_price_ind(price_per_person)] += line['num_available']
 	
 	for price_ind in range(len(num_avail_by_price)):
 		price_bracket = get_price_bracket(price_ind)
 		
 		num_available = num_avail_by_price[price_ind]
 		
-		num_booked = num_avail_by_date_and_price_first[date][price_ind] - num_available
-		num_booked = max(num_booked, 0)
+		num_gone = num_avail_by_date_and_price_first[date][price_ind] - num_available
+		num_gone = max(num_gone, 0)
 		
 		if num_available > 0:
 			plot_x.append(date[8:10] + '.' + date[5:7] + '.')
 			plot_y.append(price_bracket)
 			plot_size.append((num_available * avail_scaling) ** 2)
-			plot_color.append(num_booked)
+			plot_color.append(num_gone)
 
 
 
-plt.rcParams['figure.figsize'] = (10, 5)
+plt.rcParams['figure.figsize'] = (12, 6)
 plt.get_current_fig_manager().set_window_title('Room availability analysis – JUFA Hotel Bregenz 2024')
-plt.title("Available rooms (with breakfast) by date and price/person")
+plt.title("Available rooms below " + str(filter_price_per_person) + "€ (incl. breakfast) by date and price per person")
 plt.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=4, alpha=1)
 plt.subplots_adjust(left=0.06, right=1.07, top=0.94, bottom=0.12)
 plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 plt.xticks(rotation=45, ha='right')
-plt.colorbar(label="Already booked", location='right', pad=0.025)
+plt.colorbar(label="Already booked or price changed", location='right', pad=0.025)
 
 plt.show()

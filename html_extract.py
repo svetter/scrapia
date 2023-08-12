@@ -24,7 +24,7 @@ def extract_room_data(html):
 		room_price			= float(room_data_tag['data-price'].strip())
 		
 		room_num_avail_list	= room_data_tag.find_all('option', recursive=False)
-		room_num_avail		= int(room_num_avail_list[room_num_avail_list.__len__() - 1]['value'].strip())
+		room_num_avail		= int(room_num_avail_list[len(room_num_avail_list) - 1]['value'].strip())
 		
 		room_felix_id		= room_data_tag['data-felix-id'].strip()
 		room_package_id		= room_data_tag['data-package-id'].strip()

@@ -68,7 +68,7 @@ def filter_lines(lines):
 	result = []
 	
 	for line in lines:
-		if line['size'] >= 4 and line['num_available'] > 0:
+		if line['size'] >= 4 and line['num_available'] > 0 and line['meals'] == "Übernachtung - Frühstück":
 			result.append(line)
 	
 	return result

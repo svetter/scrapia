@@ -20,19 +20,21 @@ def parse_csv(filepath):
 		end_date		= values[1]
 		description		= values[2]
 		num_persons		= int(values[3])
-		price			= float(values[4].replace(',', '.')[:-1])
-		num_avail		= int(values[5])
-		felix_id		= values[6]
-		package_id		= values[7]
-		room_id			= values[8]
-		name_param		= values[9]
-		scraped_date	= values[10]
+		meals			= values[4]
+		price			= float(values[5].replace(',', '.')[:-1])
+		num_avail		= int(values[6])
+		felix_id		= values[7]
+		package_id		= values[8]
+		room_id			= values[9]
+		name_param		= values[10]
+		scraped_date	= values[11]
 		
 		result.append({
 			'start_date':		start_date,
 			'end_date':			end_date,
 			'description':		description,
 			'size':				num_persons,
+			'meals':			meals,
 			'price':			price,
 			'num_available':	num_avail,
 			'felix-id':			felix_id,

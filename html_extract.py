@@ -15,6 +15,7 @@ def extract_room_data(html):
 	for room_tag in room_tags:
 		# parse room details
 		room_description	= room_tag.find('h4', {'class': 'en-room-item__heading en-format-h4 GMS_room_title'}).find(string=True, recursive=False).strip()
+		room_meals			= room_tag.find('div', {'class': 'en-room-item__text en-format-meta en-wysiwyg'}).find('p').find(string=True, recursive=False).strip()
 		
 		room_num_persons	= int(room_tag.find('div', {'class': 'en-room-item__info-value en-format-meta'}).find(string=True, recursive=False).strip())
 		
@@ -32,6 +33,7 @@ def extract_room_data(html):
 		
 		room_info.append({
 			'description':		room_description,
+			'meals':			room_meals,
 			'size':				room_num_persons,
 			'price':			room_price,
 			'num_available':	room_num_avail,

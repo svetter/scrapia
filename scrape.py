@@ -49,7 +49,7 @@ sleep_time_base = 9 + 3 * random.random()
 for date_pair in dates:
 	print("Gathering data for", date_pair)
 	if use_cached_response:
-		with open(cached_response_filename, 'r') as f:
+		with open(cached_response_filename, 'r', encoding='UTF-8') as f:
 			html = f.read()
 	else:
 		html = get_html_data(num_adults, date_pair[0], date_pair[1])
@@ -78,7 +78,7 @@ else:
 sep = '\t'
 
 with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
-	f.write(sep.join(["Check-in date", "Check-out date", "Room description", "Room capacity", "Price", "Number available", "felix-id", "package-id", "room-id", "name-param", "Scrape date"]) + '\n')
+	f.write(sep.join(["Check-in date", "Check-out date", "Room description", "Meals", "Room capacity", "Price", "Number available", "felix-id", "package-id", "room-id", "name-param", "Scrape date"]) + '\n')
 	
 	if use_cached_response:
 		f.write("NOT REAL DATA!\n")
@@ -89,6 +89,7 @@ with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
 			room_info_csv_string = dates_string
 			room_info_csv_string += room_info['description'] + sep
 			room_info_csv_string += str(room_info['size']) + sep
+			room_info_csv_string += room_info['meals'] + sep
 			room_info_csv_string += "{price:.2f}€".format(price=room_info['price']).replace('.', ',') + sep
 			room_info_csv_string += str(room_info['num_available']) + sep
 			

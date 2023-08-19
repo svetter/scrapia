@@ -9,7 +9,21 @@ filter_price_per_person = 100
 
 window_title = "Room availability analysis – JUFA Hotel Bregenz 2024"
 plot_title = "Available rooms below " + str(filter_price_per_person) + ("€ (incl. breakfast)"
-				" by date and price per person")
+				" by date and price per person, adjusted for higher ticket prices on Fr/Sa")
+
+# offsets for ticket category 4 (95€/108€/121€)
+ticket_price_offset_fr = -95 + 108
+ticket_price_offset_sa = -95 + 121
+
+
+
+def get_ticket_offset(date):
+	weekday = date.weekday()
+	if weekday == 4:	# Friday
+		return ticket_price_offset_fr
+	if weekday == 5:	# Saturday
+		return ticket_price_offset_sa
+	return 0
 
 
 
@@ -88,8 +102,8 @@ def filter_lines(lines):
 csv_data_current	= filter_lines(parse_last_csv('collected_results'))
 csv_data_first		= filter_lines(parse_first_csv('collected_results'))
 
-price_rounding = 1
-prices_per_person = [line['price'] / line['size'] for line in (csv_data_current + csv_data_first)]
+price_rounding = 5
+prices_per_person = [line['price'] / line['size'] + get_ticket_offset(line['start_date']) for line in (csv_data_current + csv_data_first)]
 min_price_per_person = min(prices_per_person)
 min_price_per_person_rounded = int((min_price_per_person + price_rounding / 2) / price_rounding) * price_rounding
 max_price_per_person = max(prices_per_person)
@@ -127,6 +141,7 @@ for lines in data_by_date_first:
 	
 	for line in lines:
 		price_per_person = line['price'] / line['size']
+		price_per_person += get_ticket_offset(date)	# take into account that tickets are more expensive some days
 		num_avail_by_price[get_price_ind(price_per_person)] += line['num_available']
 	
 	num_avail_by_date_and_price_first[date] = num_avail_by_price
@@ -138,7 +153,9 @@ plot_y = []
 plot_size = []
 plot_color = []
 
-avail_scaling = 4
+avail_scaling = 3
+
+max_num_gone = 1
 
 for lines in data_by_date_current:
 	date = lines[0]['start_date']
@@ -146,7 +163,7 @@ for lines in data_by_date_current:
 	num_avail_by_price = [0] * (get_price_ind(max_price_per_person) + 1)
 	
 	for line in lines:
-		price_per_person = line['price'] / line['size']
+		price_per_person = line['price'] / line['size'] + get_ticket_offset(line['start_date'])
 		num_avail_by_price[get_price_ind(price_per_person)] += line['num_available']
 	
 	for price_ind in range(len(num_avail_by_price)):
@@ -156,6 +173,7 @@ for lines in data_by_date_current:
 		
 		num_gone = num_avail_by_date_and_price_first[date][price_ind] - num_available
 		num_gone = max(num_gone, 0)
+		max_num_gone = max(num_gone, max_num_gone)
 		
 		if num_available > 0:
 			plot_x.append(date.strftime("%a %d.%m."))
@@ -168,7 +186,7 @@ for lines in data_by_date_current:
 plt.rcParams['figure.figsize'] = (12, 6)
 plt.get_current_fig_manager().set_window_title(window_title)
 plt.title(plot_title)
-plt.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=4, alpha=1)
+plt.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=max_num_gone, alpha=1)
 plt.subplots_adjust(left=0.06, right=1.07, top=0.94, bottom=0.15)
 plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 plt.xticks(rotation=45, ha='right')

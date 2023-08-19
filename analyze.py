@@ -7,6 +7,10 @@ from dateutil.parser import isoparse as parse_iso_date
 
 filter_price_per_person = 100
 
+window_title = "Room availability analysis – JUFA Hotel Bregenz 2024"
+plot_title = "Available rooms below " + str(filter_price_per_person) + ("€ (incl. breakfast)"
+				" by date and price per person")
+
 
 
 def parse_csv(filepath):

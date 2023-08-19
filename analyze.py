@@ -158,7 +158,7 @@ for lines in data_by_date_current:
 		num_gone = max(num_gone, 0)
 		
 		if num_available > 0:
-			plot_x.append(date.strftime("%d.%m."))
+			plot_x.append(date.strftime("%a %d.%m."))
 			plot_y.append(price_bracket)
 			plot_size.append((num_available * avail_scaling) ** 2)
 			plot_color.append(num_gone)
@@ -169,7 +169,7 @@ plt.rcParams['figure.figsize'] = (12, 6)
 plt.get_current_fig_manager().set_window_title(window_title)
 plt.title(plot_title)
 plt.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=4, alpha=1)
-plt.subplots_adjust(left=0.06, right=1.07, top=0.94, bottom=0.12)
+plt.subplots_adjust(left=0.06, right=1.07, top=0.94, bottom=0.15)
 plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 plt.xticks(rotation=45, ha='right')
 plt.colorbar(label="Already booked or price changed", location='right', pad=0.025)

@@ -14,8 +14,8 @@ def get_html_data(num_adults, start_date, end_date):
 		'?action=get_hotel_rooms'
 		'&lang=de'
 		'&hotel-id=61'
-		'&date-from=' + start_date +
-		'&date-to=' + end_date +
+		'&date-from=' + start_date.isoformat() +
+		'&date-to=' + end_date.isoformat() +
 		'&rooms%5B0%5D%5Bpeople-count%5D=' + str(num_adults) +
 		'&rooms%5B0%5D%5Bchildren-count%5D=0'
 		'&rooms%5B0%5D%5Bcot%5D=0'

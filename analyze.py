@@ -1,6 +1,7 @@
 import os
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
+from dateutil.parser import isoparse as parse_iso_date
 
 
 
@@ -20,8 +21,8 @@ def parse_csv(filepath):
 		
 		values = line.split('\t')
 		
-		start_date		= values[0]
-		end_date		= values[1]
+		start_date		= parse_iso_date(values[0])
+		end_date		= parse_iso_date(values[1])
 		description		= values[2]
 		num_persons		= int(values[3])
 		meals			= values[4]
@@ -31,7 +32,7 @@ def parse_csv(filepath):
 		package_id		= values[8]
 		room_id			= values[9]
 		name_param		= values[10]
-		scraped_date	= values[11]
+		scraped_date	= parse_iso_date(values[11])
 		
 		result.append({
 			'start_date':		start_date,
@@ -153,7 +154,7 @@ for lines in data_by_date_current:
 		num_gone = max(num_gone, 0)
 		
 		if num_available > 0:
-			plot_x.append(date[8:10] + '.' + date[5:7] + '.')
+			plot_x.append(date.strftime("%d.%m."))
 			plot_y.append(price_bracket)
 			plot_size.append((num_available * avail_scaling) ** 2)
 			plot_color.append(num_gone)
@@ -161,8 +162,8 @@ for lines in data_by_date_current:
 
 
 plt.rcParams['figure.figsize'] = (12, 6)
-plt.get_current_fig_manager().set_window_title('Room availability analysis – JUFA Hotel Bregenz 2024')
-plt.title("Available rooms below " + str(filter_price_per_person) + "€ (incl. breakfast) by date and price per person")
+plt.get_current_fig_manager().set_window_title(window_title)
+plt.title(plot_title)
 plt.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=4, alpha=1)
 plt.subplots_adjust(left=0.06, right=1.07, top=0.94, bottom=0.12)
 plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))

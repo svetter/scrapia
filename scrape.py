@@ -10,31 +10,31 @@ from http_request import get_html_data
 
 num_adults = '4'
 dates = [
-	['2024-07-17', '2024-07-18'],
-	['2024-07-19', '2024-07-20'],
-	['2024-07-20', '2024-07-21'],
-	['2024-07-21', '2024-07-22'],
-	['2024-07-23', '2024-07-24'],
-	['2024-07-24', '2024-07-25'],
-	['2024-07-25', '2024-07-26'],
-	['2024-07-26', '2024-07-27'],
-	['2024-07-27', '2024-07-28'],
-	['2024-07-28', '2024-07-29'],
-	['2024-07-30', '2024-07-31'],
-	['2024-07-31', '2024-08-01'],
-	['2024-08-01', '2024-08-02'],
-	['2024-08-02', '2024-08-03'],
-	['2024-08-03', '2024-08-04'],
-	['2024-08-04', '2024-08-05'],
-	['2024-08-06', '2024-08-07'],
-	['2024-08-07', '2024-08-08'],
-	['2024-08-09', '2024-08-10'],
-	['2024-08-10', '2024-08-11'],
-	['2024-08-11', '2024-08-12'],
-	['2024-08-13', '2024-08-14'],
-	['2024-08-16', '2024-08-17'],
-	['2024-08-17', '2024-08-18'],
-	['2024-08-18', '2024-08-19']
+	[datetime.date(2024, 7, 17), datetime.date(2024, 7, 18)],
+	[datetime.date(2024, 7, 19), datetime.date(2024, 7, 20)],
+	[datetime.date(2024, 7, 20), datetime.date(2024, 7, 21)],
+	[datetime.date(2024, 7, 21), datetime.date(2024, 7, 22)],
+	[datetime.date(2024, 7, 23), datetime.date(2024, 7, 24)],
+	[datetime.date(2024, 7, 24), datetime.date(2024, 7, 25)],
+	[datetime.date(2024, 7, 25), datetime.date(2024, 7, 26)],
+	[datetime.date(2024, 7, 26), datetime.date(2024, 7, 27)],
+	[datetime.date(2024, 7, 27), datetime.date(2024, 7, 28)],
+	[datetime.date(2024, 7, 28), datetime.date(2024, 7, 29)],
+	[datetime.date(2024, 7, 30), datetime.date(2024, 7, 31)],
+	[datetime.date(2024, 7, 31), datetime.date(2024, 8,  1)],
+	[datetime.date(2024, 8,  1), datetime.date(2024, 8,  2)],
+	[datetime.date(2024, 8,  2), datetime.date(2024, 8,  3)],
+	[datetime.date(2024, 8,  3), datetime.date(2024, 8,  4)],
+	[datetime.date(2024, 8,  4), datetime.date(2024, 8,  5)],
+	[datetime.date(2024, 8,  6), datetime.date(2024, 8,  7)],
+	[datetime.date(2024, 8,  7), datetime.date(2024, 8,  8)],
+	[datetime.date(2024, 8,  9), datetime.date(2024, 8, 10)],
+	[datetime.date(2024, 8, 10), datetime.date(2024, 8, 11)],
+	[datetime.date(2024, 8, 11), datetime.date(2024, 8, 12)],
+	[datetime.date(2024, 8, 13), datetime.date(2024, 8, 14)],
+	[datetime.date(2024, 8, 16), datetime.date(2024, 8, 17)],
+	[datetime.date(2024, 8, 17), datetime.date(2024, 8, 18)],
+	[datetime.date(2024, 8, 18), datetime.date(2024, 8, 19)]
 ]
 
 
@@ -47,7 +47,7 @@ room_infos_all_dates = []
 sleep_time_base = 9 + 3 * random.random()
 
 for date_pair in dates:
-	print("Gathering data for", date_pair)
+	print("Gathering data for " + date_pair[0].isoformat() + " to " + date_pair[1].isoformat())
 	if use_cached_response:
 		with open(cached_response_filename, 'r', encoding='UTF-8') as f:
 			html = f.read()
@@ -64,15 +64,15 @@ for date_pair in dates:
 
 
 
-today = datetime.date.today().isoformat()
+today_str = datetime.date.today().isoformat()
 
 if use_cached_response:
 	results_filepath = 'results.csv'
 else:
-	results_filepath = os.path.join('collected_results', today + '.csv')
+	results_filepath = os.path.join('collected_results', today_str + '.csv')
 	i = 1
 	while os.path.isfile(results_filepath):
-		results_filepath = os.path.join('collected_results', today + '_' + str(i) + '.csv')
+		results_filepath = os.path.join('collected_results', today_str + '_' + str(i) + '.csv')
 		i += 1
 
 sep = '\t'
@@ -84,7 +84,7 @@ with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
 		f.write("NOT REAL DATA!\n")
 	
 	for room_infos_one_date in room_infos_all_dates:
-		dates_string = room_infos_one_date[0][0] + sep + room_infos_one_date[0][1] + sep
+		dates_string = room_infos_one_date[0][0].isoformat() + sep + room_infos_one_date[0][1].isoformat() + sep
 		for room_info in room_infos_one_date[1]:
 			room_info_csv_string = dates_string
 			room_info_csv_string += room_info['description'] + sep
@@ -98,7 +98,7 @@ with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
 			room_info_csv_string += room_info['room-id'] + sep
 			room_info_csv_string += room_info['name-param'] + sep
 			
-			room_info_csv_string += today
+			room_info_csv_string += today_str
 			
 			f.write(room_info_csv_string + '\n')
 

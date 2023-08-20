@@ -92,7 +92,7 @@ def filter_lines(lines):
 	
 	for line in lines:
 		price_per_person = line['price'] / line['size']
-		if price_per_person <= filter_price_per_person and line['num_available'] > 0 and line['meals'] == "Übernachtung - Frühstück":
+		if price_per_person <= filter_price_per_person and line['meals'] == "Übernachtung - Frühstück":
 			result.append(line)
 	
 	return result
@@ -175,11 +175,10 @@ for lines in data_by_date_current:
 		num_gone = max(num_gone, 0)
 		max_num_gone = max(num_gone, max_num_gone)
 		
-		if num_available > 0:
-			plot_x.append(date.strftime("%a %d.%m."))
-			plot_y.append(price_bracket)
-			plot_size.append((num_available * avail_scaling) ** 2)
-			plot_color.append(num_gone)
+		plot_x.append(date.strftime("%a %d.%m."))
+		plot_y.append(price_bracket)
+		plot_size.append((num_available * avail_scaling) ** 2 + 10)	# offset size for 0 availability to make num_gone visible
+		plot_color.append(num_gone)
 
 
 

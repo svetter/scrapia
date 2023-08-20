@@ -1,2 +1,4 @@
 *.html linguist-detectable=false
 *.htm linguist-detectable=false
+
+*.csv linguist-detectable=false

@@ -1,0 +1,465 @@
+Check-in date	Check-out date	Room description	Meals	Room capacity	Price	Number available	felix-id	package-id	room-id	name-param	Scrape date
+2024-07-17	2024-07-18	Einzelzimmer	1	Übernachtung - Frühstück	125.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-17	2024-07-18	Einzelzimmer	1	Übernachtung - Halbpension	144.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-17	2024-07-18	Einzelzimmer	1	Übernachtung Frühstück NonFlex	125.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-17	2024-07-18	Doppelzimmer Superior	2	Übernachtung - Halbpension	208.80€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-17	2024-07-18	Doppelzimmer Superior	2	Übernachtung - Frühstück	169.00€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-17	2024-07-18	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	221.30€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-07-17	2024-07-18	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	181.50€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-07-17	2024-07-18	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	157.50€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-07-17	2024-07-18	Family & Friends Zimmer	3	Übernachtung - Frühstück	206.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-17	2024-07-18	Family & Friends Zimmer	3	Übernachtung - Halbpension	266.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-17	2024-07-18	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	219.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-17	2024-07-18	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	278.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-17	2024-07-18	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	194.50€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-17	2024-07-18	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	242.50€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-17	2024-07-18	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	322.10€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-17	2024-07-18	Appartement4	4	Übernachtung ohne Frühstück	227.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-17	2024-07-18	Appartement4	4	Übernachtung - Frühstück	275.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-17	2024-07-18	Appartement4	4	Übernachtung - Halbpension	354.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-17	2024-07-18	Studio	4	Übernachtung ohne Frühstück	227.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-17	2024-07-18	Studio	4	Übernachtung - Frühstück	275.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-17	2024-07-18	Studio	4	Übernachtung - Halbpension	354.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-19	2024-07-20	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-19	2024-07-20	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-19	2024-07-20	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-19	2024-07-20	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	3	201	1141	343772	201-4-1141	2023-08-12
+2024-07-19	2024-07-20	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	3	201	1023	343772	201-4-1023	2023-08-12
+2024-07-19	2024-07-20	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	3	201	1024	343772	201-4-1024	2023-08-12
+2024-07-19	2024-07-20	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-19	2024-07-20	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-19	2024-07-20	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-07-19	2024-07-20	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-07-19	2024-07-20	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-07-19	2024-07-20	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-19	2024-07-20	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-19	2024-07-20	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-19	2024-07-20	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-19	2024-07-20	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-19	2024-07-20	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-19	2024-07-20	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-19	2024-07-20	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-19	2024-07-20	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-19	2024-07-20	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-19	2024-07-20	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-19	2024-07-20	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-19	2024-07-20	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-20	2024-07-21	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-20	2024-07-21	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-20	2024-07-21	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-20	2024-07-21	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-20	2024-07-21	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-20	2024-07-21	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-20	2024-07-21	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-20	2024-07-21	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-20	2024-07-21	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-20	2024-07-21	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-20	2024-07-21	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-20	2024-07-21	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-20	2024-07-21	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-20	2024-07-21	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-23	2024-07-24	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-23	2024-07-24	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-23	2024-07-24	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-23	2024-07-24	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	1	201	1141	343772	201-4-1141	2023-08-12
+2024-07-23	2024-07-24	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	1	201	1023	343772	201-4-1023	2023-08-12
+2024-07-23	2024-07-24	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	1	201	1024	343772	201-4-1024	2023-08-12
+2024-07-23	2024-07-24	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-23	2024-07-24	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-23	2024-07-24	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-07-23	2024-07-24	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-07-23	2024-07-24	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-07-23	2024-07-24	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-23	2024-07-24	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-23	2024-07-24	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-23	2024-07-24	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-23	2024-07-24	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-23	2024-07-24	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-23	2024-07-24	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-23	2024-07-24	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-23	2024-07-24	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-23	2024-07-24	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-23	2024-07-24	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-23	2024-07-24	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-23	2024-07-24	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-24	2024-07-25	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-24	2024-07-25	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-24	2024-07-25	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-24	2024-07-25	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-24	2024-07-25	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-24	2024-07-25	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-07-24	2024-07-25	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-07-24	2024-07-25	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-07-24	2024-07-25	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-24	2024-07-25	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-24	2024-07-25	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-24	2024-07-25	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-24	2024-07-25	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-24	2024-07-25	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-24	2024-07-25	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-24	2024-07-25	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-24	2024-07-25	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-24	2024-07-25	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-24	2024-07-25	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-24	2024-07-25	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-24	2024-07-25	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-25	2024-07-26	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-25	2024-07-26	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-25	2024-07-26	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-25	2024-07-26	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-07-25	2024-07-26	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-07-25	2024-07-26	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-07-25	2024-07-26	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-25	2024-07-26	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-25	2024-07-26	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-07-25	2024-07-26	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-07-25	2024-07-26	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-07-25	2024-07-26	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-25	2024-07-26	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-25	2024-07-26	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-25	2024-07-26	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-25	2024-07-26	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-25	2024-07-26	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-25	2024-07-26	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-25	2024-07-26	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-25	2024-07-26	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-25	2024-07-26	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-25	2024-07-26	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-25	2024-07-26	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-25	2024-07-26	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-26	2024-07-27	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	2	101	1023	343771	101-4-1023	2023-08-12
+2024-07-26	2024-07-27	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	2	101	1024	343771	101-4-1024	2023-08-12
+2024-07-26	2024-07-27	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	2	101	1141	343771	101-4-1141	2023-08-12
+2024-07-26	2024-07-27	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	1	201	1141	343772	201-4-1141	2023-08-12
+2024-07-26	2024-07-27	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	1	201	1023	343772	201-4-1023	2023-08-12
+2024-07-26	2024-07-27	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	1	201	1024	343772	201-4-1024	2023-08-12
+2024-07-26	2024-07-27	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-26	2024-07-27	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-26	2024-07-27	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	3	205	1026	344721	205-4-1026	2023-08-12
+2024-07-26	2024-07-27	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	3	205	1023	344721	205-4-1023	2023-08-12
+2024-07-26	2024-07-27	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	3	205	1024	344721	205-4-1024	2023-08-12
+2024-07-26	2024-07-27	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-26	2024-07-27	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-26	2024-07-27	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-26	2024-07-27	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-26	2024-07-27	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-26	2024-07-27	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-26	2024-07-27	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-26	2024-07-27	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-26	2024-07-27	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-26	2024-07-27	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-26	2024-07-27	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-26	2024-07-27	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-26	2024-07-27	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-27	2024-07-28	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-27	2024-07-28	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-27	2024-07-28	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-27	2024-07-28	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-07-27	2024-07-28	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-07-27	2024-07-28	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-07-27	2024-07-28	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-27	2024-07-28	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-27	2024-07-28	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	2	205	1026	344721	205-4-1026	2023-08-12
+2024-07-27	2024-07-28	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	2	205	1023	344721	205-4-1023	2023-08-12
+2024-07-27	2024-07-28	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	2	205	1024	344721	205-4-1024	2023-08-12
+2024-07-27	2024-07-28	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-27	2024-07-28	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-27	2024-07-28	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-27	2024-07-28	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-27	2024-07-28	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-27	2024-07-28	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-27	2024-07-28	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-27	2024-07-28	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-27	2024-07-28	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-27	2024-07-28	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-27	2024-07-28	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-27	2024-07-28	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-27	2024-07-28	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-30	2024-07-31	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-30	2024-07-31	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-30	2024-07-31	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-30	2024-07-31	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-07-30	2024-07-31	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-07-30	2024-07-31	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-07-30	2024-07-31	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-30	2024-07-31	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-30	2024-07-31	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-07-30	2024-07-31	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-07-30	2024-07-31	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-07-30	2024-07-31	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-30	2024-07-31	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-30	2024-07-31	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-30	2024-07-31	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-30	2024-07-31	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-30	2024-07-31	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-30	2024-07-31	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-30	2024-07-31	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-30	2024-07-31	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-30	2024-07-31	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-30	2024-07-31	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-30	2024-07-31	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-30	2024-07-31	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-07-31	2024-08-01	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-07-31	2024-08-01	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-07-31	2024-08-01	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-07-31	2024-08-01	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-07-31	2024-08-01	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-07-31	2024-08-01	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-07-31	2024-08-01	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-07-31	2024-08-01	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-07-31	2024-08-01	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-07-31	2024-08-01	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-07-31	2024-08-01	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-07-31	2024-08-01	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-07-31	2024-08-01	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-07-31	2024-08-01	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-07-31	2024-08-01	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-07-31	2024-08-01	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-07-31	2024-08-01	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-07-31	2024-08-01	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-07-31	2024-08-01	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-07-31	2024-08-01	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-07-31	2024-08-01	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-07-31	2024-08-01	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-07-31	2024-08-01	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-07-31	2024-08-01	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-01	2024-08-02	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-01	2024-08-02	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-01	2024-08-02	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-01	2024-08-02	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-01	2024-08-02	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-01	2024-08-02	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-01	2024-08-02	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-01	2024-08-02	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-01	2024-08-02	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-01	2024-08-02	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-01	2024-08-02	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-01	2024-08-02	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-01	2024-08-02	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-01	2024-08-02	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-01	2024-08-02	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-01	2024-08-02	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-01	2024-08-02	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-01	2024-08-02	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-01	2024-08-02	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-01	2024-08-02	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-01	2024-08-02	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-01	2024-08-02	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-01	2024-08-02	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-01	2024-08-02	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-02	2024-08-03	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-02	2024-08-03	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-02	2024-08-03	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-02	2024-08-03	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-02	2024-08-03	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-02	2024-08-03	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-02	2024-08-03	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-02	2024-08-03	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-02	2024-08-03	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-02	2024-08-03	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-02	2024-08-03	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-02	2024-08-03	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-02	2024-08-03	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-02	2024-08-03	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-02	2024-08-03	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-02	2024-08-03	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-02	2024-08-03	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-02	2024-08-03	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-02	2024-08-03	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-02	2024-08-03	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-02	2024-08-03	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-02	2024-08-03	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-02	2024-08-03	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-02	2024-08-03	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-03	2024-08-04	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-03	2024-08-04	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-03	2024-08-04	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-03	2024-08-04	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-03	2024-08-04	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-03	2024-08-04	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-03	2024-08-04	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-03	2024-08-04	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-03	2024-08-04	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-03	2024-08-04	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-03	2024-08-04	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-03	2024-08-04	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-03	2024-08-04	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-03	2024-08-04	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-03	2024-08-04	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-03	2024-08-04	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-03	2024-08-04	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-03	2024-08-04	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-03	2024-08-04	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-03	2024-08-04	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-03	2024-08-04	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-03	2024-08-04	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-03	2024-08-04	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-03	2024-08-04	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-06	2024-08-07	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-06	2024-08-07	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-06	2024-08-07	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-06	2024-08-07	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-06	2024-08-07	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-06	2024-08-07	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-06	2024-08-07	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-06	2024-08-07	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-06	2024-08-07	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-06	2024-08-07	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-06	2024-08-07	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-06	2024-08-07	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-06	2024-08-07	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-06	2024-08-07	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-06	2024-08-07	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-06	2024-08-07	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-06	2024-08-07	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-06	2024-08-07	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-06	2024-08-07	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-06	2024-08-07	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-06	2024-08-07	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-06	2024-08-07	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-06	2024-08-07	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-06	2024-08-07	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-07	2024-08-08	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-07	2024-08-08	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-07	2024-08-08	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-07	2024-08-08	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-07	2024-08-08	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-07	2024-08-08	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-07	2024-08-08	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-07	2024-08-08	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-07	2024-08-08	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-07	2024-08-08	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-07	2024-08-08	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-07	2024-08-08	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-07	2024-08-08	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-07	2024-08-08	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-07	2024-08-08	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-07	2024-08-08	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-07	2024-08-08	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-07	2024-08-08	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-07	2024-08-08	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-07	2024-08-08	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-07	2024-08-08	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-07	2024-08-08	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-07	2024-08-08	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-07	2024-08-08	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-09	2024-08-10	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-09	2024-08-10	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-09	2024-08-10	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-09	2024-08-10	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-09	2024-08-10	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-09	2024-08-10	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-09	2024-08-10	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-09	2024-08-10	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-09	2024-08-10	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-09	2024-08-10	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-09	2024-08-10	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-09	2024-08-10	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-09	2024-08-10	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-09	2024-08-10	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-09	2024-08-10	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-09	2024-08-10	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-09	2024-08-10	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-09	2024-08-10	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-09	2024-08-10	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-09	2024-08-10	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-09	2024-08-10	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-09	2024-08-10	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-09	2024-08-10	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-09	2024-08-10	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-10	2024-08-11	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-10	2024-08-11	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-10	2024-08-11	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-10	2024-08-11	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-10	2024-08-11	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-10	2024-08-11	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-10	2024-08-11	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-10	2024-08-11	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-10	2024-08-11	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-10	2024-08-11	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-10	2024-08-11	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-10	2024-08-11	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-10	2024-08-11	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-10	2024-08-11	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-10	2024-08-11	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-10	2024-08-11	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-10	2024-08-11	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-10	2024-08-11	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-10	2024-08-11	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-10	2024-08-11	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-10	2024-08-11	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-10	2024-08-11	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-10	2024-08-11	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-10	2024-08-11	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-13	2024-08-14	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-13	2024-08-14	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-13	2024-08-14	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-13	2024-08-14	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-13	2024-08-14	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-13	2024-08-14	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-13	2024-08-14	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-13	2024-08-14	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-13	2024-08-14	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-13	2024-08-14	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-13	2024-08-14	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-13	2024-08-14	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-13	2024-08-14	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-13	2024-08-14	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-13	2024-08-14	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-13	2024-08-14	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-13	2024-08-14	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-13	2024-08-14	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-13	2024-08-14	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-13	2024-08-14	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-13	2024-08-14	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-13	2024-08-14	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-13	2024-08-14	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-13	2024-08-14	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-16	2024-08-17	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-16	2024-08-17	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-16	2024-08-17	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-16	2024-08-17	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-16	2024-08-17	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-16	2024-08-17	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-16	2024-08-17	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-16	2024-08-17	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-16	2024-08-17	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-16	2024-08-17	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-16	2024-08-17	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-16	2024-08-17	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-16	2024-08-17	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-16	2024-08-17	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-16	2024-08-17	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-16	2024-08-17	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-16	2024-08-17	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-16	2024-08-17	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-16	2024-08-17	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-16	2024-08-17	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-16	2024-08-17	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-16	2024-08-17	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-16	2024-08-17	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-16	2024-08-17	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12
+2024-08-17	2024-08-18	Einzelzimmer	1	Übernachtung - Frühstück	156.00€	4	101	1023	343771	101-4-1023	2023-08-12
+2024-08-17	2024-08-18	Einzelzimmer	1	Übernachtung - Halbpension	175.90€	4	101	1024	343771	101-4-1024	2023-08-12
+2024-08-17	2024-08-18	Einzelzimmer	1	Übernachtung Frühstück NonFlex	156.00€	4	101	1141	343771	101-4-1141	2023-08-12
+2024-08-17	2024-08-18	Doppelzimmer	2	Übernachtung Frühstück NonFlex	178.50€	4	201	1141	343772	201-4-1141	2023-08-12
+2024-08-17	2024-08-18	Doppelzimmer	2	Übernachtung - Frühstück	184.00€	4	201	1023	343772	201-4-1023	2023-08-12
+2024-08-17	2024-08-18	Doppelzimmer	2	Übernachtung - Halbpension	223.80€	4	201	1024	343772	201-4-1024	2023-08-12
+2024-08-17	2024-08-18	Doppelzimmer Superior	2	Übernachtung - Frühstück	202.50€	4	203	1023	344599	203-4-1023	2023-08-12
+2024-08-17	2024-08-18	Doppelzimmer Superior	2	Übernachtung - Halbpension	242.30€	4	203	1024	344599	203-4-1024	2023-08-12
+2024-08-17	2024-08-18	Doppelzimmer Deluxe	2	Übernachtung ohne Frühstück	193.00€	4	205	1026	344721	205-4-1026	2023-08-12
+2024-08-17	2024-08-18	Doppelzimmer Deluxe	2	Übernachtung - Frühstück	217.00€	4	205	1023	344721	205-4-1023	2023-08-12
+2024-08-17	2024-08-18	Doppelzimmer Deluxe	2	Übernachtung - Halbpension	256.80€	4	205	1024	344721	205-4-1024	2023-08-12
+2024-08-17	2024-08-18	Family & Friends Zimmer	3	Übernachtung - Halbpension	302.20€	4	301	1024	343773	301-4-1024	2023-08-12
+2024-08-17	2024-08-18	Family & Friends Zimmer	3	Übernachtung - Frühstück	242.50€	4	301	1023	343773	301-4-1023	2023-08-12
+2024-08-17	2024-08-18	Family & Friends Plus Zimmer	3	Übernachtung - Halbpension	314.70€	4	302	1024	344598	302-4-1024	2023-08-12
+2024-08-17	2024-08-18	Family & Friends Plus Zimmer	3	Übernachtung - Frühstück	255.00€	4	302	1023	344598	302-4-1023	2023-08-12
+2024-08-17	2024-08-18	Family & Friends Plus Zimmer	4	Übernachtung - Frühstück	280.00€	4	402	1023	344722	402-4-1023	2023-08-12
+2024-08-17	2024-08-18	Family & Friends Plus Zimmer	4	Übernachtung ohne Frühstück	232.00€	4	402	1026	344722	402-4-1026	2023-08-12
+2024-08-17	2024-08-18	Family & Friends Plus Zimmer	4	Übernachtung - Halbpension	359.60€	4	402	1024	344722	402-4-1024	2023-08-12
+2024-08-17	2024-08-18	Appartement4	4	Übernachtung ohne Frühstück	264.00€	3	603	1026	344720	603-4-1026	2023-08-12
+2024-08-17	2024-08-18	Appartement4	4	Übernachtung - Frühstück	312.00€	3	603	1023	344720	603-4-1023	2023-08-12
+2024-08-17	2024-08-18	Appartement4	4	Übernachtung - Halbpension	391.60€	3	603	1024	344720	603-4-1024	2023-08-12
+2024-08-17	2024-08-18	Studio	4	Übernachtung ohne Frühstück	264.00€	2	918	1026	344719	918-4-1026	2023-08-12
+2024-08-17	2024-08-18	Studio	4	Übernachtung - Frühstück	312.00€	2	918	1023	344719	918-4-1023	2023-08-12
+2024-08-17	2024-08-18	Studio	4	Übernachtung - Halbpension	391.60€	2	918	1024	344719	918-4-1024	2023-08-12

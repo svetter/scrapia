@@ -177,7 +177,7 @@ for lines in data_by_date_current:
 		
 		plot_x.append(date.strftime("%a %d.%m."))
 		plot_y.append(price_bracket)
-		plot_size.append((num_available * avail_scaling) ** 2 + 10)	# offset size for 0 availability to make num_gone visible
+		plot_size.append((num_available * avail_scaling) ** 2 + (10 if (num_available + num_gone > 0) else 0))	# offset size for 0 availability to make num_gone visible
 		plot_color.append(num_gone)
 
 

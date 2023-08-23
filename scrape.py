@@ -39,7 +39,7 @@ dates = [
 
 
 
-use_cached_response = True
+use_cached_response = len(sys.argv) < 2 or sys.argv[1] != 'wet'
 cached_response_filename = 'cached_response.html'
 
 room_infos_all_dates = []

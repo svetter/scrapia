@@ -79,7 +79,7 @@ else:
 sep = ','
 
 with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
-	f.write(sep.join(["Check-in date", "Check-out date", "Room description", "Meals", "Room capacity", "Price", "Number available", "felix-id", "package-id", "room-id", "name-param", "Scrape date"]) + '\n')
+	f.write(sep.join(["Check-in date", "Check-out date", "Room description", "Room capacity", "Meals", "Price", "Number available", "felix-id", "package-id", "room-id", "name-param", "Scrape date"]) + '\n')
 	
 	if use_cached_response:
 		f.write("NOT REAL DATA!\n")

@@ -76,7 +76,7 @@ else:
 		results_filepath = os.path.join('collected_results', today_str + '_' + str(i) + '.csv')
 		i += 1
 
-sep = '\t'
+sep = ','
 
 with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
 	f.write(sep.join(["Check-in date", "Check-out date", "Room description", "Meals", "Room capacity", "Price", "Number available", "felix-id", "package-id", "room-id", "name-param", "Scrape date"]) + '\n')

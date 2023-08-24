@@ -37,7 +37,7 @@ def parse_csv(filepath):
 		if line == '':
 			continue
 		
-		values = line.split('\t')
+		values = line.split(',')
 		
 		start_date		= parse_iso_date(values[0])
 		end_date		= parse_iso_date(values[1])

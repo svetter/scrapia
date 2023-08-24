@@ -80,11 +80,11 @@ def parse_all_csv(path):
 	return result
 
 def parse_first_csv(path):
-	files = os.listdir(path)
+	files = sorted(os.listdir(path))
 	return parse_csv(os.path.join(path, files[0]))
 
 def parse_last_csv(path):
-	files = os.listdir(path)
+	files = sorted(os.listdir(path))
 	return parse_csv(os.path.join(path, files[len(files)-1]))
 
 def filter_lines(lines):

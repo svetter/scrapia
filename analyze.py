@@ -197,6 +197,7 @@ axes = plt.gca()
 scatter = axes.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=max_num_gone, alpha=1)
 axes.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 plt.xticks(rotation=45, ha='right')
+[tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in axes.xaxis.get_ticklabels()]
 
 # create list of sizes to show in legend
 size_legend_labels = [0, 1] + [*range(2, 2 * int(max_num_avail / 2) + 1, 2)]

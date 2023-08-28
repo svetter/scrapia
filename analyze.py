@@ -182,13 +182,16 @@ for lines in data_by_date_current:
 
 
 
-plt.rcParams['figure.figsize'] = (12, 6)
+fig = plt.figure()
 plt.get_current_fig_manager().set_window_title(window_title)
-plt.title(plot_title)
-plt.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=max_num_gone, alpha=1)
-plt.subplots_adjust(left=0.06, right=1.07, top=0.94, bottom=0.15)
-plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
+fig.suptitle(plot_title, fontsize=14)
+fig.subplots_adjust(left=0.05, right=1.1, top=0.9, bottom=0.13)
+fig.set_dpi(100)
+fig.set_size_inches(12, 6)
+axes = plt.gca()
+scatter = axes.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=max_num_gone, alpha=1)
+axes.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 plt.xticks(rotation=45, ha='right')
-plt.colorbar(label="Already booked or price changed", location='right', pad=0.025)
+fig.colorbar(scatter, label="Already booked or price changed", location='right', pad=0.025)
 
 plt.show()

@@ -91,7 +91,7 @@ def filter_lines(lines):
 	result = []
 	
 	for line in lines:
-		price_per_person = line['price'] / line['size']
+		price_per_person = line['price'] / line['size'] + get_ticket_offset(line['start_date'])
 		if price_per_person <= filter_price_per_person and line['meals'] == "Übernachtung - Frühstück":
 			result.append(line)
 	

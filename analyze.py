@@ -179,7 +179,6 @@ for lines in data_by_date_current:
 		max_num_gone = max(num_gone, max_num_gone)
 		
 		if num_available > 0 or num_gone > 0:
-			print(date.strftime("%a %d.%m."), price_bracket, num_available, scale_avail(num_available))
 			plot_x.append(date.strftime("%a %d.%m."))
 			plot_y.append(price_bracket)
 			plot_size.append(scale_avail(num_available))

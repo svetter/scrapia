@@ -8,8 +8,8 @@ from dateutil.parser import isoparse as parse_iso_date
 filter_price_per_person = 100
 
 window_title = "Room availability analysis – JUFA Hotel Bregenz 2024"
-plot_title = "Available rooms below " + str(filter_price_per_person) + ("€ (incl. breakfast)"
-				" by date and price per person, adjusted for higher ticket prices on Fr/Sa")
+plot_title = "Available rooms below " + str(filter_price_per_person) + "€ by date and price per person"
+plot_subtitle = "All prices include (only) breakfast and are adjusted for higher ticket prices on Fr/Sa"
 
 # offsets for ticket category 4 (95€/108€/121€)
 ticket_price_offset_fr = -95 + 108
@@ -185,6 +185,7 @@ for lines in data_by_date_current:
 fig = plt.figure()
 plt.get_current_fig_manager().set_window_title(window_title)
 fig.suptitle(plot_title, fontsize=14)
+plt.title(plot_subtitle, fontsize=8)
 fig.subplots_adjust(left=0.05, right=1.1, top=0.9, bottom=0.13)
 fig.set_dpi(100)
 fig.set_size_inches(12, 6)

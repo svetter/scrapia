@@ -9,7 +9,7 @@ filter_price_per_person = 100
 
 window_title = "Room availability analysis – JUFA Hotel Bregenz 2024"
 plot_title = "Available rooms below " + str(filter_price_per_person) + "€ by date and price per person"
-plot_subtitle = "All prices include (only) breakfast and are adjusted for higher ticket prices on Fr/Sa"
+plot_subtitle = "Circle size shows number of rooms available. All prices include (only) breakfast and are adjusted for higher ticket prices on Fr/Sa."
 
 # offsets for ticket category 4 (95€/108€/121€)
 ticket_price_offset_fr = -95 + 108
@@ -153,8 +153,10 @@ plot_y = []
 plot_size = []
 plot_color = []
 
-avail_scaling = 3
+def scale_avail(num_available):
+	return 10 + (num_available * 10) + (num_available ** 1.5) * 30
 
+max_num_avail = 1
 max_num_gone = 1
 
 for lines in data_by_date_current:
@@ -170,15 +172,18 @@ for lines in data_by_date_current:
 		price_bracket = get_price_bracket(price_ind)
 		
 		num_available = num_avail_by_price[price_ind]
+		max_num_avail = max(num_available, max_num_avail)
 		
 		num_gone = num_avail_by_date_and_price_first[date][price_ind] - num_available
 		num_gone = max(num_gone, 0)
 		max_num_gone = max(num_gone, max_num_gone)
 		
-		plot_x.append(date.strftime("%a %d.%m."))
-		plot_y.append(price_bracket)
-		plot_size.append((num_available * avail_scaling) ** 2 + (10 if (num_available + num_gone > 0) else 0))	# offset size for 0 availability to make num_gone visible
-		plot_color.append(num_gone)
+		if num_available > 0 or num_gone > 0:
+			print(date.strftime("%a %d.%m."), price_bracket, num_available, scale_avail(num_available))
+			plot_x.append(date.strftime("%a %d.%m."))
+			plot_y.append(price_bracket)
+			plot_size.append(scale_avail(num_available))
+			plot_color.append(num_gone)
 
 
 
@@ -193,6 +198,14 @@ axes = plt.gca()
 scatter = axes.scatter(plot_x, plot_y, s=plot_size, c=plot_color, cmap='summer', vmin=0, vmax=max_num_gone, alpha=1)
 axes.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 plt.xticks(rotation=45, ha='right')
+
+# create list of sizes to show in legend
+size_legend_labels = [0, 1] + [*range(2, 2 * int(max_num_avail / 2) + 1, 2)]
+size_legend_handles = [plt.scatter([],[], s=scale_avail(size_legend_labels[i]), label=size_legend_labels[i], color='gray') for i in range(len(size_legend_labels))]
+# create size legend
+plt.legend(handles=size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
+
+# create color legend
 fig.colorbar(scatter, label="Already booked or price changed", location='right', pad=0.025)
 
 plt.show()

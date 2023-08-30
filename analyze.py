@@ -1,28 +1,27 @@
 import os
+import math
+import collections
+from dateutil.parser import isoparse as parse_iso_date
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import matplotlib.dates as mdates
-from dateutil.parser import isoparse as parse_iso_date
 
 
 
+# settings for filtering by price per person
 filter_price_per_person = 100
 
-window_title = "Room availability analysis – JUFA Hotel Bregenz 2024"
+# settings for filtering rooms by meal options
+meal_filter = {
+	'Übernachtung ohne Frühstück':		False,
+	'Übernachtung - Frühstück':			True,
+	'Übernachtung Frühstück NonFlex':	False,
+	'Übernachtung - Halbpension':		False,
+}
 
 # offsets for ticket category 4 (95€/108€/121€)
 ticket_price_offset_fr = -95 + 108
 ticket_price_offset_sa = -95 + 121
-
-
-
-def get_ticket_offset(date):
-	weekday = date.weekday()
-	if weekday == 4:	# Friday
-		return ticket_price_offset_fr
-	if weekday == 5:	# Saturday
-		return ticket_price_offset_sa
-	return 0
 
 
 
@@ -75,44 +74,47 @@ def parse_all_csv(path):
 	for filename in filenames:
 		if filename.endswith('.csv'):
 			csv_lines = parse_csv(os.path.join(path, filename))
-			result.append((csv_lines[1:], filename[:-4]))
-	
-	return result
-
-def parse_first_csv(path):
-	filenames = sorted(os.listdir(path))
-	return parse_csv(os.path.join(path, filenames[0]))
-
-def parse_last_csv(path):
-	filenames = sorted(os.listdir(path))
-	return parse_csv(os.path.join(path, filenames[len(filenames)-1]))
-
-def filter_lines(lines):
-	result = []
-	
-	for line in lines:
-		price_per_person = line['price'] / line['size'] + get_ticket_offset(line['start_date'])
-		if price_per_person <= filter_price_per_person and line['meals'] == "Übernachtung - Frühstück":
-			result.append(line)
+			result.append((csv_lines[1:], parse_iso_date(filename[:-4])))
 	
 	return result
 
 
 
-csv_data_current	= filter_lines(parse_last_csv('collected_results'))
-csv_data_first		= filter_lines(parse_first_csv('collected_results'))
+# parse all CSV data and process it
+all_data = parse_all_csv('collected_results')
+
+first_scrape_date	= all_data[ 0][1]
+last_scrape_date	= all_data[-1][1]
+
+
 
 price_rounding = 5
-prices_per_person = [line['price'] / line['size'] + get_ticket_offset(line['start_date']) for line in (csv_data_current + csv_data_first)]
-min_price_per_person = min(prices_per_person)
-min_price_per_person_rounded = int((min_price_per_person + price_rounding / 2) / price_rounding) * price_rounding
-max_price_per_person = max(prices_per_person)
 
-def get_price_ind(price):
-	return int((price - min_price_per_person_rounded + price_rounding / 2) / price_rounding)
+def get_price_bracket_ind(price):
+	return round(price / price_rounding)
 
-def get_price_bracket(price_ind):
-	return price_ind * price_rounding + min_price_per_person_rounded
+def get_bracket_price(bracket_ind):
+	return bracket_ind * price_rounding
+
+def get_ticket_offset(date):
+	weekday = date.weekday()
+	if weekday == 4:	# Friday
+		return ticket_price_offset_fr
+	if weekday == 5:	# Saturday
+		return ticket_price_offset_sa
+	return 0
+
+def find_max_price_per_person(raw_data):
+	max_price_per_person = 0
+	for lines_one_scrape_date, _ in raw_data:
+		for line in lines_one_scrape_date:
+			price_per_person = line['price'] / line['size'] + get_ticket_offset(line['start_date'])
+			max_price_per_person = max(max_price_per_person, price_per_person)
+	return max_price_per_person
+
+max_price_per_person		= find_max_price_per_person(all_data)
+num_price_brackets			= math.ceil(   max_price_per_person / price_rounding)
+num_price_brackets_filtered	= math.ceil(filter_price_per_person / price_rounding) + 1
 
 
 
@@ -127,61 +129,106 @@ def sort_data_by_date(data):
 	
 	return data_by_date
 
-data_by_date_current	= sort_data_by_date(csv_data_current)
-data_by_date_first		= sort_data_by_date(csv_data_first)
 
 
-
-num_avail_by_date_and_price_first = {}
-
-for lines in data_by_date_first:
-	date = lines[0]['start_date']
+def process_all_data(raw_data, meal_filter=None):
+	first_scrape_date = raw_data[0][1]
+	result = collections.OrderedDict()
+	# result has format: OrderedDict<scrape_date, scrape_date, data, max_num_avail, max_num_gone, max_num_avail_filtered, max_num_gone_filtered>
+	# result[0]['data'] has format: OrderedDict<start_date, room_data, num_avail_by_price_bracket, num_gone_by_price_bracket>
 	
-	num_avail_by_price = [0] * (get_price_ind(max_price_per_person) + 1)
-	
-	for line in lines:
-		price_per_person = line['price'] / line['size']
-		price_per_person += get_ticket_offset(date)	# take into account that tickets are more expensive some days
-		num_avail_by_price[get_price_ind(price_per_person)] += line['num_available']
-	
-	num_avail_by_date_and_price_first[date] = num_avail_by_price
+	for data_one_scrape_date, scrape_date in raw_data:
+		# in this loop, we process all data for ONE SCRAPE DATE
+		dataset_sorted = sort_data_by_date(data_one_scrape_date)
+		
+		# results for all data as map
+		processed_dataset = collections.OrderedDict()
+		
+		max_num_avail			= 0
+		max_num_gone			= 0
+		max_num_avail_filtered	= 0
+		max_num_gone_filtered	= 0
+		
+		for lines_one_start_date in dataset_sorted:
+			# in this loop, we process all data for ONE START DATE (at one scrape date)
+			start_date = lines_one_start_date[0]['start_date']
+			
+			num_avail_by_price_bracket	= [0] * num_price_brackets
+			num_gone_by_price_bracket	= [0] * num_price_brackets
+			
+			# sort all rooms into price brackets first
+			for line in lines_one_start_date:
+				# in this loop, we process all data for ONE ROOM TYPE (at one start date and one scrape date), equivalent to one CSV line
+				if meal_filter is not None:
+					if line['meals'] not in meal_filter:
+						raise ValueError("Found unknown meal description '" + line['meals'] + "'. Please add to filter dict.")
+					if not meal_filter[line['meals']]:
+						continue
+				
+				price_per_person = line['price'] / line['size'] + get_ticket_offset(line['start_date'])
+				price_bracket_ind = get_price_bracket_ind(price_per_person)
+				num_avail_by_price_bracket[price_bracket_ind] += line['num_available']
+			
+			for price_ind in range(len(num_avail_by_price_bracket)):
+				# in this loop, we process all data for ONE PRICE BRACKET (at one start date and one scrape date)
+				num_available = num_avail_by_price_bracket[price_ind]
+				max_num_avail = max(num_available, max_num_avail)
+				if price_ind >= num_price_brackets_filtered:
+					max_num_avail_filtered = max(num_available, max_num_avail_filtered)
+				
+				num_gone = 0
+				if scrape_date != first_scrape_date:
+					num_gone = result[first_scrape_date]['data'][start_date]['num_avail_by_price_bracket'][price_ind] - num_available
+					num_gone = max(num_gone, 0)
+					max_num_gone = max(num_gone, max_num_gone)
+					if price_ind < num_price_brackets_filtered:
+						max_num_gone_filtered = max(num_gone, max_num_gone_filtered)
+				num_gone_by_price_bracket[price_ind] = num_gone
+			
+			processed_dataset[start_date] = {
+				'start_date':					start_date,
+				'room_data':					lines_one_start_date,
+				'num_avail_by_price_bracket':	num_avail_by_price_bracket,
+				'num_gone_by_price_bracket':	num_gone_by_price_bracket
+			}
+		
+		result[scrape_date] = {
+			'scrape_date':						scrape_date,
+			'data':								processed_dataset,
+			'max_num_avail':					max_num_avail,
+			'max_num_gone':						max_num_gone,
+			'max_num_avail_filtered':			max_num_avail_filtered,
+			'max_num_gone_filtered':			max_num_gone_filtered
+		}
+	return result
+
+
+
+processed_data = process_all_data(all_data, meal_filter=meal_filter)
+
+
+
+def scale_avail(num_available):
+	return 10 + (num_available * 10) + (num_available ** 1.5 * 30)
 
 
 
 # prepare figure 1
-fig1_x = []
-fig1_y = []
-fig1_size = []
-fig1_color = []
+fig1_x		= []
+fig1_y		= []
+fig1_size	= []
+fig1_color	= []
+fig1_max_size	= processed_data[last_scrape_date]['max_num_avail_filtered']
+fig1_max_color	= processed_data[last_scrape_date]['max_num_gone_filtered']
 
-def scale_avail(num_available):
-	return 10 + (num_available * 10) + (num_available ** 1.5) * 30
-
-max_num_avail = 1
-max_num_gone = 1
-
-for lines in data_by_date_current:
-	date = lines[0]['start_date']
-	
-	num_avail_by_price = [0] * (get_price_ind(max_price_per_person) + 1)
-	
-	for line in lines:
-		price_per_person = line['price'] / line['size'] + get_ticket_offset(line['start_date'])
-		num_avail_by_price[get_price_ind(price_per_person)] += line['num_available']
-	
-	for price_ind in range(len(num_avail_by_price)):
-		price_bracket = get_price_bracket(price_ind)
-		
-		num_available = num_avail_by_price[price_ind]
-		max_num_avail = max(num_available, max_num_avail)
-		
-		num_gone = num_avail_by_date_and_price_first[date][price_ind] - num_available
-		num_gone = max(num_gone, 0)
-		max_num_gone = max(num_gone, max_num_gone)
+for _, (start_date, data_one_start_date) in enumerate(processed_data[last_scrape_date]['data'].items()):
+	for price_bracket_ind in range(num_price_brackets_filtered):
+		num_available	= data_one_start_date['num_avail_by_price_bracket'][price_bracket_ind]
+		num_gone		= data_one_start_date['num_gone_by_price_bracket' ][price_bracket_ind]
 		
 		if num_available > 0 or num_gone > 0:
-			fig1_x.append(date.strftime("%a %d.%m."))
-			fig1_y.append(price_bracket)
+			fig1_x.append(start_date.strftime("%a %d.%m."))
+			fig1_y.append(get_bracket_price(price_bracket_ind))
 			fig1_size.append(scale_avail(num_available))
 			fig1_color.append(num_gone)
 
@@ -189,23 +236,24 @@ for lines in data_by_date_current:
 
 # FIGURE 1: scatterplot with hotness
 fig1 = plt.figure()
-fig1_plot_title = "Available rooms below " + str(filter_price_per_person) + "€ by date and price per person"
+window_title = "Room availability analysis – JUFA Hotel Bregenz 2024"
+fig1_plot_title = "Available rooms below " + str(filter_price_per_person) + "€ per person by date and price"
 fig1_plot_subtitle = "Circle size shows number of rooms available. All prices include (only) breakfast and are adjusted for higher ticket prices on Fr/Sa."
 plt.get_current_fig_manager().set_window_title(window_title)
 fig1.suptitle(fig1_plot_title, fontsize=14)
 plt.title(fig1_plot_subtitle, fontsize=8)
-fig1.subplots_adjust(left=0.07, right=1.1, top=0.9, bottom=0.13)
+fig1.subplots_adjust(left=0.07, right=1.09, top=0.9, bottom=0.13)
 fig1.set_size_inches(12, 6)
 # scatterplot
 fig1_axes = plt.gca()
-scatter = fig1_axes.scatter(fig1_x, fig1_y, s=fig1_size, c=fig1_color, cmap='summer', vmin=0, vmax=max_num_gone, alpha=1)
+scatter = fig1_axes.scatter(fig1_x, fig1_y, s=fig1_size, c=fig1_color, cmap='summer', vmin=0, vmax=fig1_max_color, alpha=1)
 fig1_axes.set_ylabel("Price per person (rounded to " + str(price_rounding) + "€)")
 fig1_axes.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 # x-axis and legends
 plt.xticks(rotation=45, ha='right')
 [tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig1_axes.xaxis.get_ticklabels()]
 # create list of sizes to show in legend
-size_legend_labels = [0, 1] + [*range(2, 2 * int(max_num_avail / 2) + 1, 2)]
+size_legend_labels = [0, 1] + [*range(2, 2 * int(fig1_max_size / 2) + 1, 2)]
 size_legend_handles = [plt.scatter([],[], s=scale_avail(size_legend_labels[i]), label=size_legend_labels[i], color='gray') for i in range(len(size_legend_labels))]
 # create size legend
 plt.legend(handles=size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
@@ -215,26 +263,28 @@ fig1.colorbar(scatter, label="Already booked or price changed", location='right'
 
 
 # prepare figure 2
-fig2_x = []
-fig2_y1 = []
-fig2_y2 = []
+fig2_x	= []
+fig2_y1	= []
+fig2_y2	= []
 
-all_data = parse_all_csv('collected_results')
 for data_one_scrape_date, scrape_date in all_data:
 	days = set()
 	num_avail = 0
 	num_different_rooms = 0
 	avg_price = 0
 	for line in data_one_scrape_date:
-		if line['size'] >= 4 and line['meals'] == "Übernachtung - Frühstück":
+		if line['size'] >= 4 and meal_filter[line['meals']]:
 			days.add(line['start_date'])
 			num_avail += line['num_available']
 			num_different_rooms += 1
 			avg_price += line['price'] / line['size']
+	num_avail /= len(days)
+	avg_price /= num_different_rooms
+	
 	if num_avail > 0:
-		fig2_x.append(parse_iso_date(scrape_date))
-		fig2_y1.append(num_avail / len(days))
-		fig2_y2.append(avg_price / num_different_rooms)
+		fig2_x.append(scrape_date)
+		fig2_y1.append(num_avail)
+		fig2_y2.append(avg_price)
 
 # FIGURE 2: line plots for changes in availability and price
 fig2 = plt.figure()

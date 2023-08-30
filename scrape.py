@@ -4,39 +4,13 @@ import random
 import time
 import datetime
 
+from constants import STAY_DATES
 from helpers.html_extract import extract_room_data
 from helpers.http_request import get_html_data
 
 
 
-num_adults = '4'
-dates = [
-	[datetime.date(2024, 7, 17), datetime.date(2024, 7, 18)],
-	[datetime.date(2024, 7, 19), datetime.date(2024, 7, 20)],
-	[datetime.date(2024, 7, 20), datetime.date(2024, 7, 21)],
-	[datetime.date(2024, 7, 21), datetime.date(2024, 7, 22)],
-	[datetime.date(2024, 7, 23), datetime.date(2024, 7, 24)],
-	[datetime.date(2024, 7, 24), datetime.date(2024, 7, 25)],
-	[datetime.date(2024, 7, 25), datetime.date(2024, 7, 26)],
-	[datetime.date(2024, 7, 26), datetime.date(2024, 7, 27)],
-	[datetime.date(2024, 7, 27), datetime.date(2024, 7, 28)],
-	[datetime.date(2024, 7, 28), datetime.date(2024, 7, 29)],
-	[datetime.date(2024, 7, 30), datetime.date(2024, 7, 31)],
-	[datetime.date(2024, 7, 31), datetime.date(2024, 8,  1)],
-	[datetime.date(2024, 8,  1), datetime.date(2024, 8,  2)],
-	[datetime.date(2024, 8,  2), datetime.date(2024, 8,  3)],
-	[datetime.date(2024, 8,  3), datetime.date(2024, 8,  4)],
-	[datetime.date(2024, 8,  4), datetime.date(2024, 8,  5)],
-	[datetime.date(2024, 8,  6), datetime.date(2024, 8,  7)],
-	[datetime.date(2024, 8,  7), datetime.date(2024, 8,  8)],
-	[datetime.date(2024, 8,  9), datetime.date(2024, 8, 10)],
-	[datetime.date(2024, 8, 10), datetime.date(2024, 8, 11)],
-	[datetime.date(2024, 8, 11), datetime.date(2024, 8, 12)],
-	[datetime.date(2024, 8, 13), datetime.date(2024, 8, 14)],
-	[datetime.date(2024, 8, 16), datetime.date(2024, 8, 17)],
-	[datetime.date(2024, 8, 17), datetime.date(2024, 8, 18)],
-	[datetime.date(2024, 8, 18), datetime.date(2024, 8, 19)]
-]
+num_adults_requested = '4'
 
 
 
@@ -47,20 +21,20 @@ room_infos_all_dates = []
 
 sleep_time_base = 9 + 3 * random.random()
 
-for date_pair in dates:
+for date_pair in STAY_DATES:
 	print("Gathering data for " + date_pair[0].isoformat() + " to " + date_pair[1].isoformat())
 	if use_cached_response:
 		with open(cached_response_filename, 'r', encoding='UTF-8') as f:
 			html = f.read()
 	else:
-		html = get_html_data(num_adults, date_pair[0], date_pair[1])
+		html = get_html_data(num_adults_requested, date_pair[0], date_pair[1])
 	
 	room_info = extract_room_data(html)
 	room_infos_all_dates.append((date_pair, room_info))
 	
 	sleep_time = sleep_time_base + random.gauss(3 + 2 * random.random(), 3 + 2 * random.random())
 	print("\tWaiting {sleep_time:.2f}s before the next request".format(sleep_time=sleep_time))
-	if not use_cached_response and date_pair != dates[len(dates)-1]:
+	if not use_cached_response and date_pair != STAY_DATES[len(STAY_DATES) - 1]:
 		time.sleep(sleep_time)
 
 

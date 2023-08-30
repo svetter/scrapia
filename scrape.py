@@ -4,8 +4,8 @@ import random
 import time
 import datetime
 
-from html_extract import extract_room_data
-from http_request import get_html_data
+from helpers.html_extract import extract_room_data
+from helpers.http_request import get_html_data
 
 
 

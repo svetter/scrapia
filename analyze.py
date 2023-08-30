@@ -76,6 +76,15 @@ def scale_avail(num_available, corr_factor=1.0):
 
 
 
+# custom colormaps
+
+colormap_urgency = LinearSegmentedColormap.from_list('urgency', ['green', 'orange', 'red'])
+colormap_price = LinearSegmentedColormap.from_list('price', ['blue', 'red'])
+mpl.colormaps.register(cmap=colormap_urgency)
+mpl.colormaps.register(cmap=colormap_price)
+
+
+
 # prepare figure 1
 fig1_x		= []
 fig1_y		= []
@@ -109,7 +118,7 @@ fig1.subplots_adjust(left=0.07, right=1.09, top=0.9, bottom=0.13)
 fig1.set_size_inches(12, 6)
 # scatterplot
 fig1_axes = plt.gca()
-fig1_plot = fig1_axes.scatter(fig1_x, fig1_y, s=fig1_size, c=fig1_color, cmap='summer', vmin=0, vmax=fig1_max_color, alpha=1)
+fig1_plot = fig1_axes.scatter(fig1_x, fig1_y, s=fig1_size, c=fig1_color, cmap='urgency', vmin=0, vmax=fig1_max_color, alpha=1)
 fig1_axes.set_ylabel("Price per person (rounded to " + str(price_rounding) + "€)")
 fig1_axes.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 # x-axis and legends
@@ -219,9 +228,6 @@ for _, (scrape_date, data_one_scrape_date) in enumerate(processed_data.items()):
 			fig3_max_size	= max(fig3_max_size, num_available)
 			fig3_min_color	= min(fig3_min_color, avg_price)
 			fig3_max_color	= max(fig3_max_color, avg_price)
-
-colormap_price = LinearSegmentedColormap.from_list('price', ['blue', 'red'])
-mpl.colormaps.register(cmap=colormap_price)
 
 # FIGURE 3: scatterplot of availability and prices over time
 fig3 = plt.figure()

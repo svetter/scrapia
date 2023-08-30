@@ -5,6 +5,7 @@ import matplotlib.ticker as mticker
 import matplotlib.dates as mdates
 from matplotlib.colors import LinearSegmentedColormap
 
+from constants import STAY_DATES
 from helpers.csv_parse import parse_all_csv
 from helpers.preprocess import process_all_data
 
@@ -85,6 +86,35 @@ mpl.colormaps.register(cmap=colormap_price)
 
 
 
+# tooltips
+
+def get_tooltip_text(start_date, price_bracket_ind):
+	hover_brackent_ind = get_price_bracket_ind(price_bracket_ind)
+	# TODO
+	return str(start_date) + ', ' + str(price_bracket_ind) + '€'
+
+def motion_hover(event):
+	if event.inaxes != fig1_axes:
+		return
+	is_contained, annot_ind = fig1_plot.contains(event)
+	if not is_contained:
+		if fig1_annotation.get_visible():
+			fig1_annotation.set_visible(False)
+			fig1.canvas.draw_idle()
+		return
+	
+	location = fig1_plot.get_offsets()[annot_ind['ind'][0]]
+	hover_date = STAY_DATES[int(location[0])][0]
+	hover_price_bracket = int(location[1])
+	# assemble tooltip text
+	tooltip_text = get_tooltip_text(hover_date, hover_price_bracket)
+	fig1_annotation.set_text(tooltip_text)
+	fig1.canvas.draw_idle()
+	fig1_annotation.xy = (event.xdata, event.ydata)
+	fig1_annotation.set_visible(True)
+
+
+
 # prepare figure 1
 fig1_x		= []
 fig1_y		= []
@@ -131,6 +161,10 @@ fig1_size_legend_handles = [plt.scatter([],[], s=scale_avail(fig1_size_legend_la
 plt.legend(handles=fig1_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
 fig1.colorbar(fig1_plot, label="Already booked or price changed", location='right', pad=0.025)
+# add and connect tooltip
+fig1_annotation = fig1_axes.annotate(text='', xy=(0, 0), xytext=(20, 20), textcoords='offset points', bbox=dict(boxstyle='round', fc='w'), arrowprops={'arrowstyle': '->'})
+fig1_annotation.set_visible(False)
+fig1.canvas.mpl_connect('motion_notify_event', motion_hover)
 
 
 
@@ -248,7 +282,7 @@ plt.xticks(rotation=45, ha='right')
 [tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig3_ax.xaxis.get_ticklabels()]
 # create list of sizes to show in legend
 fig3_size_legend_labels = [*range(2, 2 * int(fig3_max_size / 2) + 1, 2)]
-fig3_size_legend_handles = [plt.scatter([],[], s=scale_avail(fig3_size_legend_labels[i], fig3_marker_scale), label=fig3_size_legend_labels[i], color='gray') for i in range(len(fig3_size_legend_labels))]
+fig3_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig3_size_legend_labels[i], fig3_marker_scale), label=fig3_size_legend_labels[i], color='gray') for i in range(len(fig3_size_legend_labels))]
 # create size legend
 plt.legend(handles=fig3_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend

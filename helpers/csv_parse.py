@@ -19,8 +19,8 @@ def parse_csv(filepath):
 		
 		values = line.split(csv_sep)
 		
-		start_date		= parse_iso_date(values[0])
-		end_date		= parse_iso_date(values[1])
+		start_date		= parse_iso_date(values[0]).date()
+		end_date		= parse_iso_date(values[1]).date()
 		description		= values[2]
 		num_persons		= int(values[3])
 		meals			= values[4]
@@ -30,7 +30,7 @@ def parse_csv(filepath):
 		package_id		= values[8]
 		room_id			= values[9]
 		name_param		= values[10]
-		scraped_date	= parse_iso_date(values[11])
+		scraped_date	= parse_iso_date(values[11]).date()
 		
 		result.append({
 			'start_date':		start_date,
@@ -58,6 +58,6 @@ def parse_all_csv(path):
 	for filename in filenames:
 		if filename.endswith('.csv'):
 			csv_lines = parse_csv(os.path.join(path, filename))
-			result.append((csv_lines[1:], parse_iso_date(filename[:-4])))
+			result.append((csv_lines[1:], parse_iso_date(filename[:-4]).date()))
 	
 	return result

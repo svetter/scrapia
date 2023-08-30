@@ -71,8 +71,8 @@ processed_data = process_all_data(all_data, num_price_brackets, num_price_bracke
 
 
 
-def scale_avail(num_available, corr_factor=1):
-	return (10 + (num_available * 10) + (num_available ** 1.5 * 30)) * corr_factor
+def scale_avail(num_available, corr_factor=1.0):
+	return (10 + (num_available * 10) + (num_available ** 1.6 * 25)) * corr_factor
 
 
 
@@ -208,7 +208,7 @@ for _, (scrape_date, data_one_scrape_date) in enumerate(processed_data.items()):
 				num_available += room['num_available']
 				avg_price += room['price'] / room['size']
 				num_different_rooms += 1
-		avg_price /= num_different_rooms
+		avg_price /= num_different_rooms if num_different_rooms > 0 else 1
 		
 		if num_available > 0:
 			fig3_x.append(start_date.strftime("%a %d.%m."))

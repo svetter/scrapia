@@ -266,30 +266,39 @@ fig1.colorbar(scatter, label="Already booked or price changed", location='right'
 fig2_x	= []
 fig2_y1	= []
 fig2_y2	= []
+fig2_y3	= []
+fig2_y4	= []
 
 for data_one_scrape_date, scrape_date in all_data:
 	days = set()
 	num_avail = 0
 	num_different_rooms = 0
+	min_price = max_price_per_person
 	avg_price = 0
+	max_price = 0
 	for line in data_one_scrape_date:
 		if line['size'] >= 4 and meal_filter[line['meals']]:
 			days.add(line['start_date'])
 			num_avail += line['num_available']
 			num_different_rooms += 1
-			avg_price += line['price'] / line['size']
+			price_per_person = line['price'] / line['size']
+			min_price = min(min_price, price_per_person)
+			avg_price += price_per_person
+			max_price = max(max_price, price_per_person)
 	num_avail /= len(days)
 	avg_price /= num_different_rooms
 	
 	if num_avail > 0:
 		fig2_x.append(scrape_date)
 		fig2_y1.append(num_avail)
-		fig2_y2.append(avg_price)
+		fig2_y2.append(min_price)
+		fig2_y3.append(avg_price)
+		fig2_y4.append(max_price)
 
 # FIGURE 2: line plots for changes in availability and price
 fig2 = plt.figure()
-fig2_plot_title = "Available rooms (for 4 or more people) and their prices over time"
-fig2_plot_subtitle = "Prices are for rooms which include (only) breakfast."
+fig2_plot_title = "Available rooms for 4 or more people and their prices over time"
+fig2_plot_subtitle = "Prices are for room options which include (only) breakfast."
 plt.get_current_fig_manager().set_window_title(window_title)
 fig2.suptitle(fig2_plot_title, fontsize=14)
 plt.title(fig2_plot_subtitle, fontsize=8)
@@ -297,17 +306,19 @@ fig2.subplots_adjust(left=0.06, right=0.94, top=0.9, bottom=0.07)
 fig2.set_size_inches(12, 6)
 # plot 1 (left y-axis): number of available rooms
 fig2_ax1 = plt.gca()
-fig2_plot1 = fig2_ax1.plot(fig2_x, fig2_y1, color='blue', marker='o', label='Number of available rooms on each day')
+fig2_plot1 = fig2_ax1.plot(fig2_x, fig2_y1, color='black', marker='o', label='Number of available rooms on each day')
 fig2_ax1.set_ylabel('Average of available rooms per day')
 fig2_ax1.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
-# plot 2 (right y-axis): average price per person
+# plot 2-4 (right y-axis): minimum/average/maximum price per person
 fig2_ax2 = fig2_ax1.twinx()
-fig2_plot2 = fig2_ax2.plot(fig2_x, fig2_y2, color='red', marker='o', label='Average price per person')
-fig2_ax2.set_ylabel('Average price per person')
+fig2_plot2 = fig2_ax2.plot(fig2_x, fig2_y2, color='blue', marker='v', label='Minimum price per person')
+fig2_plot3 = fig2_ax2.plot(fig2_x, fig2_y3, color='purple', marker='D', label='Average price per person')
+fig2_plot4 = fig2_ax2.plot(fig2_x, fig2_y4, color='red', marker='^', label='Maximum price per person')
+fig2_ax2.set_ylabel('Price per person')
 fig2_ax2.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 fig2_ax2.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # legend and x-axis
-plt.legend(handles=[fig2_plot1[0], fig2_plot2[0]], loc='lower center')
+plt.legend(handles=[fig2_plot1[0], fig2_plot4[0], fig2_plot3[0], fig2_plot2[0]], loc='lower center')
 fig2_ax1.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
 fig2_ax1.xaxis.set_major_formatter(mdates.DateFormatter('%B %Y'))
 plt.xticks(rotation=45, ha='right')

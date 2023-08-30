@@ -29,6 +29,9 @@ meal_filter = {
 ticket_price_offset_fr = -95 + 108
 ticket_price_offset_sa = -95 + 121
 
+# setting for keeping tooltips centered to circle
+keep_tooltips_centered_to_circle = False
+
 
 
 # parse all CSV data and process it
@@ -89,9 +92,31 @@ mpl.colormaps.register(cmap=colormap_price)
 # tooltips
 
 def get_tooltip_text(start_date, price_bracket_ind):
-	hover_brackent_ind = get_price_bracket_ind(price_bracket_ind)
-	# TODO
-	return str(start_date) + ', ' + str(price_bracket_ind) + '€'
+	bracket_ind = get_price_bracket_ind(price_bracket_ind)
+	
+	rooms = []
+	col_widths = [0, 0, 0, 0]
+	for room in processed_data[last_scrape_date]['data'][start_date]['room_data']:
+		price_per_person = room['price'] / room['size'] + get_ticket_offset(room['start_date'])
+		if get_price_bracket_ind(price_per_person) == bracket_ind and meal_filter[room['meals']]:
+			rooms.append((
+				str(room['num_available']),
+				room['description'].removesuffix("Zimmer").strip(),
+				str(room['size']),
+				'{:.0f}'.format(room['price'])
+			))
+			for i in range(len(col_widths)):
+				col_widths[i] = max(col_widths[i], len(rooms[-1][i]))
+	
+	room_strings = []
+	for room in rooms:
+		col0 = ('{: <' + str(col_widths[0]) + '}').format(room[0])
+		col1 = ('{: <' + str(col_widths[1]) + '}').format(room[1])
+		col2 = ('{: <' + str(col_widths[2]) + '}').format(room[2])
+		col3 = ('{: >' + str(col_widths[3]) + '}').format(room[3])
+		room_strings.append('{}x {} ({} people):  {} €'.format(col0, col1, col2, col3))
+	
+	return '\n'.join(room_strings) if room_strings else None
 
 def motion_hover(event):
 	if event.inaxes != fig1_axes:
@@ -108,9 +133,11 @@ def motion_hover(event):
 	hover_price_bracket = int(location[1])
 	# assemble tooltip text
 	tooltip_text = get_tooltip_text(hover_date, hover_price_bracket)
+	if tooltip_text is None:
+		return
 	fig1_annotation.set_text(tooltip_text)
 	fig1.canvas.draw_idle()
-	fig1_annotation.xy = (event.xdata, event.ydata)
+	fig1_annotation.xy = (location[0], location[1]) if keep_tooltips_centered_to_circle else (event.xdata, event.ydata)
 	fig1_annotation.set_visible(True)
 
 
@@ -126,7 +153,7 @@ fig1_max_color	= processed_data[last_scrape_date]['max_num_gone_filtered']
 for _, (start_date, data_one_start_date) in enumerate(processed_data[last_scrape_date]['data'].items()):
 	for price_bracket_ind in range(num_price_brackets_filtered):
 		num_available	= data_one_start_date['num_avail_by_price_bracket'][price_bracket_ind]
-		num_gone		= data_one_start_date['num_gone_by_price_bracket' ][price_bracket_ind]
+		num_gone		= data_one_start_date[ 'num_gone_by_price_bracket'][price_bracket_ind]
 		
 		if num_available > 0 or num_gone > 0:
 			fig1_x.append(start_date.strftime("%a %d.%m."))
@@ -162,7 +189,7 @@ plt.legend(handles=fig1_size_legend_handles, loc='lower right', labelspacing=1.8
 # create color legend
 fig1.colorbar(fig1_plot, label="Already booked or price changed", location='right', pad=0.025)
 # add and connect tooltip
-fig1_annotation = fig1_axes.annotate(text='', xy=(0, 0), xytext=(20, 20), textcoords='offset points', bbox=dict(boxstyle='round', fc='w'), arrowprops={'arrowstyle': '->'})
+fig1_annotation = fig1_axes.annotate(text='', fontfamily='monospace', xy=(0, 0), xytext=(-100, 20), textcoords='offset points', bbox=dict(boxstyle='square', fc='w'), arrowprops={'arrowstyle': '->'})
 fig1_annotation.set_visible(False)
 fig1.canvas.mpl_connect('motion_notify_event', motion_hover)
 

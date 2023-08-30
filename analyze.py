@@ -1,7 +1,9 @@
 import math
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import matplotlib.dates as mdates
+from matplotlib.colors import LinearSegmentedColormap
 
 from helpers.csv_parse import parse_all_csv
 from helpers.preprocess import process_all_data
@@ -69,8 +71,8 @@ processed_data = process_all_data(all_data, num_price_brackets, num_price_bracke
 
 
 
-def scale_avail(num_available):
-	return 10 + (num_available * 10) + (num_available ** 1.5 * 30)
+def scale_avail(num_available, corr_factor=1):
+	return (10 + (num_available * 10) + (num_available ** 1.5 * 30)) * corr_factor
 
 
 
@@ -107,19 +109,19 @@ fig1.subplots_adjust(left=0.07, right=1.09, top=0.9, bottom=0.13)
 fig1.set_size_inches(12, 6)
 # scatterplot
 fig1_axes = plt.gca()
-scatter = fig1_axes.scatter(fig1_x, fig1_y, s=fig1_size, c=fig1_color, cmap='summer', vmin=0, vmax=fig1_max_color, alpha=1)
+fig1_plot = fig1_axes.scatter(fig1_x, fig1_y, s=fig1_size, c=fig1_color, cmap='summer', vmin=0, vmax=fig1_max_color, alpha=1)
 fig1_axes.set_ylabel("Price per person (rounded to " + str(price_rounding) + "€)")
 fig1_axes.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 # x-axis and legends
 plt.xticks(rotation=45, ha='right')
 [tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig1_axes.xaxis.get_ticklabels()]
 # create list of sizes to show in legend
-size_legend_labels = [0, 1] + [*range(2, 2 * int(fig1_max_size / 2) + 1, 2)]
-size_legend_handles = [plt.scatter([],[], s=scale_avail(size_legend_labels[i]), label=size_legend_labels[i], color='gray') for i in range(len(size_legend_labels))]
+fig1_size_legend_labels = [0, 1] + [*range(2, 2 * int(fig1_max_size / 2) + 1, 2)]
+fig1_size_legend_handles = [plt.scatter([],[], s=scale_avail(fig1_size_legend_labels[i]), label=fig1_size_legend_labels[i], color='gray') for i in range(len(fig1_size_legend_labels))]
 # create size legend
-plt.legend(handles=size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
+plt.legend(handles=fig1_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
-fig1.colorbar(scatter, label="Already booked or price changed", location='right', pad=0.025)
+fig1.colorbar(fig1_plot, label="Already booked or price changed", location='right', pad=0.025)
 
 
 
@@ -172,9 +174,9 @@ fig2_ax1.set_ylabel('Average of available rooms per day')
 fig2_ax1.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # plot 2-4 (right y-axis): minimum/average/maximum price per person
 fig2_ax2 = fig2_ax1.twinx()
-fig2_plot2 = fig2_ax2.plot(fig2_x, fig2_y2, color='blue', marker='v', label='Minimum price per person')
+fig2_plot2 = fig2_ax2.plot(fig2_x, fig2_y2, color='blue',   marker='v', label='Minimum price per person')
 fig2_plot3 = fig2_ax2.plot(fig2_x, fig2_y3, color='purple', marker='D', label='Average price per person')
-fig2_plot4 = fig2_ax2.plot(fig2_x, fig2_y4, color='red', marker='^', label='Maximum price per person')
+fig2_plot4 = fig2_ax2.plot(fig2_x, fig2_y4, color='red',    marker='^', label='Maximum price per person')
 fig2_ax2.set_ylabel('Price per person')
 fig2_ax2.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 fig2_ax2.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
@@ -183,6 +185,68 @@ plt.legend(handles=[fig2_plot1[0], fig2_plot4[0], fig2_plot3[0], fig2_plot2[0]],
 fig2_ax1.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
 fig2_ax1.xaxis.set_major_formatter(mdates.DateFormatter('%B %Y'))
 plt.xticks(rotation=45, ha='right')
+
+
+
+# prepare figure 3
+fig3_x		= []
+fig3_y		= []
+fig3_size	= []
+fig3_color	= []
+fig3_max_size = 0
+fig3_min_color = max_price_per_person
+fig3_max_color = 0
+fig3_marker_scale = 0.6
+
+for _, (scrape_date, data_one_scrape_date) in enumerate(processed_data.items()):
+	for _, (start_date, data_one_start_date) in enumerate(data_one_scrape_date['data'].items()):
+		num_available = 0
+		avg_price = 0
+		num_different_rooms = 0
+		for room in data_one_start_date['room_data']:
+			if room['size'] >= 4 and meal_filter[room['meals']]:
+				num_available += room['num_available']
+				avg_price += room['price'] / room['size']
+				num_different_rooms += 1
+		avg_price /= num_different_rooms
+		
+		if num_available > 0:
+			fig3_x.append(start_date.strftime("%a %d.%m."))
+			fig3_y.append(scrape_date)
+			fig3_size.append(scale_avail(num_available, fig3_marker_scale))
+			fig3_color.append(avg_price)
+			
+			fig3_max_size	= max(fig3_max_size, num_available)
+			fig3_min_color	= min(fig3_min_color, avg_price)
+			fig3_max_color	= max(fig3_max_color, avg_price)
+
+colormap_price = LinearSegmentedColormap.from_list('price', ['blue', 'red'])
+mpl.colormaps.register(cmap=colormap_price)
+
+# FIGURE 3: scatterplot of availability and prices over time
+fig3 = plt.figure()
+fig3_plot_title = "Available rooms for 4 or more people and their average price over time"
+fig3_plot_subtitle = "Circle size shows number of rooms available. Prices are for room options which include (only) breakfast."
+plt.get_current_fig_manager().set_window_title(window_title)
+fig3.suptitle(fig3_plot_title, fontsize=14)
+plt.title(fig3_plot_subtitle, fontsize=8)
+fig3.subplots_adjust(left=0.09, right=1.07, top=0.9, bottom=0.14)
+fig3.set_size_inches(12, 6)
+fig3_ax = plt.gca()
+fig3_plot = fig3_ax.scatter(fig3_x, fig3_y, s=fig3_size, c=fig3_color, cmap='price', vmin=fig3_min_color, vmax=fig3_max_color, alpha=1)
+fig3_ax.invert_yaxis()
+fig3_ax.yaxis.set_major_locator(mdates.MonthLocator(interval=1))
+fig3_ax.yaxis.set_major_formatter(mdates.DateFormatter('%B %Y'))
+# x-axis and legends
+plt.xticks(rotation=45, ha='right')
+[tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig3_ax.xaxis.get_ticklabels()]
+# create list of sizes to show in legend
+fig3_size_legend_labels = [*range(2, 2 * int(fig3_max_size / 2) + 1, 2)]
+fig3_size_legend_handles = [plt.scatter([],[], s=scale_avail(fig3_size_legend_labels[i], fig3_marker_scale), label=fig3_size_legend_labels[i], color='gray') for i in range(len(fig3_size_legend_labels))]
+# create size legend
+plt.legend(handles=fig3_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
+# create color legend
+fig1.colorbar(fig3_plot, label="Average price", location='right', pad=0.025, format='%.0f €')
 
 
 

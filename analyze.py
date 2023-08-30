@@ -11,11 +11,11 @@ import matplotlib.dates as mdates
 # settings for filtering by price per person
 filter_price_per_person = 100
 
-# settings for filtering rooms by meal options
+# settings for filtering rooms by meal options (True = include)
 meal_filter = {
 	'Übernachtung ohne Frühstück':		False,
 	'Übernachtung - Frühstück':			True,
-	'Übernachtung Frühstück NonFlex':	False,
+	'Übernachtung Frühstück NonFlex':	True,
 	'Übernachtung - Halbpension':		False,
 }
 

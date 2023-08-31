@@ -137,7 +137,17 @@ def motion_hover(event):
 		return
 	fig1_annotation.set_text(tooltip_text)
 	fig1.canvas.draw_idle()
-	fig1_annotation.xy = (location[0], location[1]) if keep_tooltips_centered_to_circle else (event.xdata, event.ydata)
+	# set pointer position (mouse or circle center)
+	(x_point, y_point) = location if keep_tooltips_centered_to_circle else (event.xdata, event.ydata)
+	fig1_annotation.xy = (x_point, y_point)
+	# reposition tooltip relative to pointer
+	x_frac = (x_point     - fig1_axes.get_xlim()[0]) / (fig1_axes.get_xlim()[1] - fig1_axes.get_xlim()[0])
+	y_frac = (location[1] - fig1_axes.get_ylim()[0]) / (fig1_axes.get_ylim()[1] - fig1_axes.get_ylim()[0])	# y: always use circle center to avoid snapping up/down inside circle
+	annot_width = fig1_annotation.get_window_extent(fig1.canvas.get_renderer()).width * 72 / fig1.dpi
+	annot_height = fig1_annotation.get_window_extent(fig1.canvas.get_renderer()).height * 72 / fig1.dpi
+	x_offset = -(annot_width / 2) + (annot_width * (0.5 - x_frac)) * 1.25	# keep centered, move away from edge
+	y_offset = 30 if y_frac < 0.5 else -30 - annot_height
+	fig1_annotation.xyann = (x_offset, y_offset)
 	fig1_annotation.set_visible(True)
 
 
@@ -189,7 +199,7 @@ plt.legend(handles=fig1_size_legend_handles, loc='lower right', labelspacing=1.8
 # create color legend
 fig1.colorbar(fig1_plot, label="Already booked or price changed", location='right', pad=0.025)
 # add and connect tooltip
-fig1_annotation = fig1_axes.annotate(text='', fontfamily='monospace', xy=(0, 0), xytext=(-100, 20), textcoords='offset points', bbox=dict(boxstyle='square', fc='w'), arrowprops={'arrowstyle': '->'})
+fig1_annotation = fig1_axes.annotate(text='', fontfamily='monospace', xy=(0, 0), textcoords='offset points', bbox=dict(boxstyle='square', fc='w'))
 fig1_annotation.set_visible(False)
 fig1.canvas.mpl_connect('motion_notify_event', motion_hover)
 

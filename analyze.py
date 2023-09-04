@@ -320,13 +320,13 @@ fig3_plot_subtitle = "Circle size shows number of rooms available. Prices are fo
 plt.get_current_fig_manager().set_window_title(window_title)
 fig3.suptitle(fig3_plot_title, fontsize=14)
 plt.title(fig3_plot_subtitle, fontsize=8)
-fig3.subplots_adjust(left=0.09, right=1.07, top=0.9, bottom=0.14)
+fig3.subplots_adjust(left=0.07, right=1.07, top=0.9, bottom=0.14)
 fig3.set_size_inches(12, 6)
 fig3_ax = plt.gca()
 fig3_plot = fig3_ax.scatter(fig3_x, fig3_y, s=fig3_size, c=fig3_color, cmap='price', vmin=fig3_min_color, vmax=fig3_max_color, alpha=1)
 fig3_ax.invert_yaxis()
 fig3_ax.yaxis.set_major_locator(mdates.MonthLocator(interval=1))
-fig3_ax.yaxis.set_major_formatter(mdates.DateFormatter('%B %Y'))
+fig3_ax.yaxis.set_major_formatter(mdates.DateFormatter('%m.%Y'))
 # x-axis and legends
 plt.xticks(rotation=45, ha='right')
 [tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig3_ax.xaxis.get_ticklabels()]

@@ -228,7 +228,6 @@ fig2_y3	= []
 fig2_y4	= []
 
 for data_one_scrape_date, scrape_date in all_data:
-	days = set()
 	num_avail = 0
 	num_different_rooms = 0
 	min_price = max_price_per_person
@@ -236,14 +235,13 @@ for data_one_scrape_date, scrape_date in all_data:
 	max_price = 0
 	for line in data_one_scrape_date:
 		if line['size'] >= 4 and meal_filter[line['meals']]:
-			days.add(line['start_date'])
 			num_avail += line['num_available']
 			num_different_rooms += 1
 			price_per_person = line['price'] / line['size']
 			min_price = min(min_price, price_per_person)
 			avg_price += price_per_person
 			max_price = max(max_price, price_per_person)
-	num_avail /= len(days)
+	num_avail /= len(STAY_DATES)
 	avg_price /= num_different_rooms
 	
 	if num_avail > 0:
@@ -264,7 +262,7 @@ fig2.subplots_adjust(left=0.06, right=0.94, top=0.9, bottom=0.07)
 fig2.set_size_inches(12, 6)
 # plot 1 (left y-axis): number of available rooms
 fig2_ax1 = plt.gca()
-fig2_plot1 = fig2_ax1.plot(fig2_x, fig2_y1, color='black', marker='o', label='Number of available rooms on each day')
+fig2_plot1 = fig2_ax1.plot(fig2_x, fig2_y1, color='black', marker='o', label='Average number of available rooms per day')
 fig2_ax1.set_ylabel('Average of available rooms per day')
 fig2_ax1.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # plot 2-4 (right y-axis): minimum/average/maximum price per person

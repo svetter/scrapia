@@ -107,74 +107,90 @@ mpl.colormaps.register(cmap=colormap_price)
 
 # tooltips
 
-def get_tooltip_text(start_date, price_bracket):
-	bracket_ind = get_price_bracket_ind(price_bracket)
-	
-	rooms = []
-	col_widths = [0, 0, 0, 0]
-	for room in processed_data[last_scrape_date]['data'][start_date]['room_data']:
-		price_per_person = room['price'] / room['size'] + get_ticket_offset(room['start_date'])
-		if get_price_bracket_ind(price_per_person) == bracket_ind and meal_filter[room['meals']]:
-			rooms.append((
-				str(room['num_available']),
-				room['description'].removesuffix("Zimmer").strip(),
-				str(room['size']),
-				'{:.0f}'.format(room['price'])
-			))
-			for i in range(len(col_widths)):
-				col_widths[i] = max(col_widths[i], len(rooms[-1][i]))
-	
-	room_strings = []
-	for room_line in rooms:
-		col0 = ('{: <' + str(col_widths[0]) + '}').format(room_line[0])
-		col1 = ('{: <' + str(col_widths[1]) + '}').format(room_line[1])
-		col2 = ('{: <' + str(col_widths[2]) + '}').format(room_line[2])
-		col3 = ('{: >' + str(col_widths[3]) + '}').format(room_line[3])
-		room_strings.append('{}x {} ({} people):  {} €'.format(col0, col1, col2, col3))
-	
-	result = '\n'.join(room_strings)
-	
-	# find number of rooms already booked or price changed
-	num_gone = processed_data[last_scrape_date]['data'][start_date]['num_gone_by_price_bracket'][bracket_ind]
-	
-	if num_gone > 0:
-		if result != '':
-			result += '\n\n'
-		result += str(num_gone) + ' rooms already booked or price changed'
-	
-	return result
+def get_get_tooltip_text(y_is_scrape_date_not_price):
+	def get_tooltip_text(x, y):
+		start_date = STAY_DATES[x][0]
+		if y_is_scrape_date_not_price:
+			scrape_date = mdates.num2date(y).date()
+		else:
+			scrape_date = last_scrape_date
+			price_bracket = y
+			bracket_ind = get_price_bracket_ind(price_bracket)
+		
+		rooms = []
+		col_widths = [0, 0, 0, 0]
+		for room in processed_data[scrape_date]['data'][start_date]['room_data']:
+			price_per_person = room['price'] / room['size'] + get_ticket_offset(room['start_date'])
+			
+			if y_is_scrape_date_not_price:
+				condition_met = room['size'] >= 4
+			else:
+				condition_met = get_price_bracket_ind(price_per_person) == bracket_ind
+			
+			if condition_met and meal_filter[room['meals']]:
+				rooms.append((
+					str(room['num_available']),
+					room['description'].removesuffix("Zimmer").strip(),
+					str(room['size']),
+					'{:.0f}'.format(room['price'])
+				))
+				for i in range(len(col_widths)):
+					col_widths[i] = max(col_widths[i], len(rooms[-1][i]))
+		
+		room_strings = []
+		for room_line in rooms:
+			col0 = ('{: <' + str(col_widths[0]) + '}').format(room_line[0])
+			col1 = ('{: <' + str(col_widths[1]) + '}').format(room_line[1])
+			col2 = ('{: <' + str(col_widths[2]) + '}').format(room_line[2])
+			col3 = ('{: >' + str(col_widths[3]) + '}').format(room_line[3])
+			room_strings.append('{}x {} ({} people):  {} €'.format(col0, col1, col2, col3))
+		
+		result = '\n'.join(room_strings)
+		
+		if not y_is_scrape_date_not_price:
+			# find number of rooms already booked or price changed
+			num_gone = processed_data[scrape_date]['data'][start_date]['num_gone_by_price_bracket'][bracket_ind]
+			
+			if num_gone > 0:
+				if result != '':
+					result += '\n\n'
+				result += str(num_gone) + ' rooms already booked or price changed'
+		
+		return result
+	return get_tooltip_text
 
-def motion_hover(event):
-	if event.inaxes != fig1_axes:
-		return
-	is_contained, annot_ind = fig1_plot.contains(event)
-	if not is_contained:
-		if fig1_annotation.get_visible():
-			fig1_annotation.set_visible(False)
-			fig1.canvas.draw_idle()
-		return
-	
-	location = fig1_plot.get_offsets()[annot_ind['ind'][0]]
-	hover_date = STAY_DATES[int(location[0])][0]
-	hover_price_bracket = int(location[1])
-	# assemble tooltip text
-	tooltip_text = get_tooltip_text(hover_date, hover_price_bracket)
-	if tooltip_text is None:
-		return
-	fig1_annotation.set_text(tooltip_text)
-	fig1.canvas.draw_idle()
-	# set pointer position (mouse or circle center)
-	(x_point, y_point) = location if keep_tooltips_centered_to_circle else (event.xdata, event.ydata)
-	fig1_annotation.xy = (x_point, y_point)
-	# reposition tooltip relative to pointer
-	x_frac = (x_point     - fig1_axes.get_xlim()[0]) / (fig1_axes.get_xlim()[1] - fig1_axes.get_xlim()[0])
-	y_frac = (location[1] - fig1_axes.get_ylim()[0]) / (fig1_axes.get_ylim()[1] - fig1_axes.get_ylim()[0])	# y: always use circle center to avoid snapping up/down inside circle
-	annot_width = fig1_annotation.get_window_extent(fig1.canvas.get_renderer()).width * 72 / fig1.dpi
-	annot_height = fig1_annotation.get_window_extent(fig1.canvas.get_renderer()).height * 72 / fig1.dpi
-	x_offset = -(annot_width / 2) + (annot_width * (0.5 - x_frac)) * 0.95	# keep centered, move away from edge
-	y_offset = 30 if y_frac < 0.5 else -30 - annot_height
-	fig1_annotation.xyann = (x_offset, y_offset)
-	fig1_annotation.set_visible(True)
+def get_motion_hover(fig, plot, ax, annot, get_tooltip_text):
+	def motion_hover(event):
+		if event.inaxes != ax:
+			return
+		is_contained, annot_ind = plot.contains(event)
+		if not is_contained:
+			if annot.get_visible():
+				annot.set_visible(False)
+				fig.canvas.draw_idle()
+			return
+		
+		location = plot.get_offsets()[annot_ind['ind'][0]]
+		# assemble tooltip text
+		tooltip_text = get_tooltip_text(int(location[0]), int(location[1]))
+		if tooltip_text is None:
+			return
+		annot.set_text(tooltip_text)
+		fig.canvas.draw_idle()
+		# set pointer position (mouse or circle center)
+		(x_point, y_point) = location if keep_tooltips_centered_to_circle else (event.xdata, event.ydata)
+		annot.xy = (x_point, y_point)
+		# reposition tooltip relative to pointer
+		x_frac = (x_point - ax.get_xlim()[0]) / (ax.get_xlim()[1] - ax.get_xlim()[0])
+		y_frac = (location[1] - ax.get_ylim()[0]) / (ax.get_ylim()[1] - ax.get_ylim()[
+			0])  # y: always use circle center to avoid snapping up/down inside circle
+		annot_width = annot.get_window_extent(fig.canvas.get_renderer()).width * 72 / fig.dpi
+		annot_height = annot.get_window_extent(fig.canvas.get_renderer()).height * 72 / fig.dpi
+		x_offset = -(annot_width / 2) + (annot_width * (0.5 - x_frac)) * 0.95  # keep centered, move away from edge
+		y_offset = 30 if y_frac < 0.5 else -30 - annot_height
+		annot.xyann = (x_offset, y_offset)
+		annot.set_visible(True)
+	return motion_hover
 
 
 
@@ -216,13 +232,13 @@ plt.title(fig1_plot_subtitle, fontsize=8)
 fig1.subplots_adjust(left=0.07, right=1.09, top=0.9, bottom=0.13)
 fig1.set_size_inches(12, 6)
 # scatterplot
-fig1_axes = plt.gca()
-fig1_plot = fig1_axes.scatter(fig1_x, fig1_y, s=fig1_size, c=fig1_color, cmap='urgency', vmin=0, vmax=fig1_max_color, alpha=1)
-fig1_axes.set_ylabel("Price per person (rounded to " + str(price_rounding) + "€)")
-fig1_axes.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
+fig1_ax = plt.gca()
+fig1_plot = fig1_ax.scatter(fig1_x, fig1_y, s=fig1_size, c=fig1_color, cmap='urgency', vmin=0, vmax=fig1_max_color, alpha=1)
+fig1_ax.set_ylabel("Price per person (rounded to " + str(price_rounding) + "€)")
+fig1_ax.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 # x-axis and legends
 plt.xticks(rotation=45, ha='right')
-[tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig1_axes.xaxis.get_ticklabels()]
+[tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig1_ax.xaxis.get_ticklabels()]
 # create list of sizes to show in legend
 fig1_size_legend_labels = [0, 1] + [*range(2, 2 * int(fig1_max_size / 2) + 1, 2)]
 fig1_size_legend_handles = [plt.scatter([],[], s=scale_avail(fig1_size_legend_labels[i]), label=fig1_size_legend_labels[i], color='gray') for i in range(len(fig1_size_legend_labels))]
@@ -231,14 +247,16 @@ plt.legend(handles=fig1_size_legend_handles, loc='lower right', labelspacing=1.8
 # create color legend
 fig1.colorbar(fig1_plot, label="Already booked or price changed", location='right', pad=0.025)
 # format status bar coordinates
-fig1_axes.format_coord = lambda x, y: (
+fig1_ax.format_coord = lambda x, y: (
 	('' if round(x) < 0 or round(x) >= len(STAY_DATES) else ('Stay date: ' + STAY_DATES[round(x)][0].strftime("%d.%m.%Y") + ', '))
 	+ 'Price/person: ' + str(round(y)) + ' €'
 )
 # add and connect tooltip
-fig1_annotation = fig1_axes.annotate(text='', fontfamily='monospace', xy=(0, 0), xytext=(0, 0), textcoords='offset points', bbox=dict(boxstyle='square', fc='w'), zorder=10)
+fig1_annotation = fig1_ax.annotate(text='', fontfamily='monospace', xy=(0, 0), xytext=(0, 0), textcoords='offset points', bbox=dict(boxstyle='square', fc='w'), zorder=10)
 fig1_annotation.set_visible(False)
-fig1.canvas.mpl_connect('motion_notify_event', motion_hover)
+fig1_get_tooltip_text = get_get_tooltip_text(False)
+fig1_motion_hover = get_motion_hover(fig1, fig1_plot, fig1_ax, fig1_annotation, fig1_get_tooltip_text)
+fig1.canvas.mpl_connect('motion_notify_event', fig1_motion_hover)
 
 
 
@@ -373,6 +391,12 @@ fig3_ax.format_coord = lambda x, y: (
 	('' if round(x) < 0 or round(x) >= len(STAY_DATES) else ('Stay date: ' + STAY_DATES[round(x)][0].strftime("%d.%m.%Y") + ', '))
 	+ 'Scrape date: ' + mdates.num2date(y).strftime("%d.%m.%Y")
 )
+# add and connect tooltip
+fig3_annotation = fig3_ax.annotate(text='', fontfamily='monospace', xy=(0, 0), xytext=(0, 0), textcoords='offset points', bbox=dict(boxstyle='square', fc='w'), zorder=10)
+fig3_annotation.set_visible(False)
+fig3_get_tooltip_text = get_get_tooltip_text(True)
+fig3_motion_hover = get_motion_hover(fig3, fig3_plot, fig3_ax, fig3_annotation, fig3_get_tooltip_text)
+fig3.canvas.mpl_connect('motion_notify_event', fig3_motion_hover)
 
 
 

@@ -82,7 +82,7 @@ def find_max_price_per_person(raw_data):
 
 max_price_per_person		= find_max_price_per_person(all_data)
 num_price_brackets			= math.ceil(   max_price_per_person / price_rounding)
-num_price_brackets_filtered	= math.ceil(filter_price_per_person / price_rounding) + 1
+num_price_brackets_filtered	= min(math.ceil(filter_price_per_person / price_rounding) + 1, num_price_brackets)
 
 
 
@@ -187,6 +187,12 @@ fig1_max_size	= processed_data[last_scrape_date]['max_num_avail_filtered']
 fig1_max_color	= processed_data[last_scrape_date]['max_num_gone_filtered']
 
 for _, (start_date, data_one_start_date) in enumerate(processed_data[last_scrape_date]['data'].items()):
+	# add invisible point to ensure all x-axis ticks are shown
+	fig1_x.append(start_date.strftime("%a %d.%m."))
+	fig1_y.append(filter_price_per_person)
+	fig1_size.append(0)
+	fig1_color.append(0)
+	
 	for price_bracket_ind in range(num_price_brackets_filtered):
 		num_available	= data_one_start_date['num_avail_by_price_bracket'][price_bracket_ind]
 		num_gone		= data_one_start_date[ 'num_gone_by_price_bracket'][price_bracket_ind]
@@ -311,6 +317,13 @@ fig3_marker_scale = 0.6
 
 for _, (scrape_date, data_one_scrape_date) in enumerate(processed_data.items()):
 	for _, (start_date, data_one_start_date) in enumerate(data_one_scrape_date['data'].items()):
+		if scrape_date == first_scrape_date:
+			# add invisible point to ensure all x-axis ticks are shown
+			fig3_x.append(start_date.strftime("%a %d.%m."))
+			fig3_y.append(first_scrape_date)
+			fig3_size.append(0)
+			fig3_color.append(0)
+		
 		num_available = 0
 		avg_price = 0
 		num_different_rooms = 0

@@ -72,7 +72,7 @@ def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, 
 				# in this loop, we process all data for ONE PRICE BRACKET (at one start date and one scrape date)
 				num_available = num_avail_by_price_bracket[price_ind]
 				max_num_avail = max(num_available, max_num_avail)
-				if price_ind >= num_price_brackets_filtered:
+				if price_ind < num_price_brackets_filtered:
 					max_num_avail_filtered = max(num_available, max_num_avail_filtered)
 				
 				num_gone = 0

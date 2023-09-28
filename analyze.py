@@ -213,6 +213,11 @@ fig1_size_legend_handles = [plt.scatter([],[], s=scale_avail(fig1_size_legend_la
 plt.legend(handles=fig1_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
 fig1.colorbar(fig1_plot, label="Already booked or price changed", location='right', pad=0.025)
+# format status bar coordinates
+fig1_axes.format_coord = lambda x, y: (
+	('' if round(x) < 0 or round(x) >= len(STAY_DATES) else ('Stay date: ' + STAY_DATES[round(x)][0].strftime("%d.%m.%Y") + ', '))
+	+ 'Price/person: ' + str(round(y)) + ' €'
+)
 # add and connect tooltip
 fig1_annotation = fig1_axes.annotate(text='', fontfamily='monospace', xy=(0, 0), xytext=(0, 0), textcoords='offset points', bbox=dict(boxstyle='square', fc='w'), zorder=10)
 fig1_annotation.set_visible(False)
@@ -278,6 +283,8 @@ plt.legend(handles=[fig2_plot1[0], fig2_plot4[0], fig2_plot3[0], fig2_plot2[0]],
 fig2_ax1.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
 fig2_ax1.xaxis.set_major_formatter(mdates.DateFormatter('%B %Y'))
 plt.xticks(rotation=45, ha='right')
+# format status bar coordinates
+fig2_ax2.format_coord = lambda x, y: 'Scrape date: ' + mdates.num2date(x).strftime("%d.%m.%Y") + ', ' + 'Price/person: ' + str(round(y)) + ' €'
 
 
 
@@ -337,6 +344,11 @@ fig3_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig3_size_legend_l
 plt.legend(handles=fig3_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
 fig1.colorbar(fig3_plot, label="Average price", location='right', pad=0.025, format='%.0f €')
+# format status bar coordinates
+fig3_ax.format_coord = lambda x, y: (
+	('' if round(x) < 0 or round(x) >= len(STAY_DATES) else ('Stay date: ' + STAY_DATES[round(x)][0].strftime("%d.%m.%Y") + ', '))
+	+ 'Scrape date: ' + mdates.num2date(y).strftime("%d.%m.%Y")
+)
 
 
 

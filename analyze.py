@@ -50,7 +50,8 @@ keep_tooltips_centered_to_circle = False
 
 
 # parse all CSV data and process it
-all_data = parse_all_csv('collected_results')
+exclude_first_scrape_date = True
+all_data = parse_all_csv('collected_results', exclude_first_scrape_date)
 
 first_scrape_date	= all_data[ 0][1]
 last_scrape_date	= all_data[-1][1]

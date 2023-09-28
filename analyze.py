@@ -106,8 +106,8 @@ mpl.colormaps.register(cmap=colormap_price)
 
 # tooltips
 
-def get_tooltip_text(start_date, price_bracket_ind):
-	bracket_ind = get_price_bracket_ind(price_bracket_ind)
+def get_tooltip_text(start_date, price_bracket):
+	bracket_ind = get_price_bracket_ind(price_bracket)
 	
 	rooms = []
 	col_widths = [0, 0, 0, 0]
@@ -124,14 +124,24 @@ def get_tooltip_text(start_date, price_bracket_ind):
 				col_widths[i] = max(col_widths[i], len(rooms[-1][i]))
 	
 	room_strings = []
-	for room in rooms:
-		col0 = ('{: <' + str(col_widths[0]) + '}').format(room[0])
-		col1 = ('{: <' + str(col_widths[1]) + '}').format(room[1])
-		col2 = ('{: <' + str(col_widths[2]) + '}').format(room[2])
-		col3 = ('{: >' + str(col_widths[3]) + '}').format(room[3])
+	for room_line in rooms:
+		col0 = ('{: <' + str(col_widths[0]) + '}').format(room_line[0])
+		col1 = ('{: <' + str(col_widths[1]) + '}').format(room_line[1])
+		col2 = ('{: <' + str(col_widths[2]) + '}').format(room_line[2])
+		col3 = ('{: >' + str(col_widths[3]) + '}').format(room_line[3])
 		room_strings.append('{}x {} ({} people):  {} €'.format(col0, col1, col2, col3))
 	
-	return '\n'.join(room_strings) if room_strings else None
+	result = '\n'.join(room_strings)
+	
+	# find number of rooms already booked or price changed
+	num_gone = processed_data[last_scrape_date]['data'][start_date]['num_gone_by_price_bracket'][bracket_ind]
+	
+	if num_gone > 0:
+		if result != '':
+			result += '\n\n'
+		result += str(num_gone) + ' rooms already booked or price changed'
+	
+	return result
 
 def motion_hover(event):
 	if event.inaxes != fig1_axes:

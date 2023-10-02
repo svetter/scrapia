@@ -245,7 +245,8 @@ fig1_size_legend_handles = [plt.scatter([],[], s=scale_avail(fig1_size_legend_la
 # create size legend
 plt.legend(handles=fig1_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
-fig1.colorbar(fig1_plot, label="Already booked or price changed", location='right', pad=0.025)
+fig1_colorbar = fig1.colorbar(fig1_plot, label="Already booked or price changed", location='right', pad=0.025)
+fig1_colorbar.ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # format status bar coordinates
 fig1_ax.format_coord = lambda x, y: (
 	('' if round(x) < 0 or round(x) >= len(STAY_DATES) else ('Stay date: ' + STAY_DATES[round(x)][0].strftime("%d.%m.%Y") + ', '))
@@ -385,7 +386,8 @@ fig3_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig3_size_legend_l
 # create size legend
 plt.legend(handles=fig3_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
-fig1.colorbar(fig3_plot, label="Average price", location='right', pad=0.025, format='%.0f €')
+fig3_colorbar = fig3.colorbar(fig3_plot, label="Average price", location='right', pad=0.025, format='%.0f €')
+fig3_colorbar.ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # format status bar coordinates
 fig3_ax.format_coord = lambda x, y: (
 	('' if round(x) < 0 or round(x) >= len(STAY_DATES) else ('Stay date: ' + STAY_DATES[round(x)][0].strftime("%d.%m.%Y") + ', '))

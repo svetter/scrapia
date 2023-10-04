@@ -13,11 +13,13 @@
 # You should have received a copy of the GNU General Public License along with Scrapia.
 # If not, see <https://www.gnu.org/licenses/>.
 
+import locale
 import math
+
 import matplotlib as mpl
+import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
-import matplotlib.dates as mdates
 from matplotlib.colors import LinearSegmentedColormap
 
 from constants import STAY_DATES
@@ -46,6 +48,14 @@ ticket_price_offset_sa = -95 + 121
 
 # setting for keeping tooltips centered to circle
 keep_tooltips_centered_to_circle = False
+
+
+
+# set locale to English to ensure consistent date formatting
+# call matplotlib first because it will set the locale to the system default
+plt.plot()
+plt.close()
+locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
 
 
 
@@ -229,7 +239,7 @@ fig1_plot_subtitle = "Circle size shows number of rooms available. All prices in
 plt.get_current_fig_manager().set_window_title(window_title)
 fig1.suptitle(fig1_plot_title, fontsize=14)
 plt.title(fig1_plot_subtitle, fontsize=8)
-fig1.subplots_adjust(left=0.07, right=1.09, top=0.9, bottom=0.13)
+fig1.subplots_adjust(left=0.07, right=1.09, top=0.9, bottom=0.14)
 fig1.set_size_inches(12, 6)
 # scatterplot
 fig1_ax = plt.gca()

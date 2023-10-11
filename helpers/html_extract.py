@@ -23,6 +23,9 @@ def extract_room_data(html):
 	form_rooms = soup.find('form', {'id': 'hbFormRooms'})
 #	print(form_rooms.prettify())
 	
+	if form_rooms is None:
+		return []
+	
 	room_info = []
 	
 	room_tags = form_rooms.find_all('section', recursive=False)

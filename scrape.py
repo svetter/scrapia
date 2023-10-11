@@ -37,6 +37,9 @@ room_infos_all_dates = []
 sleep_time_base = 9 + 3 * random.random()
 
 for date_pair in STAY_DATES:
+	if (date_pair[0] - datetime.date.today()).days < 0:
+		continue	# skip past dates
+	
 	print("Gathering data for " + date_pair[0].isoformat() + " to " + date_pair[1].isoformat())
 	if use_cached_response:
 		with open(cached_response_filename, 'r', encoding='UTF-8') as f:
@@ -92,4 +95,4 @@ with open(results_filepath, 'w', encoding='UTF-8', newline='\n') as f:
 			
 			f.write(room_info_csv_string + '\n')
 
-print("\nAll data processed and written to CSV.")
+print("\nAll data processed and written to file " + results_filepath)

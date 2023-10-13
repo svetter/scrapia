@@ -25,8 +25,8 @@ Usage is very simple.
 
 In order to scrape information from the website, run `python scrape.py wet`.
 
-If the parameter `wet` is not present or contains something else, the website will not be contacted,
-but other funcitonality (e.g., the HTML parser) is still checked using a cached server response.
+If the parameter `wet` is not present or some other argument is passed, the website will not be contacted,
+but other functionality (e.g., the HTML parser) is still checked using a cached server response.
 
 #### Analysis
 

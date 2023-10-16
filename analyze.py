@@ -157,14 +157,24 @@ def get_get_tooltip_text(y_is_scrape_date_not_price):
 		
 		result = '\n'.join(room_strings)
 		
+		# find number of rooms already booked or price changed
 		if not y_is_scrape_date_not_price:
-			# find number of rooms already booked or price changed
 			num_gone = processed_data[scrape_date]['data'][start_date]['num_gone_by_price_bracket'][bracket_ind]
-			
-			if num_gone > 0:
-				if result != '':
-					result += '\n\n'
-				result += str(num_gone) + ' rooms already booked or price changed'
+		else:
+			num_available = 0
+			for room in processed_data[scrape_date]['data'][start_date]['room_data']:
+				if room['size'] >= 4 and meal_filter[room['meals']]:
+					num_available += room['num_available']
+			num_gone = 0
+			for room in processed_data[first_scrape_date]['data'][start_date]['room_data']:
+				if room['size'] >= 4 and meal_filter[room['meals']]:
+					num_gone += room['num_available']
+			num_gone = max(0, num_gone - num_available)
+		
+		if num_gone > 0:
+			if result != '':
+				result += '\n\n'
+			result += str(num_gone) + ' rooms already booked or price changed'
 		
 		return result
 	return get_tooltip_text

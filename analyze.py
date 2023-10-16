@@ -340,8 +340,8 @@ fig3_y		= []
 fig3_size	= []
 fig3_color	= []
 fig3_max_size = 0
-fig3_min_color = max_price_per_person
-fig3_max_color = 0
+fig3_min_color = 0
+fig3_max_color = 1
 fig3_marker_scale = 0.6
 
 for _, (scrape_date, data_one_scrape_date) in enumerate(processed_data.items()):
@@ -354,33 +354,32 @@ for _, (scrape_date, data_one_scrape_date) in enumerate(processed_data.items()):
 			fig3_color.append(0)
 		
 		num_available = 0
-		avg_price = 0
-		num_different_rooms = 0
 		for room in data_one_start_date['room_data']:
 			if room['size'] >= 4 and meal_filter[room['meals']]:
 				num_available += room['num_available']
-				avg_price += room['price'] / room['size']
-				num_different_rooms += 1
-		avg_price /= num_different_rooms if num_different_rooms > 0 else 1
+		num_gone = 0
+		for room in processed_data[first_scrape_date]['data'][start_date]['room_data']:
+			if room['size'] >= 4 and meal_filter[room['meals']]:
+				num_gone += room['num_available']
+		num_gone = max(0, num_gone - num_available)
 		
 		if num_available > 0:
 			fig3_x.append(start_date.strftime("%a %d.%m."))
 			fig3_y.append(scrape_date)
 			fig3_size.append(scale_avail(num_available, fig3_marker_scale))
-			fig3_color.append(avg_price)
+			fig3_color.append(num_gone)
 			
 			fig3_max_size	= max(fig3_max_size, num_available)
-			fig3_min_color	= min(fig3_min_color, avg_price)
-			fig3_max_color	= max(fig3_max_color, avg_price)
+			fig3_max_color	= max(fig3_max_color, num_gone)
 
 # FIGURE 3: scatterplot of availability and prices over time
 fig3 = plt.figure()
-fig3_plot_title = "Available rooms for 4 or more people and their average price over time"
-fig3_plot_subtitle = "Circle size shows number of rooms available. Prices are for room options which include (only) breakfast."
+fig3_plot_title = "Available rooms for 4 or more people over time"
+fig3_plot_subtitle = "Circle size shows number of rooms available. Showing rooms which include (only) breakfast."
 plt.get_current_fig_manager().set_window_title(window_title)
 fig3.suptitle(fig3_plot_title, fontsize=14)
 plt.title(fig3_plot_subtitle, fontsize=8)
-fig3.subplots_adjust(left=0.07, right=1.07, top=0.9, bottom=0.14)
+fig3.subplots_adjust(left=0.07, right=1.09, top=0.9, bottom=0.14)
 fig3.set_size_inches(12, 6)
 fig3_ax = plt.gca()
 fig3_plot = fig3_ax.scatter(fig3_x, fig3_y, s=fig3_size, c=fig3_color, cmap='price', vmin=fig3_min_color, vmax=fig3_max_color, alpha=1)
@@ -396,7 +395,7 @@ fig3_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig3_size_legend_l
 # create size legend
 plt.legend(handles=fig3_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
-fig3_colorbar = fig3.colorbar(fig3_plot, label="Average price", location='right', pad=0.025, format='%.0f €')
+fig3_colorbar = fig1.colorbar(fig3_plot, label="Already booked or price changed", location='right', pad=0.025)
 fig3_colorbar.ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # format status bar coordinates
 fig3_ax.format_coord = lambda x, y: (

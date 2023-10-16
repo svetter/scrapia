@@ -54,6 +54,8 @@ def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, 
 			# in this loop, we process all data for ONE START DATE (at one scrape date)
 			num_avail_by_price_bracket	= [0] * num_price_brackets
 			num_gone_by_price_bracket	= [0] * num_price_brackets
+			num_avail_filtered_price	= 0
+			num_gone_filtered_price		= 0
 			
 			# sort all rooms into price brackets first
 			for line in lines_one_start_date:
@@ -73,6 +75,7 @@ def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, 
 				num_available = num_avail_by_price_bracket[price_ind]
 				max_num_avail = max(num_available, max_num_avail)
 				if price_ind < num_price_brackets_filtered:
+					num_avail_filtered_price += num_available
 					max_num_avail_filtered = max(num_available, max_num_avail_filtered)
 				
 				num_gone = 0
@@ -81,6 +84,7 @@ def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, 
 					num_gone = max(num_gone, 0)
 					max_num_gone = max(num_gone, max_num_gone)
 					if price_ind < num_price_brackets_filtered:
+						num_gone_filtered_price += num_gone
 						max_num_gone_filtered = max(num_gone, max_num_gone_filtered)
 				num_gone_by_price_bracket[price_ind] = num_gone
 			
@@ -88,7 +92,9 @@ def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, 
 				'start_date':					start_date,
 				'room_data':					lines_one_start_date,
 				'num_avail_by_price_bracket':	num_avail_by_price_bracket,
-				'num_gone_by_price_bracket':	num_gone_by_price_bracket
+				'num_gone_by_price_bracket':	num_gone_by_price_bracket,
+				'num_avail_filtered_price':		num_avail_filtered_price,
+				'num_gone_filtered_price':		num_gone_filtered_price
 			}
 		
 		result[scrape_date] = {

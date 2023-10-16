@@ -251,7 +251,7 @@ plt.xticks(rotation=45, ha='right')
 [tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig1_ax.xaxis.get_ticklabels()]
 # create list of sizes to show in legend
 fig1_size_legend_labels = [0, 1] + [*range(2, 2 * int(fig1_max_size / 2) + 1, 2)]
-fig1_size_legend_handles = [plt.scatter([],[], s=scale_avail(fig1_size_legend_labels[i]), label=fig1_size_legend_labels[i], color='gray') for i in range(len(fig1_size_legend_labels))]
+fig1_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig1_size_legend_labels[i]), label=fig1_size_legend_labels[i], color='gray') for i in range(len(fig1_size_legend_labels))]
 # create size legend
 plt.legend(handles=fig1_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
@@ -280,20 +280,20 @@ fig2_y4	= []
 
 for data_one_scrape_date, scrape_date in all_data:
 	num_avail = 0
-	num_different_rooms = 0
+	num_available_rooms = 0
 	min_price = max_price_per_person
 	avg_price = 0
 	max_price = 0
 	for line in data_one_scrape_date:
 		if line['size'] >= 4 and meal_filter[line['meals']]:
 			num_avail += line['num_available']
-			num_different_rooms += 1
+			num_available_rooms += line['num_available']
 			price_per_person = line['price'] / line['size']
 			min_price = min(min_price, price_per_person)
-			avg_price += price_per_person
+			avg_price += price_per_person * line['num_available']
 			max_price = max(max_price, price_per_person)
 	num_avail /= len(STAY_DATES)
-	avg_price /= num_different_rooms
+	avg_price /= num_available_rooms
 	
 	if num_avail > 0:
 		fig2_x.append(scrape_date)

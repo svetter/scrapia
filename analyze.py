@@ -38,9 +38,9 @@ price_rounding = 5
 meal_filter = {
 	'Übernachtung ohne Frühstück':		False,
 	'Übernachtung - Frühstück':			True,
-	'Übernachtung Frühstück NonFlex':	False,
-	'Übernachtung - Halbpension':		False,
-	'Kultur & Natur in Bregenz':		False
+	'Übernachtung Frühstück NonFlex':	True,
+	'Übernachtung - Halbpension':		True,
+	'Kultur & Natur in Bregenz':		True
 }
 
 # offsets for ticket category 4 (95€/108€/121€)
@@ -246,7 +246,7 @@ for _, (start_date, data_one_start_date) in enumerate(processed_data[last_scrape
 fig1 = plt.figure()
 window_title = "Room availability analysis – JUFA Hotel Bregenz 2024"
 fig1_plot_title = "Available rooms below " + str(filter_price_per_person) + "€ per person by date and price"
-fig1_plot_subtitle = "Circle size shows number of rooms available. All prices include (only) breakfast and are adjusted for higher ticket prices on Fr/Sa."
+fig1_plot_subtitle = "Circle size shows number of rooms available. Prices are for cheapest option which includes breakfast, and are adjusted for higher ticket prices on Fr/Sa."
 plt.get_current_fig_manager().set_window_title(window_title)
 fig1.suptitle(fig1_plot_title, fontsize=14)
 plt.title(fig1_plot_subtitle, fontsize=8)
@@ -289,27 +289,29 @@ fig2_y2	= []
 fig2_y3	= []
 fig2_y4	= []
 
-for data_one_scrape_date, scrape_date in all_data:
-	num_avail = 0
+for scrape_date, data_one_scrape_date in processed_data.items():
 	num_available_rooms = 0
 	min_price = max_price_per_person
 	avg_price = 0
 	max_price = 0
-	for line in data_one_scrape_date:
-		if line['size'] >= 4 and meal_filter[line['meals']]:
-			num_avail += line['num_available']
+	
+	for data_one_start_date in data_one_scrape_date['data'].values():
+		for line in data_one_start_date['room_data']:
+			if line['size'] < 4:
+				continue
+			
 			num_available_rooms += line['num_available']
 			price_per_person = line['price'] / line['size']
 			min_price = min(min_price, price_per_person)
 			avg_price += price_per_person * line['num_available']
 			max_price = max(max_price, price_per_person)
-	num_avail /= len(STAY_DATES)
 	if num_available_rooms > 0:
 		avg_price /= num_available_rooms
+	avg_num_available_rooms = num_available_rooms / len(STAY_DATES)
 	
-	if num_avail > 0:
+	if num_available_rooms > 0:
 		fig2_x.append(scrape_date)
-		fig2_y1.append(num_avail)
+		fig2_y1.append(avg_num_available_rooms)
 		fig2_y2.append(min_price)
 		fig2_y3.append(avg_price)
 		fig2_y4.append(max_price)
@@ -317,7 +319,7 @@ for data_one_scrape_date, scrape_date in all_data:
 # FIGURE 2: line plots for changes in availability and price
 fig2 = plt.figure()
 fig2_plot_title = "Available rooms for 4 or more people and their prices over time"
-fig2_plot_subtitle = "Prices are for room options which include (only) breakfast."
+fig2_plot_subtitle = "Prices are for cheapest option which includes breakfast."
 plt.get_current_fig_manager().set_window_title(window_title)
 fig2.suptitle(fig2_plot_title, fontsize=14)
 plt.title(fig2_plot_subtitle, fontsize=8)
@@ -387,7 +389,7 @@ for _, (scrape_date, data_one_scrape_date) in enumerate(processed_data.items()):
 # FIGURE 3: scatterplot of availability and prices over time
 fig3 = plt.figure()
 fig3_plot_title = "Available rooms for 4 or more people over time"
-fig3_plot_subtitle = "Circle size shows number of rooms available. Showing rooms which include (only) breakfast."
+fig3_plot_subtitle = "Circle size shows number of rooms available."
 plt.get_current_fig_manager().set_window_title(window_title)
 fig3.suptitle(fig3_plot_title, fontsize=14)
 plt.title(fig3_plot_subtitle, fontsize=8)

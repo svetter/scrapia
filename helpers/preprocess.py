@@ -57,18 +57,35 @@ def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, 
 			num_avail_filtered_price	= 0
 			num_gone_filtered_price		= 0
 			
-			# sort all rooms into price brackets first
+			# sort all rooms by felix-id first
+			sorted_by_room = {}
 			for line in lines_one_start_date:
-				# in this loop, we process all data for ONE ROOM TYPE (at one start date and one scrape date), equivalent to one CSV line
-				if meal_filter is not None:
-					if line['meals'] not in meal_filter:
-						raise ValueError("Found unknown meal description '" + line['meals'] + "'. Please add to filter dict.")
-					if not meal_filter[line['meals']]:
-						continue
+				if sorted_by_room.get(line['felix-id']) is None:
+					sorted_by_room[line['felix-id']] = []
+				sorted_by_room[line['felix-id']].append(line)
+			
+			# for every available room, pick the cheapest package (meal option and other included benefits)
+			cheapest_lines_one_start_date = []
+			for room_data in sorted_by_room.values():
+				cheapest_line = None
+				for line in room_data:
+					# in this loop, we process all data for ONE ROOM TYPE (at one start date and one scrape date), equivalent to one CSV line
+					if meal_filter is not None:
+						if line['meals'] not in meal_filter:
+							raise ValueError("Found unknown meal description '" + line['meals'] + "'. Please add to filter dict.")
+						if not meal_filter[line['meals']]:
+							continue
+					# keep line if it is the cheapest package for the current room so far
+					if cheapest_line is None or line['price'] < cheapest_line['price']:
+						cheapest_line = line
 				
-				price_per_person = line['price'] / line['size'] + get_ticket_offset(line['start_date'])
+				cheapest_lines_one_start_date.append(cheapest_line)
+				
+				# we now have the cheapest package for the current room stored in cheapest_line
+				# sort room into price bracket
+				price_per_person = cheapest_line['price'] / cheapest_line['size'] + get_ticket_offset(cheapest_line['start_date'])
 				price_bracket_ind = get_price_bracket_ind(price_per_person)
-				num_avail_by_price_bracket[price_bracket_ind] += line['num_available']
+				num_avail_by_price_bracket[price_bracket_ind] += cheapest_line['num_available']
 			
 			for price_ind in range(len(num_avail_by_price_bracket)):
 				# in this loop, we process all data for ONE PRICE BRACKET (at one start date and one scrape date)
@@ -90,7 +107,7 @@ def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, 
 			
 			processed_dataset[start_date] = {
 				'start_date':					start_date,
-				'room_data':					lines_one_start_date,
+				'room_data':					cheapest_lines_one_start_date,
 				'num_avail_by_price_bracket':	num_avail_by_price_bracket,
 				'num_gone_by_price_bracket':	num_gone_by_price_bracket,
 				'num_avail_filtered_price':		num_avail_filtered_price,

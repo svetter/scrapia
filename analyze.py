@@ -38,8 +38,9 @@ price_rounding = 5
 meal_filter = {
 	'Übernachtung ohne Frühstück':		False,
 	'Übernachtung - Frühstück':			True,
-	'Übernachtung Frühstück NonFlex':	True,
+	'Übernachtung Frühstück NonFlex':	False,
 	'Übernachtung - Halbpension':		False,
+	'Kultur & Natur in Bregenz':		False
 }
 
 # offsets for ticket category 4 (95€/108€/121€)
@@ -303,7 +304,8 @@ for data_one_scrape_date, scrape_date in all_data:
 			avg_price += price_per_person * line['num_available']
 			max_price = max(max_price, price_per_person)
 	num_avail /= len(STAY_DATES)
-	avg_price /= num_available_rooms
+	if num_available_rooms > 0:
+		avg_price /= num_available_rooms
 	
 	if num_avail > 0:
 		fig2_x.append(scrape_date)

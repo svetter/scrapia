@@ -2,7 +2,7 @@ name: Scraping run (wet!)
 
 on:
   schedule:
-  - cron '48 7 * * 1' # Every Monday at 8:48
+    - cron '48 7 * * 1' # Every Monday at 8:48
   workflow_dispatch:
 
 permissions:
@@ -14,23 +14,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.10"
-        cache: 'pip'
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run live scrape
-      run: |
-        python scrape.py wet
-    - name: Add and commit new CSV
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: 'collected_results/'
-        message: 'Added data from automated scraping run'
-        pathspec_error_handling: exitImmediately
-        push: true
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          cache: 'pip'
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run live scrape
+        run: |
+          python scrape.py wet
+      - name: Add and commit new CSV
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'collected_results/'
+          message: 'Added data from automated scraping run'
+          pathspec_error_handling: exitImmediately
+          push: true

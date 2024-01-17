@@ -1,12 +1,9 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
 name: Scraping run (wet!)
 
 on:
-  workflow_dispatch
-#  schedule:
-#  - cron '0 17 * * 7' # Every Sunday at 19:00 CET
+  schedule:
+  - cron '48 7 * * 1' # Every Monday at 8:48
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -35,6 +32,5 @@ jobs:
       with:
         add: 'collected_results/'
         message: 'Added data from automated scraping run'
-#        new_branch: new_data
         pathspec_error_handling: exitImmediately
         push: true

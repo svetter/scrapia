@@ -1,20 +1,24 @@
-name: Scraping run (wet!)
+name: Scraping run
 
 on:
   schedule:
-    - cron: '48 7 * * 1' # Every Monday at 8:48
+    - cron: '0 7 * * 1' # Every Monday between 7:00 and 8:00 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
-  build:
+  scrape:
 
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+        with:
+          token: ${{ secrets.WORKFLOW_TOKEN }}
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
@@ -27,10 +31,13 @@ jobs:
       - name: Run live scrape
         run: |
           python scrape.py wet
+      - name: Randomize workflow schedule
+        run: |
+          sed -i.bak "/^\s*- cron: '/{s/\([0-9]\+\)/$(shuf -i 0-59 -n 1)/}" .github/workflows/scrape.yml
       - name: Add and commit new CSV
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'collected_results/'
+          add: 'collected_results/ .github/workflows/scrape.yml'
           message: 'Added data from automated scraping run'
           pathspec_error_handling: exitImmediately
           push: true

@@ -386,7 +386,7 @@ for _, (scrape_date, data_one_scrape_date) in enumerate(processed_data.items()):
 			fig3_max_size	= max(fig3_max_size, num_available)
 			fig3_max_color	= max(fig3_max_color, num_gone)
 
-# FIGURE 3: scatterplot of availability and prices over time
+# FIGURE 3: scatterplot of availability over time
 fig3 = plt.figure()
 fig3_plot_title = "Available rooms for 4 or more people over time"
 fig3_plot_subtitle = "Circle size shows number of rooms available."
@@ -409,7 +409,7 @@ fig3_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig3_size_legend_l
 # create size legend
 plt.legend(handles=fig3_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
-fig3_colorbar = fig1.colorbar(fig3_plot, label="Already booked or price changed", location='right', pad=0.025)
+fig3_colorbar = fig1.colorbar(fig3_plot, label="Already booked", location='right', pad=0.025)
 fig3_colorbar.ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # format status bar coordinates
 fig3_ax.format_coord = lambda x, y: (

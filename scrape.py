@@ -55,19 +55,23 @@ for date_pair in STAY_DATES:
 	if not use_cached_response and date_pair != STAY_DATES[len(STAY_DATES) - 1]:
 		time.sleep(sleep_time)
 
+if len(room_infos_all_dates) == 0:
+	print("No data was gathered: All stay dates are in the past.")
+	sys.exit(0)
+
 
 
 today_str = datetime.date.today().isoformat()
 
+year = STAY_DATES[0][0].year
+results_filepath = os.path.join('collected_results', str(year), today_str + '.csv')
+i = 1
+while os.path.isfile(results_filepath):
+	results_filepath = os.path.join('collected_results', str(year), today_str + '_' + str(i) + '.csv')
+	i += 1
+
 if use_cached_response:
 	results_filepath = 'results.csv'
-else:
-	year = STAY_DATES[0][0].year
-	results_filepath = os.path.join('collected_results', str(year), today_str + '.csv')
-	i = 1
-	while os.path.isfile(results_filepath):
-		results_filepath = os.path.join('collected_results', str(year), today_str + '_' + str(i) + '.csv')
-		i += 1
 
 sep = ','
 

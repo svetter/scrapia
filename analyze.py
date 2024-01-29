@@ -62,7 +62,7 @@ locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
 
 # parse all CSV data and process it
 exclude_first_scrape_date = True
-all_data = parse_all_csv('collected_results', exclude_first_scrape_date)
+all_data = parse_all_csv('collected_results/2024', exclude_first_scrape_date)
 
 first_scrape_date	= all_data[ 0][1]
 last_scrape_date	= all_data[-1][1]

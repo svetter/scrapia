@@ -62,10 +62,11 @@ today_str = datetime.date.today().isoformat()
 if use_cached_response:
 	results_filepath = 'results.csv'
 else:
-	results_filepath = os.path.join('collected_results', today_str + '.csv')
+	year = STAY_DATES[0][0].year
+	results_filepath = os.path.join('collected_results', str(year), today_str + '.csv')
 	i = 1
 	while os.path.isfile(results_filepath):
-		results_filepath = os.path.join('collected_results', today_str + '_' + str(i) + '.csv')
+		results_filepath = os.path.join('collected_results', str(year), today_str + '_' + str(i) + '.csv')
 		i += 1
 
 sep = ','

@@ -1,0 +1,165 @@
+Check-in date,Check-out date,Room description,Room capacity,Meals,Price,Number available,felix-id,package-id,room-id,name-param,Scrape date
+2024-07-17,2024-07-18,Einzelzimmer,1,Übernachtung - Frühstück,147.50€,1,101,1023,343771,101-4-1023,2024-02-05
+2024-07-17,2024-07-18,Einzelzimmer,1,Übernachtung Frühstück NonFlex,147.50€,1,101,1141,343771,101-4-1141,2024-02-05
+2024-07-17,2024-07-18,Einzelzimmer,1,Kultur & Natur in Bregenz,163.50€,1,101,1432,343771,101-4-1432,2024-02-05
+2024-07-17,2024-07-18,Einzelzimmer,1,Übernachtung - Halbpension,167.40€,1,101,1024,343771,101-4-1024,2024-02-05
+2024-07-17,2024-07-18,Doppelzimmer,2,Übernachtung Frühstück NonFlex,171.00€,1,201,1141,343772,201-4-1141,2024-02-05
+2024-07-17,2024-07-18,Doppelzimmer,2,Übernachtung - Frühstück,177.50€,1,201,1023,343772,201-4-1023,2024-02-05
+2024-07-17,2024-07-18,Doppelzimmer,2,Kultur & Natur in Bregenz,209.50€,1,201,1432,343772,201-4-1432,2024-02-05
+2024-07-17,2024-07-18,Doppelzimmer,2,Übernachtung - Halbpension,217.30€,1,201,1024,343772,201-4-1024,2024-02-05
+2024-07-17,2024-07-18,Doppelzimmer Superior,2,Übernachtung - Frühstück,191.00€,3,203,1023,344599,203-4-1023,2024-02-05
+2024-07-17,2024-07-18,Doppelzimmer Superior,2,Kultur & Natur in Bregenz,223.00€,3,203,1432,344599,203-4-1432,2024-02-05
+2024-07-17,2024-07-18,Doppelzimmer Superior,2,Übernachtung - Halbpension,230.80€,3,203,1024,344599,203-4-1024,2024-02-05
+2024-07-17,2024-07-18,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,255.50€,1,302,1023,344598,302-4-1023,2024-02-05
+2024-07-17,2024-07-18,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,303.50€,1,302,1432,344598,302-4-1432,2024-02-05
+2024-07-17,2024-07-18,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,315.20€,1,302,1024,344598,302-4-1024,2024-02-05
+2024-07-19,2024-07-20,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,299.00€,2,302,1023,344598,302-4-1023,2024-02-05
+2024-07-19,2024-07-20,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,347.00€,2,302,1432,344598,302-4-1432,2024-02-05
+2024-07-19,2024-07-20,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,358.70€,2,302,1024,344598,302-4-1024,2024-02-05
+2024-07-19,2024-07-20,Appartement,4,Übernachtung - Frühstück,312.00€,1,603,1023,344720,603-4-1023,2024-02-05
+2024-07-19,2024-07-20,Appartement,4,Kultur & Natur in Bregenz,376.00€,1,603,1432,344720,603-4-1432,2024-02-05
+2024-07-19,2024-07-20,Appartement,4,Übernachtung - Halbpension,391.60€,1,603,1024,344720,603-4-1024,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Zimmer,3,Übernachtung - Halbpension,343.70€,2,301,1024,343773,301-4-1024,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Zimmer,3,Kultur & Natur in Bregenz,332.00€,2,301,1432,343773,301-4-1432,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Zimmer,3,Übernachtung - Frühstück,284.00€,2,301,1023,343773,301-4-1023,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,299.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,358.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,347.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,379.00€,2,402,1432,344722,402-4-1432,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,394.60€,2,402,1024,344722,402-4-1024,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,267.00€,2,402,1026,344722,402-4-1026,2024-02-05
+2024-07-23,2024-07-24,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,315.00€,2,402,1023,344722,402-4-1023,2024-02-05
+2024-07-23,2024-07-24,Appartement,4,Übernachtung - Frühstück,312.00€,1,603,1023,344720,603-4-1023,2024-02-05
+2024-07-23,2024-07-24,Appartement,4,Kultur & Natur in Bregenz,376.00€,1,603,1432,344720,603-4-1432,2024-02-05
+2024-07-23,2024-07-24,Appartement,4,Übernachtung - Halbpension,391.60€,1,603,1024,344720,603-4-1024,2024-02-05
+2024-07-23,2024-07-24,Studio,4,Kultur & Natur in Bregenz,376.00€,1,918,1432,344719,918-4-1432,2024-02-05
+2024-07-23,2024-07-24,Studio,4,Übernachtung - Frühstück,312.00€,1,918,1023,344719,918-4-1023,2024-02-05
+2024-07-23,2024-07-24,Studio,4,Übernachtung - Halbpension,391.60€,1,918,1024,344719,918-4-1024,2024-02-05
+2024-07-23,2024-07-24,Studio,4,Übernachtung ohne Frühstück,264.00€,1,918,1026,344719,918-4-1026,2024-02-05
+2024-07-25,2024-07-26,Family & Friends Zimmer,3,Übernachtung - Frühstück,294.00€,1,301,1023,343773,301-4-1023,2024-02-05
+2024-07-25,2024-07-26,Family & Friends Zimmer,3,Kultur & Natur in Bregenz,342.00€,1,301,1432,343773,301-4-1432,2024-02-05
+2024-07-25,2024-07-26,Family & Friends Zimmer,3,Übernachtung - Halbpension,353.70€,1,301,1024,343773,301-4-1024,2024-02-05
+2024-07-25,2024-07-26,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,288.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-07-25,2024-07-26,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,336.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-07-25,2024-07-26,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,347.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Zimmer,3,Übernachtung - Halbpension,343.70€,3,301,1024,343773,301-4-1024,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Zimmer,3,Übernachtung - Frühstück,284.00€,3,301,1023,343773,301-4-1023,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Zimmer,3,Kultur & Natur in Bregenz,332.00€,3,301,1432,343773,301-4-1432,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,336.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,288.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,347.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,382.60€,4,402,1024,344722,402-4-1024,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,367.00€,4,402,1432,344722,402-4-1432,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,255.00€,4,402,1026,344722,402-4-1026,2024-02-05
+2024-07-30,2024-07-31,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,303.00€,4,402,1023,344722,402-4-1023,2024-02-05
+2024-07-30,2024-07-31,Appartement,4,Übernachtung - Frühstück,312.00€,1,603,1023,344720,603-4-1023,2024-02-05
+2024-07-30,2024-07-31,Appartement,4,Kultur & Natur in Bregenz,376.00€,1,603,1432,344720,603-4-1432,2024-02-05
+2024-07-30,2024-07-31,Appartement,4,Übernachtung - Halbpension,391.60€,1,603,1024,344720,603-4-1024,2024-02-05
+2024-07-30,2024-07-31,Studio,4,Übernachtung ohne Frühstück,264.00€,2,918,1026,344719,918-4-1026,2024-02-05
+2024-07-30,2024-07-31,Studio,4,Übernachtung - Frühstück,312.00€,2,918,1023,344719,918-4-1023,2024-02-05
+2024-07-30,2024-07-31,Studio,4,Kultur & Natur in Bregenz,376.00€,2,918,1432,344719,918-4-1432,2024-02-05
+2024-07-30,2024-07-31,Studio,4,Übernachtung - Halbpension,391.60€,2,918,1024,344719,918-4-1024,2024-02-05
+2024-07-31,2024-08-01,Family & Friends Zimmer,3,Übernachtung - Frühstück,294.00€,1,301,1023,343773,301-4-1023,2024-02-05
+2024-07-31,2024-08-01,Family & Friends Zimmer,3,Kultur & Natur in Bregenz,342.00€,1,301,1432,343773,301-4-1432,2024-02-05
+2024-07-31,2024-08-01,Family & Friends Zimmer,3,Übernachtung - Halbpension,353.70€,1,301,1024,343773,301-4-1024,2024-02-05
+2024-07-31,2024-08-01,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,299.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-07-31,2024-08-01,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,347.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-07-31,2024-08-01,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,358.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-08-01,2024-08-02,Einzelzimmer,1,Übernachtung Frühstück NonFlex,185.00€,1,101,1141,343771,101-4-1141,2024-02-05
+2024-08-01,2024-08-02,Einzelzimmer,1,Kultur & Natur in Bregenz,201.00€,1,101,1432,343771,101-4-1432,2024-02-05
+2024-08-01,2024-08-02,Einzelzimmer,1,Übernachtung - Halbpension,204.90€,1,101,1024,343771,101-4-1024,2024-02-05
+2024-08-01,2024-08-02,Einzelzimmer,1,Übernachtung - Frühstück,185.00€,1,101,1023,343771,101-4-1023,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Zimmer,3,Übernachtung - Frühstück,294.00€,1,301,1023,343773,301-4-1023,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Zimmer,3,Kultur & Natur in Bregenz,342.00€,1,301,1432,343773,301-4-1432,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Zimmer,3,Übernachtung - Halbpension,353.70€,1,301,1024,343773,301-4-1024,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,299.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,347.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,358.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,382.60€,4,402,1024,344722,402-4-1024,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,255.00€,4,402,1026,344722,402-4-1026,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,303.00€,4,402,1023,344722,402-4-1023,2024-02-05
+2024-08-01,2024-08-02,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,367.00€,4,402,1432,344722,402-4-1432,2024-02-05
+2024-08-01,2024-08-02,Appartement,4,Übernachtung - Frühstück,312.00€,1,603,1023,344720,603-4-1023,2024-02-05
+2024-08-01,2024-08-02,Appartement,4,Kultur & Natur in Bregenz,376.00€,1,603,1432,344720,603-4-1432,2024-02-05
+2024-08-01,2024-08-02,Appartement,4,Übernachtung - Halbpension,391.60€,1,603,1024,344720,603-4-1024,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Zimmer,3,Übernachtung - Frühstück,294.00€,1,301,1023,343773,301-4-1023,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Zimmer,3,Kultur & Natur in Bregenz,342.00€,1,301,1432,343773,301-4-1432,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Zimmer,3,Übernachtung - Halbpension,353.70€,1,301,1024,343773,301-4-1024,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,288.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,336.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,347.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,267.00€,3,402,1026,344722,402-4-1026,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,315.00€,3,402,1023,344722,402-4-1023,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,379.00€,3,402,1432,344722,402-4-1432,2024-02-05
+2024-08-06,2024-08-07,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,394.60€,3,402,1024,344722,402-4-1024,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Zimmer,3,Kultur & Natur in Bregenz,342.00€,1,301,1432,343773,301-4-1432,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Zimmer,3,Übernachtung - Frühstück,294.00€,1,301,1023,343773,301-4-1023,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Zimmer,3,Übernachtung - Halbpension,353.70€,1,301,1024,343773,301-4-1024,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,288.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,336.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,347.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,255.00€,4,402,1026,344722,402-4-1026,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,303.00€,4,402,1023,344722,402-4-1023,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,367.00€,4,402,1432,344722,402-4-1432,2024-02-05
+2024-08-07,2024-08-08,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,382.60€,4,402,1024,344722,402-4-1024,2024-02-05
+2024-08-07,2024-08-08,Appartement,4,Übernachtung - Frühstück,312.00€,1,603,1023,344720,603-4-1023,2024-02-05
+2024-08-07,2024-08-08,Appartement,4,Kultur & Natur in Bregenz,376.00€,1,603,1432,344720,603-4-1432,2024-02-05
+2024-08-07,2024-08-08,Appartement,4,Übernachtung - Halbpension,391.60€,1,603,1024,344720,603-4-1024,2024-02-05
+2024-08-09,2024-08-10,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,288.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-08-09,2024-08-10,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,336.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-08-09,2024-08-10,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,347.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-08-09,2024-08-10,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,255.00€,4,402,1026,344722,402-4-1026,2024-02-05
+2024-08-09,2024-08-10,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,303.00€,4,402,1023,344722,402-4-1023,2024-02-05
+2024-08-09,2024-08-10,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,367.00€,4,402,1432,344722,402-4-1432,2024-02-05
+2024-08-09,2024-08-10,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,382.60€,4,402,1024,344722,402-4-1024,2024-02-05
+2024-08-09,2024-08-10,Studio,4,Übernachtung ohne Frühstück,264.00€,1,918,1026,344719,918-4-1026,2024-02-05
+2024-08-09,2024-08-10,Studio,4,Übernachtung - Frühstück,312.00€,1,918,1023,344719,918-4-1023,2024-02-05
+2024-08-09,2024-08-10,Studio,4,Kultur & Natur in Bregenz,376.00€,1,918,1432,344719,918-4-1432,2024-02-05
+2024-08-09,2024-08-10,Studio,4,Übernachtung - Halbpension,391.60€,1,918,1024,344719,918-4-1024,2024-02-05
+2024-08-10,2024-08-11,Doppelzimmer Deluxe,2,Übernachtung ohne Frühstück,241.50€,1,205,1026,344721,205-4-1026,2024-02-05
+2024-08-10,2024-08-11,Doppelzimmer Deluxe,2,Übernachtung - Frühstück,265.50€,1,205,1023,344721,205-4-1023,2024-02-05
+2024-08-10,2024-08-11,Doppelzimmer Deluxe,2,Kultur & Natur in Bregenz,297.50€,1,205,1432,344721,205-4-1432,2024-02-05
+2024-08-10,2024-08-11,Doppelzimmer Deluxe,2,Übernachtung - Halbpension,305.30€,1,205,1024,344721,205-4-1024,2024-02-05
+2024-08-13,2024-08-14,Einzelzimmer,1,Übernachtung - Frühstück,177.50€,4,101,1023,343771,101-4-1023,2024-02-05
+2024-08-13,2024-08-14,Einzelzimmer,1,Kultur & Natur in Bregenz,193.50€,4,101,1432,343771,101-4-1432,2024-02-05
+2024-08-13,2024-08-14,Einzelzimmer,1,Übernachtung - Halbpension,197.40€,4,101,1024,343771,101-4-1024,2024-02-05
+2024-08-13,2024-08-14,Einzelzimmer,1,Übernachtung Frühstück NonFlex,177.50€,4,101,1141,343771,101-4-1141,2024-02-05
+2024-08-13,2024-08-14,Doppelzimmer Deluxe,2,Übernachtung ohne Frühstück,241.50€,1,205,1026,344721,205-4-1026,2024-02-05
+2024-08-13,2024-08-14,Doppelzimmer Deluxe,2,Übernachtung - Frühstück,265.50€,1,205,1023,344721,205-4-1023,2024-02-05
+2024-08-13,2024-08-14,Doppelzimmer Deluxe,2,Kultur & Natur in Bregenz,297.50€,1,205,1432,344721,205-4-1432,2024-02-05
+2024-08-13,2024-08-14,Doppelzimmer Deluxe,2,Übernachtung - Halbpension,305.30€,1,205,1024,344721,205-4-1024,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Zimmer,3,Übernachtung - Frühstück,294.00€,1,301,1023,343773,301-4-1023,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Zimmer,3,Übernachtung - Halbpension,353.70€,1,301,1024,343773,301-4-1024,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Zimmer,3,Kultur & Natur in Bregenz,342.00€,1,301,1432,343773,301-4-1432,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,314.70€,4,302,1024,344598,302-4-1024,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,255.00€,4,302,1023,344598,302-4-1023,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,303.00€,4,302,1432,344598,302-4-1432,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,382.60€,4,402,1024,344722,402-4-1024,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,367.00€,4,402,1432,344722,402-4-1432,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,303.00€,4,402,1023,344722,402-4-1023,2024-02-05
+2024-08-13,2024-08-14,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,255.00€,4,402,1026,344722,402-4-1026,2024-02-05
+2024-08-13,2024-08-14,Appartement,4,Übernachtung - Frühstück,312.00€,3,603,1023,344720,603-4-1023,2024-02-05
+2024-08-13,2024-08-14,Appartement,4,Kultur & Natur in Bregenz,376.00€,3,603,1432,344720,603-4-1432,2024-02-05
+2024-08-13,2024-08-14,Appartement,4,Übernachtung - Halbpension,391.60€,3,603,1024,344720,603-4-1024,2024-02-05
+2024-08-13,2024-08-14,Studio,4,Übernachtung - Frühstück,312.00€,1,918,1023,344719,918-4-1023,2024-02-05
+2024-08-13,2024-08-14,Studio,4,Übernachtung ohne Frühstück,264.00€,1,918,1026,344719,918-4-1026,2024-02-05
+2024-08-13,2024-08-14,Studio,4,Kultur & Natur in Bregenz,376.00€,1,918,1432,344719,918-4-1432,2024-02-05
+2024-08-13,2024-08-14,Studio,4,Übernachtung - Halbpension,391.60€,1,918,1024,344719,918-4-1024,2024-02-05
+2024-08-16,2024-08-17,Einzelzimmer,1,Übernachtung - Frühstück,192.00€,1,101,1023,343771,101-4-1023,2024-02-05
+2024-08-16,2024-08-17,Einzelzimmer,1,Übernachtung Frühstück NonFlex,192.00€,1,101,1141,343771,101-4-1141,2024-02-05
+2024-08-16,2024-08-17,Einzelzimmer,1,Kultur & Natur in Bregenz,208.00€,1,101,1432,343771,101-4-1432,2024-02-05
+2024-08-16,2024-08-17,Einzelzimmer,1,Übernachtung - Halbpension,211.90€,1,101,1024,343771,101-4-1024,2024-02-05
+2024-08-16,2024-08-17,Family & Friends Plus Zimmer,3,Übernachtung - Frühstück,310.00€,2,302,1023,344598,302-4-1023,2024-02-05
+2024-08-16,2024-08-17,Family & Friends Plus Zimmer,3,Kultur & Natur in Bregenz,358.00€,2,302,1432,344598,302-4-1432,2024-02-05
+2024-08-16,2024-08-17,Family & Friends Plus Zimmer,3,Übernachtung - Halbpension,369.70€,2,302,1024,344598,302-4-1024,2024-02-05
+2024-08-16,2024-08-17,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,278.50€,1,402,1026,344722,402-4-1026,2024-02-05
+2024-08-16,2024-08-17,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,326.50€,1,402,1023,344722,402-4-1023,2024-02-05
+2024-08-16,2024-08-17,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,390.50€,1,402,1432,344722,402-4-1432,2024-02-05
+2024-08-16,2024-08-17,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,406.10€,1,402,1024,344722,402-4-1024,2024-02-05
+2024-08-17,2024-08-18,Family & Friends Plus Zimmer,4,Übernachtung ohne Frühstück,278.50€,1,402,1026,344722,402-4-1026,2024-02-05
+2024-08-17,2024-08-18,Family & Friends Plus Zimmer,4,Übernachtung - Frühstück,326.50€,1,402,1023,344722,402-4-1023,2024-02-05
+2024-08-17,2024-08-18,Family & Friends Plus Zimmer,4,Kultur & Natur in Bregenz,390.50€,1,402,1432,344722,402-4-1432,2024-02-05
+2024-08-17,2024-08-18,Family & Friends Plus Zimmer,4,Übernachtung - Halbpension,406.10€,1,402,1024,344722,402-4-1024,2024-02-05
+2024-08-17,2024-08-18,Appartement,4,Übernachtung - Frühstück,312.00€,1,603,1023,344720,603-4-1023,2024-02-05
+2024-08-17,2024-08-18,Appartement,4,Kultur & Natur in Bregenz,376.00€,1,603,1432,344720,603-4-1432,2024-02-05
+2024-08-17,2024-08-18,Appartement,4,Übernachtung - Halbpension,391.60€,1,603,1024,344720,603-4-1024,2024-02-05

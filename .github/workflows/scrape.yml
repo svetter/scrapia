@@ -2,7 +2,7 @@ name: Scraping run
 
 on:
   schedule:
-    - cron: '0 7 * * 1' # Every Monday between 7:00 and 8:00 UTC (exact time randomized by other workflow)
+    - cron: '42 7 * * 1' # Every Monday between 7:00 and 8:00 UTC (exact time randomized by other workflow)
   workflow_dispatch:
 
 permissions:

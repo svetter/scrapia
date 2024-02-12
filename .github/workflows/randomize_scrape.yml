@@ -1,0 +1,31 @@
+name: Scrape time randomization
+
+on:
+  schedule:
+    - cron: '30 8 * * 1' # Every Monday at 8:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  randomize_scrape:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+        with:
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+      - name: Randomize scrape workflow schedule
+        run: |
+          sed -i.bak "/^\s*- cron: '/{s/\([0-9]\+\)/$(shuf -i 0-59 -n 1)/}" .github/workflows/scrape.yml
+      - name: Add and commit new CSV
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '.github/workflows/scrape.yml'
+          message: 'Randomize scraping workflow schedule'
+          pathspec_error_handling: exitImmediately
+          push: true

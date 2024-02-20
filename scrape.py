@@ -19,9 +19,9 @@ import random
 import time
 import datetime
 
-from constants import STAY_DATES
-from helpers.html_extract import extract_room_data
-from helpers.http_request import get_html_data
+from src.constants import STAY_DATES
+from src.html_extract import extract_room_data
+from src.http_request import get_html_data
 
 
 
@@ -30,7 +30,7 @@ num_adults_requested = '4'
 
 
 use_cached_response = len(sys.argv) < 2 or sys.argv[1] != 'wet'
-cached_response_filename = 'cached_response.html'
+cached_response_filename = 'resources/cached_response.html'
 
 room_infos_all_dates = []
 
@@ -71,7 +71,7 @@ while os.path.isfile(results_filepath):
 	i += 1
 
 if use_cached_response:
-	results_filepath = 'results.csv'
+	results_filepath = 'collected_results/dry_results.csv'
 
 sep = ','
 

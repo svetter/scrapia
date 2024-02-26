@@ -40,7 +40,11 @@ meal_filter = {
 	'Übernachtung - Frühstück':			True,
 	'Übernachtung Frühstück NonFlex':	True,
 	'Übernachtung - Halbpension':		True,
-	'Kultur & Natur in Bregenz':		True
+	'Kultur & Natur in Bregenz':		True,
+	'Overnight stay without breakfast':	False,
+	'Overnight breakfast':				True,
+	'Non refundable Bed & Breakfast':	True,
+	'Overnight half board':				True,
 }
 
 # offsets for ticket category 4 (95€/108€/121€)

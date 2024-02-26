@@ -21,7 +21,8 @@ import datetime
 
 from src.constants import STAY_DATES
 from src.html_extract import extract_room_data
-from src.http_request import get_html_data
+from src.http_request import get_html_data_method1
+from src.http_request import get_html_data_method2
 
 
 
@@ -30,7 +31,8 @@ num_adults_requested = '4'
 
 
 use_cached_response = len(sys.argv) < 2 or sys.argv[1] != 'wet'
-cached_response_filename = 'resources/cached_response.html'
+cached_response_filename_method1 = 'src/cached_response_method1.html'
+cached_response_filename_method2 = 'src/cached_response_method2.html'
 
 room_infos_all_dates = []
 
@@ -42,12 +44,15 @@ for date_pair in STAY_DATES:
 	
 	print("Gathering data for " + date_pair[0].isoformat() + " to " + date_pair[1].isoformat())
 	if use_cached_response:
-		with open(cached_response_filename, 'r', encoding='UTF-8') as f:
-			html = f.read()
+		with open(cached_response_filename_method1, 'r', encoding='UTF-8') as f:
+			html1 = f.read()
+		with open(cached_response_filename_method2, 'r', encoding='UTF-8') as f:
+			html2 = f.read()
 	else:
-		html = get_html_data(num_adults_requested, date_pair[0], date_pair[1])
+		html1 = get_html_data_method1(num_adults_requested, date_pair[0], date_pair[1])
+		html2 = get_html_data_method2(num_adults_requested, date_pair[0], date_pair[1])
 	
-	room_info = extract_room_data(html)
+	room_info = extract_room_data(html1, html2)
 	room_infos_all_dates.append((date_pair, room_info))
 	
 	sleep_time = sleep_time_base + random.gauss(3 + 2 * random.random(), 3 + 2 * random.random())
@@ -56,7 +61,7 @@ for date_pair in STAY_DATES:
 		time.sleep(sleep_time)
 
 if len(room_infos_all_dates) == 0:
-	print("No data was gathered: All stay dates are in the past.")
+	print("No data was gathered.")
 	sys.exit(0)
 
 

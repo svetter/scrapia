@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jufa Online Buchung</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="EiMVae1ZnkcRB2HZCQqSJMNwA_Ha477X4TexgU-i_FZDh9RP7UPJINckEt3vE_rv23PiVXZC_nYwWfC9AzASiQ" />
+    
+
+    <link rel="stylesheet" href="/assets/application-24241f5a7e216e092614034cbfaedafefd86dafe28484fe664c393d3fae86b0c.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-f5d198bd848ac55b4e0c213cfdfdea30df69bb5c801661670496b116806cf4a9.js",
+    "bootstrap": "https://ga.jspm.io/npm:bootstrap@5.2.3/dist/js/bootstrap.esm.js",
+    "@popperjs/core": "https://unpkg.com/@popperjs/core@2.11.6/dist/esm/index.js",
+    "custom/basket": "/assets/custom/basket-4a66fefa2678264bdcdf23c891069e03cc77a5d71934e65a70ad1586b51dfd6a.js",
+    "custom/checkout_formula": "/assets/custom/checkout_formula-c4c6fd7254bea088071c1216a98ea639a39d33d4c2f5059188b17ecfe24b8147.js",
+    "custom/design": "/assets/custom/design-670bb38fb56b43d5acc0abb107b8f51507ddd0dc5c9d1d139a464a955177162d.js",
+    "custom/ecommerce_tracker": "/assets/custom/ecommerce_tracker-1fdb1305dfafea8dee0250f61b390224cce0e133af024386e58f7cea1b44fd20.js",
+    "custom/jquery-ui.custom": "/assets/custom/jquery-ui.custom-c488fd4d8cfa794d1783a15d79d208c2a3f5df455f63fbe757ba30c609da1a8a.js",
+    "custom/js": "/assets/custom/js-2120fda011d78a3598c34fd30a8075710cac3c44e45a61417ff8aae6af417032.js",
+    "custom/meldeschein": "/assets/custom/meldeschein-b737064683e5001e06c3da5b97140ee426778e31e815762d3ea743abad0fb189.js",
+    "custom/multipage": "/assets/custom/multipage-9e525d0f16abf8f597595af24cd87994f8146676e240a99ed8b091642d30d578.js",
+    "custom/newDesign": "/assets/custom/newDesign-5e4e86c240fef1598be6df1d7a6e90c8ef85e98b35bec96c80f192e44a72fa1e.js",
+    "custom/onepage": "/assets/custom/onepage-3a2e1b67784066cf2162710ad1ebd9174b775ada0ae1e0befc1b1554ee582eb6.js",
+    "custom/promotion_code": "/assets/custom/promotion_code-aea00c847ec64c699a0da817e659a24169e598316192c72ec7885b3cf1bfff80.js",
+    "custom/rooms": "/assets/custom/rooms-0cf70983c0902a6eebb8f434eb0dc4f9c39552e22527a278a6743eb9dbd26966.js",
+    "custom/site-language": "/assets/custom/site-language-17fadee63b6de92aa6c93a55bc26d3adf5ebb689395e00066d24a915f8e17534.js",
+    "lib/jquery.datepicker.extension.range": "/assets/lib/jquery.datepicker.extension.range-0f0334faa1ce82a867d3cdd1f3300edfd91319c4f105d4dad01c553c1ed2303a.js",
+    "lib/slick/slick": "/assets/lib/slick/slick-97e71e3405820fedb3b58d39eb3e74e501e625f46fcd82d0d3ec188de32431c9.js",
+    "lib/slick/slick.min": "/assets/lib/slick/slick.min-a9961e1ceb0e22a662cb00862fe0e16cd55c1f3c73b1aadfe79b9036db87b49e.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-f5d198bd848ac55b4e0c213cfdfdea30df69bb5c801661670496b116806cf4a9.js">
+<script src="/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js" async="async" data-turbo-track="reload"></script>
+<script type="module">import "application"</script>
+
+<!--    AKHLAQ-->
+    <link rel="icon" type="image/x-icon" href="https://www.jufahotels.com/assets/website/images/logo.svg" />
+    <!-- To load page specific content in head with content_for... see views/search/index -->
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGGECCYW40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EGGECCYW40'); // GMS GOB14
+
+    gtag('config', 'G-H88JPMPD1F');
+
+
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" />
+
+<!--Copied from lib. javascript/lib/slick-->
+<link rel="stylesheet" href="/assets/slick-4514d61ce31482ddb0586c1e8e666a378f45f1c3dd25eb96a5c980612d221705.css" />
+<link rel="stylesheet" href="/assets/slick-theme-e852ddfce05af3a88cc1cbd1da9f46092377c99e6a9e93c20024289459a6197a.css" />
+
+<link rel="stylesheet" href="/assets/datapicker-custom-735daa8b350535e1e72b11f7e837790a59addd32c81da7de616a768bd18463f7.css" />
+<link rel="stylesheet" href="/assets/styleNew-f4c5a6fd08916840b7f904c60d5cfa4202d6497e0492a958d993598d92142bc5.css" />
+<link rel="stylesheet" href="/hotels/jufa/jufa.css" />
+  <style>
+    .GMS_online_booking .global_footer{background:#FCC500;} .GMS_online_booking .submitButton .submit{background:#FCC500;color:#000;} .GMS_online_booking .global_footer a {color:#000;} .GMS_online_booking .global_footer .copyright {color:#000;} .GMS_online_booking .fa {color:#000;} .GMS_online_booking .global_footer .container-fluid {color:#000;}; .GMS_online_booking .submitButton .submit:hover, .GMS_online_booking .btn:hover, .GMS_online_booking .btn-primary:hover, .GMS_online_booking .btn:focus{background:#000!important;}
+  </style>
+
+<!-- Hotjar Tracking Code for https://jufa-gob14.gms.info/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3649508,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  </head>
+
+  <body>
+  <!-- polifill for IE -->
+<script src="https://cdn.polyfill.io/v3/polyfill.js?features=Element.prototype.closest"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+<script type="module">import "lib/jquery.datepicker.extension.range"</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js" integrity="sha256-LBjlnpPrM6Aig8LDFc9PJctPHLGUc6RaUvnmXE4hV5Y=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" integrity="sha256-nuhNsfXzBFR6G1lKP8bK77dakkQDqdHcQ4OCFZvk6Qo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://kit.fontawesome.com/29dceacc74.js"></script>
+
+<script type="text/javascript">
+
+	var GOB5_ecommerce = {
+        'room_added': 1,
+        'room_removed': 1,
+        'date_changed': 1,
+        'people_changed': 1,
+        'extras_shown': 1,
+        'extra_added': 1,
+        'extra_removed': 1,
+        'checkout_shown': 1,
+        'booking_success': 1,
+	};
+
+</script>
+<script src="/assets/custom/ecommerce_tracker-1fdb1305dfafea8dee0250f61b390224cce0e133af024386e58f7cea1b44fd20.js"></script>
+<!--<script id="ecommerce_tracker" src="/js/ecommerce_tracker.js"></script>-->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('body').on('change', '.ga-search-adult', function(){
+            GMSDataLayer.trackAdultsChanged({
+                'event_category': 'userInteraction',
+                'event_label': 'Search Page Adults Changed',
+                value: $(this).val()
+            });
+        });
+        $('body').on('change', '#childrenCount', function(){
+            GMSDataLayer.trackChildrenChanged({
+                'event_category': 'userInteraction',
+                'event_label': 'Search Page children Changed',
+                value: $(this).val()
+            });
+        });
+
+        $('body').on('click', '.selectRoomBtn', function(){
+            GMSDataLayer.trackRoomAdded({
+                'event_category': 'userInteraction',
+                'event_label': 'Room added to cart',
+                'room': $(this).data('room-name'),
+                'price': $(this).data('price')
+            });
+            gaEcommerce('select_item', {
+                item_list_id: 0,
+                item_list_name: 'rooms',
+                items: [
+                    {
+                        item_id: $(this).data('room-id'),
+                        item_name: $(this).data('room-name'),
+                        affiliation: 'GOB14',
+                        currency: 'EUR',
+                        price: $(this).data('price'),
+                        item_category: 'room'
+                    }
+                ]
+            });
+        });
+        $('body').on('click', '.basket_delete_room_btn', function (event) {
+            GMSDataLayer.trackRoomRemoved({
+                'event_category': 'userInteraction',
+                'event_label': 'Room deleted from cart'
+            });
+        });
+        $('body').on('click', '.add-service', function(){
+            GMSDataLayer.trackExtraAdded({
+                'event_category': 'userInteraction',
+                'event_label': 'Extra added',
+                'extra': $(this).data('extra-name'),
+                'price': $(this).data('extra-price')
+            });
+            gaEcommerce('select_item', {
+                item_list_id: 1,
+                item_list_name: 'extras',
+                items: [
+                    {
+                        item_id: $(this).data('extra-id'),
+                        item_name: $(this).data('extra-name'),
+                        affiliation: 'GOB14',
+                        currency: 'EUR',
+                        price: $(this).data('extra-price'),
+                        item_category: 'extra'
+                    }
+                ]
+            })
+        });
+        $('body').on("click",".service-delete", function(event){
+            GMSDataLayer.trackExtraRemoved({
+                'event_category': 'userInteraction',
+                'event_label': 'Extra deleted'
+            });
+        });
+
+    });
+
+    function thankYouPageGA(bookingObject) {
+        GMSDataLayer.trackBookingComplete({
+            'event_category': 'userInteraction',
+            'event_label': 'Booking Completed'
+        });
+        gaEcommerce('purchase', bookingObject);
+    }
+
+    function gaEcommerce(event_type, data) {
+        console.log('gaEcommerce', event_type, data);
+        gtag('event', event_type, data);
+    }
+
+</script>
+
+  <div id="topOfThePage"></div>
+
+  <!--  Loading Indicator-->
+  <div class="preloader-wrapper d-flex w-100 justify-content-center">
+    <div class="preloader">
+      <div class="preloader-content">
+        <div class="preloader-first"></div>
+        <div class="preloader-second"></div>
+        <div class="preloader-third"></div>
+      </div>
+    </div>
+  </div>
+  <!--  Loading Indicator-->
+
+  <div class="wrapper">
+    <div class="content">
+      <header class="d-flex header" id="header">
+  <div class="header-wrap">
+  <span class="name-mobile">JUFA Hotel Bregenz am Bodensee</span>
+    <div class="d-flex" id="header-nav-1">
+      <a href="/buchen/en/bregenz?uid=17089709278944">
+        <img src="https://www.jufahotels.com/assets/website/images/logo.svg">
+        <br>
+        <span>JUFA Hotel Bregenz am Bodensee</span>
+      </a>
+    </div>
+      <div class="d-flex" id="header-nav-2">
+        <p id='header-guest-count' class="mr-1">4</p>
+        <div class="mt-3">
+        <span id="header-guest-text">
+          Guests
+        </span>
+          <br>
+          <span id='header-adult-count'>
+          4
+        </span>
+          <span id="header-adult-text">
+          Adults
+        </span>
+          <span id='header-child-count'>
+          0
+        </span>
+          <span id="header-children-text">
+          Child
+        </span>
+        </div>
+      </div>
+      <div class="d-flex" id="header-nav-3">
+        <p id="header-night-count" class="mr-1">
+          1
+        </p>
+        <div class="mt-3">
+        <span id="header-night-text">
+          Night
+        </span>
+          <br>
+          <div id="header-date-from-date-to">
+            07.Aug 24 - 08.Aug 24
+          </div>
+        </div>
+      </div>
+      <div class="d-flex" id="header-nav-4">
+        <p class="mr-1" id="header_rooms_count">
+          <span class="number_block">0</span>
+        </p>
+        <div class="mt-3">
+        <span>
+          Room
+        </span>
+          <br>
+        </div>
+      </div>
+      <div class="d-flex" id="header-nav-5">
+        <p class="mr-1" id="header_extras_count">0</p>
+        <div class="mt-4 mx-2">
+        <span>
+          Extras
+        </span>
+          <br>
+          <span id='header_extras_price'>
+          € 0,00
+        </span>
+        </div>
+      </div>
+      <div class="d-flex" id="header-nav-6">
+        <p class="mr-1" id="header_total_price">0</p>
+        <div class="mt-4 mx-2">
+          <span>
+            Total Price
+          </span>
+          <br>
+        </div>
+      </div>
+    </div>
+</header>
+
+      <div id="template_body">
+        <!--    <script type="text/html" id="hotel_currency_prefix">{{ hotel_currency_prefix()|raw }}</script>-->
+          <div id="inputs">
+    <input id="sid" type="hidden" name="sid" value="178ebcc646401cb49fe3632c08fc3410">
+    <input id="step" type="hidden" name="step" value="loadRooms">
+    <input id="GMS_ui_calendar" type="hidden" name="ui_calendar" value="1">
+  </div>
+
+
+  <div class="rooms-wrapper my-5" id="rooms-wrapper">
+      <h1>
+  Recommended room
+</h1>
+
+<div class="container-fluid recommended-room">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 p-0 mt-3">
+      <div class="sl">
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/47901bccb0da4881aa6cfb42c6655515.jpg" data-fancybox="gallery344722">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/47901bccb0da4881aa6cfb42c6655515.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/47901bccb0da4881aa6cfb42c6655515.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/b6afe755792d1ffca36d8a2084a828b1.jpg" data-fancybox="gallery344722">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/b6afe755792d1ffca36d8a2084a828b1.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/b6afe755792d1ffca36d8a2084a828b1.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/67a29030be5f48a2e690414c41d9b195.jpg" data-fancybox="gallery344722">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/67a29030be5f48a2e690414c41d9b195.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/67a29030be5f48a2e690414c41d9b195.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/27c274c7bc46b3d1cd90d4b3dd2a2c50.jpg" data-fancybox="gallery344722">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/27c274c7bc46b3d1cd90d4b3dd2a2c50.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/27c274c7bc46b3d1cd90d4b3dd2a2c50.jpg" alt="">
+                </div>
+              </a>
+            </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 pr-0 pl-4 mt-3">
+
+      <h2>Family &amp; Friends plus room</h2>
+      <p class="jufa-max-persons">max. 4 Persons</p>
+      <div class="package_wrap">
+      <h3>Overnight stay without breakfast</h3>
+      <a  href="" class="modal-info" data-bs-toggle="modal" data-bs-target="#infoModal344722_recommended_room_package"></a>
+      <a  href="" class="modal-info  mobile" data-bs-toggle="modal" data-bs-target="#infoModal"></a>
+      <div class="modal fade" id="infoModal344722_recommended_room_package" tabindex="-1" role="dialog" data-bs-backdrop="false" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Übernachtung ohne Frühstück
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="modal-mobile">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Übernachtung ohne Frühstück
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <ul class="room-features">
+        <li class="balkon"><ul>
+	<li>Modern, bright and friendly rooms with Twin or double beds</li>
+	<li>additional sleeping accomodations</li>
+	<li>shower, WC and hair dryer</li>
+	<li>TV, free WIFI, safe and folding bench</li>
+	<li>Baby cot is possible on request.</li>
+</ul>
+</li>
+      </ul>
+
+      <div class="size-and-price d-flex justify-content-end pb-4 pt-3">
+        <a class="clickable-price">
+            <span class="h3">
+              Total Price&nbsp;
+            </span>
+          <span class="h2">
+              € 267,00
+            </span>
+          <br>
+        </a>
+      </div>
+      <div class="d-flex justify-content-end pb-4 pt-3">
+        <button class="book-button selectRoomBtn"
+                name="402-4-1026"
+                data-room-cat-adults="402-4"
+                data-room-id="402"
+                data-room-maxperson="4"
+                data-room-name="Family &amp; Friends Plus Zimmer	"
+                data-package-name="Overnight stay without breakfast"
+                data-value="1::267.0"
+                data-price="267.0"
+        >
+          Book
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <h1>Available rooms</h1>
+    <div class="booking-info  py-2">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-6  d-flex align-items-center justify-content-center">
+            <i class="fas fa-calendar px-2"></i>
+            <div class="dates">
+              (<span id="searchMenuDateFrom">07.08.2024</span>
+              -
+              <span id="searchMenuDateTo">08.08.2024</span>)
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center justify-content-center">
+            <i class="fas fa-user-friends px-2"></i>
+            <div class="text">
+              <span id="searchMenuAdults"><span class="number_block">4</span> Erwachsene</span>
+              <span id="searchMenuChildren"> / <span class="number_block">0</span> Kinder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav aria-label="breadcrumb" class="breadcrumb breadcrumbs_module">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col col-lg-3 d-flex justify-content-center ">
+          <a href="https://jufa-gob14.gms.info/bregenz/en/search?uid=17089709278944" class="">Search</a>
+        </div>
+        <div class="col col-lg-3 d-flex justify-content-center ">
+          <a href="https://jufa-gob14.gms.info/bregenz/en/rooms?uid=17089709278944" class="">Rooms</a>
+        </div>
+        <div class="col col-lg-3 d-flex justify-content-center disabled">
+          <a href="https://jufa-gob14.gms.info/bregenz/en/extras?uid=17089709278944" class="">Extras</a>
+        </div>
+        <div class="col col-lg-3 d-flex justify-content-center disabled">
+          <a href="https://jufa-gob14.gms.info/bregenz/en/checkout?uid=17089709278944" class="">Checkout</a>
+        </div>
+    </div>
+  </div>
+</nav>
+
+
+    <section class="rooms-main">
+
+
+        <div class="room-cell" id="room-0" data-index="0">
+          <div id="room-anchor-344722" style="position: absolute; top: -150px; left: 0"></div>
+          <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 p-0 mt-3">
+      <div class="sl">
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/47901bccb0da4881aa6cfb42c6655515.jpg" data-fancybox="gallery344722">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/47901bccb0da4881aa6cfb42c6655515.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/47901bccb0da4881aa6cfb42c6655515.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/b6afe755792d1ffca36d8a2084a828b1.jpg" data-fancybox="gallery344722">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/b6afe755792d1ffca36d8a2084a828b1.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/b6afe755792d1ffca36d8a2084a828b1.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/67a29030be5f48a2e690414c41d9b195.jpg" data-fancybox="gallery344722">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/67a29030be5f48a2e690414c41d9b195.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/67a29030be5f48a2e690414c41d9b195.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/27c274c7bc46b3d1cd90d4b3dd2a2c50.jpg" data-fancybox="gallery344722">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/27c274c7bc46b3d1cd90d4b3dd2a2c50.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/27c274c7bc46b3d1cd90d4b3dd2a2c50.jpg" alt="">
+                </div>
+              </a>
+            </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 pr-0 pl-4 mt-3">
+      <div class="room-title py-2">
+        <h4>Family &amp; Friends plus room</h4>
+        <p class="jufa-max-persons">max. 4 Persons</p>
+      </div>
+      <div class="size-and-price d-flex justify-content-end pb-4 pt-3">
+        <a class="clickable-price">
+          <span class="h3">
+            from&nbsp;
+          </span>
+          <span class="h2">
+            € 267,00
+          </span>
+          <br>
+        </a>
+      </div>
+      <div class="clickable py-4 room-features-clickable">
+        <ul class="room-features">
+          <li class="balkon"><ul>
+	<li>Modern, bright and friendly rooms with Twin or double beds</li>
+	<li>additional sleeping accomodations</li>
+	<li>shower, WC and hair dryer</li>
+	<li>TV, free WIFI, safe and folding bench</li>
+	<li>Baby cot is possible on request.</li>
+</ul>
+</li>
+        </ul>
+      </div>
+      <div class="accordion accordion-flush room-features-clickable-mobile" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Zimmerbeschreibung
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> 
+            <ul class="room-features">
+              <li class="balkon"><ul>
+	<li>Modern, bright and friendly rooms with Twin or double beds</li>
+	<li>additional sleeping accomodations</li>
+	<li>shower, WC and hair dryer</li>
+	<li>TV, free WIFI, safe and folding bench</li>
+	<li>Baby cot is possible on request.</li>
+</ul>
+</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="col-xs-12 my-1 info-table-block  shown ">
+  <table class="info-table">
+    <thead class="title-thead">
+    <tr>
+      <th>
+        <div class="container-fluid">
+
+          <div class="row py-2 title-row">
+            <div class="col-lg-5 col-sm-4 col-12 info-table-title">Offers and information</div>
+            <div class="col-lg-2 col-4 info-table-title">Total Price</div>
+            <div class="col-lg-4 col-3 info-table-title">Persons</div>
+          </div>
+        </div>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+  <td>
+    <div class="row py-2 table-info-row table-info-row-mobile" id="table-row">
+      <div class="col-12 col-sm-5 col-lg-5 d-flex flex-column">
+        <div class="text-and-icon d-flex">
+          <p class="info-text" >Overnight stay without breakfast</p>
+        </div>
+          <a class="modal-info" data-bs-toggle="modal" data-bs-target="#infoModal3447220"></a>
+          <a class="modal-info mobile" data-bs-toggle="modal" data-bs-target='#infoModal'></a>
+          <div class="modal fade" id="infoModal3447220" tabindex="-1" role="dialog" data-bs-backdrop="false" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Übernachtung ohne Frühstück
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="modal-mobile">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Übernachtung ohne Frühstück
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-12 d-flex flex-column">
+        <div class="info-table-title-mobile">Gesamtpreis</div>
+        <span class="discount_name">
+              
+        </span>
+        <span class="price ">
+          <span class="ab">from</span>
+          € 267,00
+        </span>
+      </div>
+
+      <div class="col-lg-3 col-sm-4 col-12 d-flex flex-column persons">
+        <div class="info-table-title-mobile">Persons</div>
+        <span class="table-persons" data-adultspackage="1">Persons min. 1 </span>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-2 d-flex justify-content-end align-items-center">
+        <button class="book-button selectRoomBtn"
+                name="402-1-1026"
+                data-room-cat-adults="402-1"
+                data-room-id="402"
+                data-room-maxperson="4"
+                data-room-name="Family &amp; Friends Plus Zimmer	"
+                data-package-name="Overnight stay without breakfast"
+                data-value="1::267.0"
+                data-price="267.0"
+        >
+          Book
+        </button>
+      </div>
+      <div class="booking-animation-block">
+
+      </div>
+    </div>
+  </td>
+</tr>
+        <tr>
+  <td>
+    <div class="row py-2 table-info-row table-info-row-mobile" id="table-row">
+      <div class="col-12 col-sm-5 col-lg-5 d-flex flex-column">
+        <div class="text-and-icon d-flex">
+          <p class="info-text"  dusk="firstPackageTitle" >Overnight breakfast</p>
+        </div>
+          <a class="modal-info" data-bs-toggle="modal" data-bs-target="#infoModal3447221"></a>
+          <a class="modal-info mobile" data-bs-toggle="modal" data-bs-target='#infoModal'></a>
+          <div class="modal fade" id="infoModal3447221" tabindex="-1" role="dialog" data-bs-backdrop="false" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Breakfast buffet</strong> with a large selection of hot and cold drinks, cereals, bread and pastries, milk and milk products, various sausages, fresh and semi-hard cheese, homemade jam and more.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="modal-mobile">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Breakfast buffet</strong> with a large selection of hot and cold drinks, cereals, bread and pastries, milk and milk products, various sausages, fresh and semi-hard cheese, homemade jam and more.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-12 d-flex flex-column">
+        <div class="info-table-title-mobile">Gesamtpreis</div>
+        <span class="discount_name">
+              
+        </span>
+        <span class="price ">
+          <span class="ab">from</span>
+          € 279,00
+        </span>
+      </div>
+
+      <div class="col-lg-3 col-sm-4 col-12 d-flex flex-column persons">
+        <div class="info-table-title-mobile">Persons</div>
+        <span class="table-persons" data-adultspackage="1">Persons min. 1 </span>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-2 d-flex justify-content-end align-items-center">
+        <button class="book-button selectRoomBtn"
+                name="402-1-1023"
+                data-room-cat-adults="402-1"
+                data-room-id="402"
+                data-room-maxperson="4"
+                data-room-name="Family &amp; Friends Plus Zimmer	"
+                data-package-name="Overnight breakfast"
+                data-value="1::279.0"
+                data-price="279.0"
+        >
+          Book
+        </button>
+      </div>
+      <div class="booking-animation-block">
+
+      </div>
+    </div>
+  </td>
+</tr>
+        <tr>
+  <td>
+    <div class="row py-2 table-info-row table-info-row-mobile" id="table-row">
+      <div class="col-12 col-sm-5 col-lg-5 d-flex flex-column">
+        <div class="text-and-icon d-flex">
+          <p class="info-text" >Kultur &amp; Natur in Bregenz</p>
+        </div>
+          <a class="modal-info" data-bs-toggle="modal" data-bs-target="#infoModal3447222"></a>
+          <a class="modal-info mobile" data-bs-toggle="modal" data-bs-target='#infoModal'></a>
+          <div class="modal fade" id="infoModal3447222" tabindex="-1" role="dialog" data-bs-backdrop="false" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Kultur & Natur in Bregenz
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="modal-mobile">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Kultur & Natur in Bregenz
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-12 d-flex flex-column">
+        <div class="info-table-title-mobile">Gesamtpreis</div>
+        <span class="discount_name">
+              
+        </span>
+        <span class="price ">
+          <span class="ab">from</span>
+          € 295,00
+        </span>
+      </div>
+
+      <div class="col-lg-3 col-sm-4 col-12 d-flex flex-column persons">
+        <div class="info-table-title-mobile">Persons</div>
+        <span class="table-persons" data-adultspackage="1">Persons min. 1 </span>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-2 d-flex justify-content-end align-items-center">
+        <button class="book-button selectRoomBtn"
+                name="402-1-1432"
+                data-room-cat-adults="402-1"
+                data-room-id="402"
+                data-room-maxperson="4"
+                data-room-name="Family &amp; Friends Plus Zimmer	"
+                data-package-name="Kultur &amp; Natur in Bregenz"
+                data-value="1::295.0"
+                data-price="295.0"
+        >
+          Book
+        </button>
+      </div>
+      <div class="booking-animation-block">
+
+      </div>
+    </div>
+  </td>
+</tr>
+        <tr>
+  <td>
+    <div class="row py-2 table-info-row table-info-row-mobile" id="table-row">
+      <div class="col-12 col-sm-5 col-lg-5 d-flex flex-column">
+        <div class="text-and-icon d-flex">
+          <p class="info-text" >Overnight half board</p>
+        </div>
+          <a class="modal-info" data-bs-toggle="modal" data-bs-target="#infoModal3447223"></a>
+          <a class="modal-info mobile" data-bs-toggle="modal" data-bs-target='#infoModal'></a>
+          <div class="modal fade" id="infoModal3447223" tabindex="-1" role="dialog" data-bs-backdrop="false" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Breakfast buffet</strong> with a large selection of hot and cold drinks, cereals, bread and pastries, milk and milk products, various sausages, fresh and semi-hard cheese, homemade jam and more.</p>
+
+<p><strong>Dinner</strong>&#160;with starters, main dish and desserts from the buffet - fresh, varied and vegetarian delicacies from the region.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="modal-mobile">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Breakfast buffet</strong> with a large selection of hot and cold drinks, cereals, bread and pastries, milk and milk products, various sausages, fresh and semi-hard cheese, homemade jam and more.</p>
+
+<p><strong>Dinner</strong>&#160;with starters, main dish and desserts from the buffet - fresh, varied and vegetarian delicacies from the region.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-12 d-flex flex-column">
+        <div class="info-table-title-mobile">Gesamtpreis</div>
+        <span class="discount_name">
+              
+        </span>
+        <span class="price ">
+          <span class="ab">from</span>
+          € 298,90
+        </span>
+      </div>
+
+      <div class="col-lg-3 col-sm-4 col-12 d-flex flex-column persons">
+        <div class="info-table-title-mobile">Persons</div>
+        <span class="table-persons" data-adultspackage="1">Persons min. 1 </span>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-2 d-flex justify-content-end align-items-center">
+        <button class="book-button selectRoomBtn"
+                name="402-1-1024"
+                data-room-cat-adults="402-1"
+                data-room-id="402"
+                data-room-maxperson="4"
+                data-room-name="Family &amp; Friends Plus Zimmer	"
+                data-package-name="Overnight half board"
+                data-value="1::298.9"
+                data-price="298.9"
+        >
+          Book
+        </button>
+      </div>
+      <div class="booking-animation-block">
+
+      </div>
+    </div>
+  </td>
+</tr>
+    </tbody>
+  </table>
+</div>
+
+        </div>
+
+
+
+        <div class="room-cell" id="room-1" data-index="1">
+          <div id="room-anchor-344598" style="position: absolute; top: -150px; left: 0"></div>
+          <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 p-0 mt-3">
+      <div class="sl">
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/e7fd913c10eb45703932cda2ff2d5bd1.jpg" data-fancybox="gallery344598">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/e7fd913c10eb45703932cda2ff2d5bd1.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/e7fd913c10eb45703932cda2ff2d5bd1.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/95662bb49bdd48527f55c6cc87e62a1d.jpg" data-fancybox="gallery344598">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/95662bb49bdd48527f55c6cc87e62a1d.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/95662bb49bdd48527f55c6cc87e62a1d.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="sl-first">
+              <a class="fancybox" href="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/a88729f2c0ffbab14713da769fac0ab8.jpg" data-fancybox="gallery344598">
+                <div class="rooms_slide_img_block" style="background-image:url('https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/a88729f2c0ffbab14713da769fac0ab8.jpg');">
+                  <img class="rooms_slide_image" src="https://jufa-gob14.gms.info/admin/gob5_images/bregenz/large/a88729f2c0ffbab14713da769fac0ab8.jpg" alt="">
+                </div>
+              </a>
+            </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 pr-0 pl-4 mt-3">
+      <div class="room-title py-2">
+        <h4>Family &amp; Friends plus room</h4>
+        <p class="jufa-max-persons">max. 3 Persons</p>
+      </div>
+      <div class="size-and-price d-flex justify-content-end pb-4 pt-3">
+        <a class="clickable-price">
+          <span class="h3">
+            from&nbsp;
+          </span>
+          <span class="h2">
+            € 286,00
+          </span>
+          <br>
+        </a>
+      </div>
+      <div class="clickable py-4 room-features-clickable">
+        <ul class="room-features">
+          <li class="balkon"><ul>
+	<li>Modern, bright and friendly rooms with Twin or double beds</li>
+	<li>additional sleeping accomodations</li>
+	<li>shower, WC and hair dryer</li>
+	<li>TV, free WIFI, safe and folding bench</li>
+	<li>Baby cot is possible on request.</li>
+</ul>
+</li>
+        </ul>
+      </div>
+      <div class="accordion accordion-flush room-features-clickable-mobile" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Zimmerbeschreibung
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> 
+            <ul class="room-features">
+              <li class="balkon"><ul>
+	<li>Modern, bright and friendly rooms with Twin or double beds</li>
+	<li>additional sleeping accomodations</li>
+	<li>shower, WC and hair dryer</li>
+	<li>TV, free WIFI, safe and folding bench</li>
+	<li>Baby cot is possible on request.</li>
+</ul>
+</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="col-xs-12 my-1 info-table-block  shown ">
+  <table class="info-table">
+    <thead class="title-thead">
+    <tr>
+      <th>
+        <div class="container-fluid">
+
+          <div class="row py-2 title-row">
+            <div class="col-lg-5 col-sm-4 col-12 info-table-title">Offers and information</div>
+            <div class="col-lg-2 col-4 info-table-title">Total Price</div>
+            <div class="col-lg-4 col-3 info-table-title">Persons</div>
+          </div>
+        </div>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+  <td>
+    <div class="row py-2 table-info-row table-info-row-mobile" id="table-row">
+      <div class="col-12 col-sm-5 col-lg-5 d-flex flex-column">
+        <div class="text-and-icon d-flex">
+          <p class="info-text" >Overnight breakfast</p>
+        </div>
+          <a class="modal-info" data-bs-toggle="modal" data-bs-target="#infoModal3445980"></a>
+          <a class="modal-info mobile" data-bs-toggle="modal" data-bs-target='#infoModal'></a>
+          <div class="modal fade" id="infoModal3445980" tabindex="-1" role="dialog" data-bs-backdrop="false" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Breakfast buffet</strong> with a large selection of hot and cold drinks, cereals, bread and pastries, milk and milk products, various sausages, fresh and semi-hard cheese, homemade jam and more.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="modal-mobile">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Breakfast buffet</strong> with a large selection of hot and cold drinks, cereals, bread and pastries, milk and milk products, various sausages, fresh and semi-hard cheese, homemade jam and more.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-12 d-flex flex-column">
+        <div class="info-table-title-mobile">Gesamtpreis</div>
+        <span class="discount_name">
+              
+        </span>
+        <span class="price ">
+          <span class="ab">from</span>
+          € 286,00
+        </span>
+      </div>
+
+      <div class="col-lg-3 col-sm-4 col-12 d-flex flex-column persons">
+        <div class="info-table-title-mobile">Persons</div>
+        <span class="table-persons" data-adultspackage="1">Persons min. 1 </span>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-2 d-flex justify-content-end align-items-center">
+        <button class="book-button selectRoomBtn"
+                name="302-1-1023"
+                data-room-cat-adults="302-1"
+                data-room-id="302"
+                data-room-maxperson="3"
+                data-room-name="Family &amp; Friends Plus Zimmer	"
+                data-package-name="Overnight breakfast"
+                data-value="1::286.0"
+                data-price="286.0"
+        >
+          Book
+        </button>
+      </div>
+      <div class="booking-animation-block">
+
+      </div>
+    </div>
+  </td>
+</tr>
+        <tr>
+  <td>
+    <div class="row py-2 table-info-row table-info-row-mobile" id="table-row">
+      <div class="col-12 col-sm-5 col-lg-5 d-flex flex-column">
+        <div class="text-and-icon d-flex">
+          <p class="info-text"  dusk="firstPackageTitle" >Kultur &amp; Natur in Bregenz</p>
+        </div>
+          <a class="modal-info" data-bs-toggle="modal" data-bs-target="#infoModal3445981"></a>
+          <a class="modal-info mobile" data-bs-toggle="modal" data-bs-target='#infoModal'></a>
+          <div class="modal fade" id="infoModal3445981" tabindex="-1" role="dialog" data-bs-backdrop="false" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Kultur & Natur in Bregenz
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="modal-mobile">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Kultur & Natur in Bregenz
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-12 d-flex flex-column">
+        <div class="info-table-title-mobile">Gesamtpreis</div>
+        <span class="discount_name">
+              
+        </span>
+        <span class="price ">
+          <span class="ab">from</span>
+          € 302,00
+        </span>
+      </div>
+
+      <div class="col-lg-3 col-sm-4 col-12 d-flex flex-column persons">
+        <div class="info-table-title-mobile">Persons</div>
+        <span class="table-persons" data-adultspackage="1">Persons min. 1 </span>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-2 d-flex justify-content-end align-items-center">
+        <button class="book-button selectRoomBtn"
+                name="302-1-1432"
+                data-room-cat-adults="302-1"
+                data-room-id="302"
+                data-room-maxperson="3"
+                data-room-name="Family &amp; Friends Plus Zimmer	"
+                data-package-name="Kultur &amp; Natur in Bregenz"
+                data-value="1::302.0"
+                data-price="302.0"
+        >
+          Book
+        </button>
+      </div>
+      <div class="booking-animation-block">
+
+      </div>
+    </div>
+  </td>
+</tr>
+        <tr>
+  <td>
+    <div class="row py-2 table-info-row table-info-row-mobile" id="table-row">
+      <div class="col-12 col-sm-5 col-lg-5 d-flex flex-column">
+        <div class="text-and-icon d-flex">
+          <p class="info-text" >Overnight half board</p>
+        </div>
+          <a class="modal-info" data-bs-toggle="modal" data-bs-target="#infoModal3445982"></a>
+          <a class="modal-info mobile" data-bs-toggle="modal" data-bs-target='#infoModal'></a>
+          <div class="modal fade" id="infoModal3445982" tabindex="-1" role="dialog" data-bs-backdrop="false" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Breakfast buffet</strong> with a large selection of hot and cold drinks, cereals, bread and pastries, milk and milk products, various sausages, fresh and semi-hard cheese, homemade jam and more.</p>
+
+<p><strong>Dinner</strong>&#160;with starters, main dish and desserts from the buffet - fresh, varied and vegetarian delicacies from the region.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="modal-mobile">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Details</h5>
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Breakfast buffet</strong> with a large selection of hot and cold drinks, cereals, bread and pastries, milk and milk products, various sausages, fresh and semi-hard cheese, homemade jam and more.</p>
+
+<p><strong>Dinner</strong>&#160;with starters, main dish and desserts from the buffet - fresh, varied and vegetarian delicacies from the region.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close mobile-modal-close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-12 d-flex flex-column">
+        <div class="info-table-title-mobile">Gesamtpreis</div>
+        <span class="discount_name">
+              
+        </span>
+        <span class="price ">
+          <span class="ab">from</span>
+          € 305,90
+        </span>
+      </div>
+
+      <div class="col-lg-3 col-sm-4 col-12 d-flex flex-column persons">
+        <div class="info-table-title-mobile">Persons</div>
+        <span class="table-persons" data-adultspackage="1">Persons min. 1 </span>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-2 d-flex justify-content-end align-items-center">
+        <button class="book-button selectRoomBtn"
+                name="302-1-1024"
+                data-room-cat-adults="302-1"
+                data-room-id="302"
+                data-room-maxperson="3"
+                data-room-name="Family &amp; Friends Plus Zimmer	"
+                data-package-name="Overnight half board"
+                data-value="1::305.9"
+                data-price="305.9"
+        >
+          Book
+        </button>
+      </div>
+      <div class="booking-animation-block">
+
+      </div>
+    </div>
+  </td>
+</tr>
+    </tbody>
+  </table>
+</div>
+
+        </div>
+
+    </section>
+    <a href="https://jufa-gob14.gms.info/bregenz/en/extras?uid=17089709278944">
+      <button
+        class="weiter-mobile weiterBtn roomsPageWeiterBtn"
+        are_you_sure="Are you sure?"
+        popup_sentence="The number of people in the shopping cart does not match the number of people in the original search"
+        popup_cancel="Change the number of people"
+        popup_ok="Confirm and continue"
+      >
+        Weiter
+      </button>
+    </a>
+  </div>
+
+  <script type="text/javascript">
+      window.OrderInfo = window.OrderInfo || {};
+<!--      window.OrderInfo.numofrooms = ;-->
+      window.OrderInfo.adults = 4;
+      window.OrderInfo.children = 0;
+      window.OrderInfo.room_selection_mode = '';
+  </script>
+
+
+
+      </div>
+    </div>
+    <footer class="en-footer en-hidden-print">
+  <div class="en-footer__inner en-grid en-wrapper-limit">
+    <div class="en-footer__section en-footer__section--top en-griditem">
+      <div class="en-line en-line--hidden-mobile">
+        <h2 class="en-line__text en-footer__title en-format-h2">JUFA Hotels – Happy together</h2>
+      </div>
+    </div>
+    <div class="en-footer__section en-footer__section--bottom en-griditem en-grid en-icon" data-en-icon="illustration-wavy-line">
+      <div class="en-footer__column en-griditem" data-en-griditem-medium="3">
+        <h4 class="en-format-h4">JUFA Booking Center</h4>
+        <div class="en-format-meta en-wysiwyg en-footer__spacer en_footer__smallp"><p><span class="en-format-small"><strong>JUFA Holding GmbH, Idlhofgasse 74, 8020 Graz</strong></span></p>
+          <p><strong>Austria:</strong> <a href="tel:004357083800">+43 (0)5 / 7083-800</a><br />
+            <strong>E-Mail:</strong> <a href="mailto:booking@jufahotels.com?subject=Anfrage">booking@jufahotels.com</a></p>
+        </div>
+
+        <div class="en-footer__logo">
+          <img class="en-footer__logo-image" src="https://www.jufahotels.com/assets/website/images/logo.svg" alt="JUFA Hotels" />
+          <span class="en-footer__logo-text en-format-h6">&copy; JUFA Holding GmbH 2019</span>
+        </div>
+      </div>
+      <div class="en-footer__column en-griditem" data-en-griditem-medium="3">
+        <h4 class="en-footer__heading en-format-h4">
+          Always up-to-date with our JUFA newsletter
+        </h4>
+        <div class="en-footer__spacer en-format-meta">
+          Weekly updates about JUFA Hotels and the latest offers in your inbox.
+        </div>
+        <a href="https://www.jufahotels.com/newsletter/" target="_blank" class="en-button">
+          Newsletter Sign up
+        </a>
+      </div>
+      <div class="en-footer__column en-griditem" data-en-griditem-medium="4">
+        <div class="en-footer__socials en-footer__spacer">
+          <h4 class="en-footer__heading en-format-h4">
+            Follow JUFA Hotels on:
+          </h4>
+
+          <ul class="en-footer__social-buttons en-socials">
+            <li class="en-social"><a href="https://www.facebook.com/JUFAholidays" class="en-social__inner en-icon" data-en-icon="social-facebook" target="_blank"></a></li>
+            <li class="en-social"><a href="https://twitter.com/JUFAholidays" class="en-social__inner en-icon" data-en-icon="social-twitter" target="_blank"></a></li>
+            <li class="en-social"><a href="https://www.youtube.com/user/JUFAholidays" class="en-social__inner en-icon" data-en-icon="social-youtube" target="_blank"></a></li>
+          </ul>
+        </div>
+        <ul id="menu-footermenue" class="en-menu en-menu--footer"><li id="menu-item-6619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6619 menu-item--level_0"><a href="https://www.jufahotels.com/impressum/" target="_blank" class="menu-item__inner"><span class="menu-item__title">Impressum</span></a></li>
+          <li id="menu-item-6620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6620 menu-item--level_0"><a href="https://www.jufahotels.com/agb/" target="_blank"  class="menu-item__inner"><span class="menu-item__title">AGBs</span></a></li>
+          <li id="menu-item-6032770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6032770 menu-item--level_0"><a href="https://www.jufahotels.com/datenschutz/" target="_blank"  class="menu-item__inner"><span class="menu-item__title">Datenschutz</span></a></li>
+        </ul>
+        <div class="en-footer__language-list">
+          <span class="en-format-navigation">Language:</span>
+
+          <select id="site-language">
+            <option value="de"  >DE</option>
+            <option value="en" selected >EN</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script type="text/javascript">
+
+    const JS_Routes = {
+        "search": "https://jufa-gob14.gms.info/bregenz/en/search?uid=17089709278944",
+        "rooms": "https://jufa-gob14.gms.info/bregenz/en/rooms?uid=17089709278944",
+        "roomdetails": "https://jufa-gob14.gms.info/bregenz/en/roomdetails?uid=17089709278944",
+        "basket": "https://jufa-gob14.gms.info/bregenz/en/basket?uid=17089709278944",
+        "add_room": "https://jufa-gob14.gms.info/bregenz/en/add_room?uid=17089709278944",
+        "remove_room": "https://jufa-gob14.gms.info/bregenz/en/remove_room?uid=17089709278944",
+        "extras": "https://jufa-gob14.gms.info/bregenz/en/extras?uid=17089709278944",
+        "extraleftblock": "https://jufa-gob14.gms.info/bregenz/en/extraleftblock?uid=17089709278944",
+        "add_extra": "https://jufa-gob14.gms.info/bregenz/en/add_extra?uid=17089709278944",
+        "remove_extra": "https://jufa-gob14.gms.info/bregenz/en/remove_extra?uid=17089709278944",
+        "checkout": "https://jufa-gob14.gms.info/bregenz/en/checkout?uid=17089709278944",
+        "payment": "https://jufa-gob14.gms.info/bregenz/en/payment?uid=17089709278944",
+        "change_prepayment": "https://jufa-gob14.gms.info/bregenz/en/change_prepayment?uid=17089709278944",
+        "thankyou": "https://jufa-gob14.gms.info/bregenz/en/thankyou?uid=17089709278944",
+        "anfrage": "https://jufa-gob14.gms.info/bregenz/en/anfrage?uid=17089709278944",
+        "thankyouAnfrage": "https://jufa-gob14.gms.info/bregenz/en/thankyouAnfrage?uid=17089709278944",
+        "change_order_price": "https://jufa-gob14.gms.info/bregenz/en/change_order_price?uid=17089709278944",
+        "lastminute": "https://jufa-gob14.gms.info/bregenz/en/lastminute?uid=17089709278944",
+        "inquiry": "https://jufa-gob14.gms.info/bregenz/en/inquiry?uid=17089709278944",
+        "inquiryThank": "https://jufa-gob14.gms.info/bregenz/en/inquiryThank?uid=17089709278944",
+        "sessionExpired": "https://jufa-gob14.gms.info/bregenz/en/sessionExpired?uid=17089709278944",
+        "alternativeRooms": "https://jufa-gob14.gms.info/bregenz/en/alternativeRooms?uid=17089709278944",
+        "404": "https://jufa-gob14.gms.info/bregenz/en/404?uid=17089709278944",
+        "smartbook": "https://jufa-gob14.gms.info/bregenz/en/smartbook_widget?uid=17089709278944",
+        "smartsorry": "https://jufa-gob14.gms.info/bregenz/en/smartsorry?uid=17089709278944",
+        "add_promotion_code": "https://jufa-gob14.gms.info/bregenz/en/add_promotion_code?uid=17089709278944",
+        "remove_promotion_code": "https://jufa-gob14.gms.info/bregenz/en/remove_promotion_code?uid=17089709278944",
+    };
+
+    if(typeof window.GMS_Embed != 'undefined'){
+        for(var i in JS_Routes){
+            JS_Routes[i] = GMS_Embed.url(JS_Routes[i]);
+        }
+    }
+
+    window.GMS_calendarDomain = 'jufa-gob14.gms.info';
+
+</script>
+<script>
+    let csrf_token = 'x52wQMkQQHCYjfZaXhCKiHSMvf6PD_GmIGuYjzEbPg4';
+    let autoAddToBasket = false;
+    let language = 'en';
+    let currency = ['EUR', '€'];
+    let booking_final_time = '0';
+    let uid = '17089709278944'
+</script>
+<!--<script>-->
+<!--    let serachDesign = false;-->
+<!--    let roomsDesign = false;-->
+<!--    let formDesign = false;-->
+<!--    let thankDesign = false;-->
+<!--    let footerDesign = false;-->
+<!--</script>-->
+
+<script type="module">import "custom/newDesign"</script>
+
+  <script type="module">import "custom/multipage"</script>
+
+  <script type="module">import "hotels/jufa"</script>
+
+  <script type="text/javascript">
+      
+  </script>
+
+<script type="text/javascript">
+
+    var JS_Lang = {
+        alert: "HINWEIS",
+        children_alert: "Bitte füllen Sie das korrekte Kinderalter aus",
+        correct_number_of_rooms: "Bitte wählen Sie korrekte Anzahl der Zimmer",
+        correct_number_of_adults: "Die Anzahl der Erwachsenen entspricht nicht Ihrer Auswahl",
+        email_is_invalid: "Email ist nicht gültig",
+        emails_do_not_match: "Emails stimmen nicht überein",
+        ZIMMER_FREI: "Free rooms",
+        NUR_MEHR_WENIGE_ZIMMER: "Only a few more rooms",
+        AUSGEBUCHT: "Booked up",
+        online_nicht_buchbar: "Online nicht buchbar",
+        TAG: "Tag",
+        TAGE: "Tage",
+        Mindestaufenthalt: "Mindestaufenthalt",
+        KEINE_ANREISE_MOGLICH: "Keine Anreise möglich",
+        KEINE_ABREISE_MOGLICH: "Keine Abreise möglich",
+        NUR_AUF_ANFRAGE: "Nur auf Anfrage",
+        ZIMMERPRICE_GERL: "Zimmerpreis ist inklusive Frühstücksbuffet 06:00 bis 11:00 und Spa Benützung <br> Family: Indoorpool, Textilsauna und Sommergartenpool 08:00 -22:00 , Adultsonly <br> (21) View Club 11:00 bis 22:00 <br>My Private Spa muss separat gebucht werden",
+        Kreditkartenhinterlegung_GERL: "Kreditkartenhinterlegung",
+        Kreditkartenhinterlegung_text_GERL: "Zur Sicherstellung Ihrer Buchung speichern wir die Kreditkartendaten. Die Karte belasten wir nur im kostenpflichtigen Stornofall oder wenn gewünscht zur Abrechnung vor Ort",
+        Sofortüberweisung_GERL: "Immediate Transfer",
+        Sofortüberweisung__text_GERL: "Eine normale Buchung kann auch ohne Kreditkarte mit Sofortüberweisung bezahlt <br> werden. Natürlich gelten auch hier die Stornoregelungenzeiten und im Falle einer <br> kostenlosen Stornierung wird der eingezahlte Betrag nach schriftlicher <br> Anforderung zurückbezahlt",
+        Non_Refundable_Rate_GERL: "Non Refundable Rate",
+        Non_Refundable_Rate_text_GERL: "Buchungen dieser Rate sind im allgemeinen reduziert und zu keinem Zeitpunkt <br> mehr rückerstattbar",
+        Haustierregelung_GERL: "Haustierregelung",
+        Haustierregelung_text_GERL: "Hunde sind in der Kategorie Urban Eco und Komfort willkommen. <br> Der Preis ohne Futter beträgt pro Hund mit bis zu 50 cm € 15,00 ab 50 cm <br> € 20,00 pro Tag",
+        Stornierungsrichtlinien_GERL: "Stornierungsrichtlinien",
+        Stornierungsrichtlinien_text_GERL: "Sorglos buchen & stornieren: <br> Sollte aufgrund von C19 Maßnahmen der Betrieb geschlossen werden kann bis 24h <br> vor Anreise kostenfrei stornieren. <br> Buchungen mit Anreise am selben Tag, sowie Buchungen innerhalb der nicht <br> kostenfreien Stornierungsfristen sind nicht rückerstattbar",
+        Nebensaison_GERL: "Nebensaison",
+        Nebensaison_text_GERL: "In der Nebensaison ist eine kostenlose Stornierung des Zimmers unter der Woche bis 24h vor Anreise (15:00 Uhr) möglich. An den Wochenenden ist eine kostenlose Stornierung des Zimmers bis 72h (15:00 Uhr) möglich",
+        Sommersaison_GERL: "Sommersaison",
+        Sommersaison_text_GERL: "Osterwoche<br> Pfingsten <br> Mitte Juni bis Mitte September <br>  ist eine kostenlose Stornierung des Zimmers bis 14 Tage vor Anreise möglich",
+        Wintersaison_GERL: "Wintersaison",
+        Wintersaison_text_GERL: "Gastmesse im November<br> Adventwochenende <br> Weihnachten bis Heiligen drei Könige <br> ist eine kostenlose Stornierung des Zimmers bis 14 Tage vor Anreise möglich",
+        Gruppen_GERL: "Gruppen",
+        Gruppen_text_GERL: "Bei Gruppen ab 5 Zimmer, treten gesonderte Stornierungsbestimmungen in Kraft",
+        Allgemein_GERL: "Allgemein",
+        Allgemein_text_GERL: "Stornierungen sowie Änderungen sind ausschließlich schriftlich vorzunehmen und werden erst mit einer Rückbestätigung wirksam! <br> Stornokosten werden mit 100% des Aufenthalts abgerechnet, das betrifft auch eine Vorzeitige Abreise",
+        Guest: "Guest",
+        Guests: "Guests",
+        Adult: "Adult",
+        Adults: "Adults",
+        Child: "Child",
+        Children: "Children",
+        Night: "Night",
+        Nights: "Nights",
+        Room: "Room",
+        Rooms: "Room",
+        Show_price_and_flat_rate: "Preis und Pauschale anzeigen",
+        Hide_price_and_flat_rate: "Hide price and flat rate",
+        Query_Dates_Unavailable_heading: "ACHTUNG",
+        Query_Dates_Unavailable_text: "Zu diesem Datum sind keine Zimmer verfügbar - bitte ein Datum aus dem Kalender auswählen.",
+        Booking_Final_Time_Heading: "ACHTUNG",
+        Booking_Final_Time_Text: "Für Anreise heute kann nicht mehr gebucht werden.",
+    }
+
+        JS_Lang.Calendar = {
+            dayNames: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+            dayNamesFull: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            monthNames: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            monthNamesFull: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+        }
+
+        JS_Lang.lang = 'en';
+
+
+        $.datepicker.regional['ru'] = {
+            closeText: 'Закрыть',
+            prevText: 'Пред',
+            nextText: 'След',
+            currentText: 'Сегодня',
+            monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+            'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+            monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+            'Июл','Авг','Сен','Окт','Ноя','Дек'],
+            dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+            dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+            dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+            weekHeader: 'Нед',
+            dateFormat: 'dd.mm.yy',
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ''};
+        $.datepicker.regional['de'] = {
+            closeText: "Schließen",
+            prevText: "&#x3C;Zurück",
+            nextText: "Vor&#x3E;",
+            currentText: "Heute",
+            monthNames: ["Januar", "Februar", "März", "April", "Mai", "Juni",
+            "Juli", "August", "September", "Oktober", "November", "Dezember"],
+            monthNamesShort: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun",
+            "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+            dayNames: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+            dayNamesShort: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+            dayNamesMin: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+            weekHeader: "KW",
+            dateFormat: "dd.mm.yy",
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ""};
+        $.datepicker.regional['fr'] = {
+            closeText: "Fermer",
+            prevText: "Précédent",
+            nextText: "Suivant",
+            currentText: "Aujourd'hui",
+            monthNames: ["janvier", "février", "mars", "avril", "mai", "juin",
+            "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+            monthNamesShort: ["janv.", "févr.", "mars", "avr.", "mai", "juin",
+            "juil.", "août", "sept.", "oct.", "nov.", "déc."],
+            dayNames: ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+            dayNamesShort: ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+            dayNamesMin: ["D", "L", "M", "M", "J", "V", "S"],
+            weekHeader: "Sem.",
+            dateFormat: "dd/mm/yy",
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ""};
+        $.datepicker.regional['it'] = {
+            closeText: "Chiudi",
+            prevText: "&#x3C;Prec",
+            nextText: "Succ&#x3E;",
+            currentText: "Oggi",
+            monthNames: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
+            "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+            monthNamesShort: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu",
+            "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
+            dayNames: ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
+            dayNamesShort: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"],
+            dayNamesMin: ["Do", "Lu", "Ma", "Me", "Gi", "Ve", "Sa"],
+            weekHeader: "Sm",
+            dateFormat: "dd/mm/yy",
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ""};
+        $.datepicker.setDefaults($.datepicker.regional['en']);
+
+</script>
+
+<!--To load page specific js content in body with content_for -->
+
+  </body>
+</html>

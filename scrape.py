@@ -31,8 +31,8 @@ num_adults_requested = '4'
 
 
 use_cached_response = len(sys.argv) < 2 or sys.argv[1] != 'wet'
-cached_response_filename_method1 = 'src/cached_response_method1.html'
-cached_response_filename_method2 = 'src/cached_response_method2.html'
+cached_response_filename_method1 = 'resources/cached_response_method1.html'
+cached_response_filename_method2 = 'resources/cached_response_method2.html'
 
 room_infos_all_dates = []
 

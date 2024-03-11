@@ -327,7 +327,7 @@ fig2_plot_subtitle = "Prices are for cheapest option which includes breakfast."
 plt.get_current_fig_manager().set_window_title(window_title)
 fig2.suptitle(fig2_plot_title, fontsize=14)
 plt.title(fig2_plot_subtitle, fontsize=8)
-fig2.subplots_adjust(left=0.06, right=0.94, top=0.9, bottom=0.07)
+fig2.subplots_adjust(left=0.05, right=0.94, top=0.9, bottom=0.07)
 fig2.set_size_inches(12, 6)
 # plot 1 (left y-axis): number of available rooms
 fig2_ax1 = plt.gca()
@@ -343,7 +343,7 @@ fig2_ax2.set_ylabel('Price per person')
 fig2_ax2.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 fig2_ax2.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # legend and x-axis
-plt.legend(handles=[fig2_plot1[0], fig2_plot4[0], fig2_plot3[0], fig2_plot2[0]], loc='center left')
+plt.legend(handles=[fig2_plot1[0], fig2_plot4[0], fig2_plot3[0], fig2_plot2[0]], loc='upper center')
 fig2_ax1.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
 fig2_ax1.xaxis.set_major_formatter(mdates.DateFormatter('%B %Y'))
 plt.xticks(rotation=45, ha='right')

@@ -110,7 +110,6 @@ def get_html_data_method2(num_adults, start_date, end_date):
 		'&search%5Bdate_to%5D=' + end_date.strftime('%d.%m.%Y') +
 		'&authenticity_token=' + auth2
 	)
-	# Encode the data. The supported object types include bytes, file-like objects, and iterables of bytes-like objects.
 	data3 = data3.encode('utf-8')
 	request3 = urllib.request.Request(url3, data3, headers2)
 	urllib.request.urlopen(request3)

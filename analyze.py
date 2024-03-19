@@ -263,7 +263,6 @@ fig1_ax.set_ylabel("Price per person (rounded to " + str(price_rounding) + "€)
 fig1_ax.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f €'))
 # x-axis and legends
 plt.xticks(rotation=45, ha='right')
-[tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig1_ax.xaxis.get_ticklabels()]
 # create list of sizes to show in legend
 fig1_size_legend_labels = [0, 1] + [*range(2, 2 * int(fig1_max_size / 2) + 1, 2)]
 fig1_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig1_size_legend_labels[i]), label=fig1_size_legend_labels[i], color='gray') for i in range(len(fig1_size_legend_labels))]
@@ -406,7 +405,6 @@ fig3_ax.yaxis.set_major_locator(mdates.MonthLocator(interval=1))
 fig3_ax.yaxis.set_major_formatter(mdates.DateFormatter('%m.%Y'))
 # x-axis and legends
 plt.xticks(rotation=45, ha='right')
-[tick.set_color('blue' if tick.get_text().startswith('Thu') else 'black') for tick in fig3_ax.xaxis.get_ticklabels()]
 # create list of sizes to show in legend
 fig3_size_legend_labels = [*range(2, 2 * int(fig3_max_size / 2) + 1, 2)]
 fig3_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig3_size_legend_labels[i], fig3_marker_scale), label=fig3_size_legend_labels[i], color='gray') for i in range(len(fig3_size_legend_labels))]

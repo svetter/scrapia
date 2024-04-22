@@ -344,7 +344,7 @@ fig2_ax2.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # legend and x-axis
 plt.legend(handles=[fig2_plot1[0], fig2_plot4[0], fig2_plot3[0], fig2_plot2[0]], loc='upper center')
 fig2_ax1.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
-fig2_ax1.xaxis.set_major_formatter(mdates.DateFormatter('%B %Y'))
+fig2_ax1.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
 plt.xticks(rotation=45, ha='right')
 # format status bar coordinates
 fig2_ax2.format_coord = lambda x, y: 'Scrape date: ' + mdates.num2date(x).strftime("%d.%m.%Y") + ', ' + 'Price/person: ' + str(round(y)) + ' €'

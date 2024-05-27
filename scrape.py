@@ -43,6 +43,8 @@ for date_pair in STAY_DATES:
 		continue	# skip past dates
 	
 	print("Gathering data for " + date_pair[0].isoformat() + " to " + date_pair[1].isoformat())
+	sys.stdout.flush()
+	
 	if use_cached_response:
 		with open(cached_response_filename_method1, 'r', encoding='UTF-8') as f:
 			html1 = f.read()

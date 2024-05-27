@@ -1,0 +1,24 @@
+Check-in date,Check-out date,Room description,Room capacity,Meals,Price,Number available,felix-id,package-id,room-id,name-param,Scrape date
+2024-07-25,2024-07-26,Double room superior,2,Overnight stay without breakfast,221.00€,1,203,1026,,203-1-1026,2024-05-27
+2024-07-25,2024-07-26,Double room superior,2,Overnight breakfast,239.00€,1,203,1023,,203-1-1023,2024-05-27
+2024-07-25,2024-07-26,Double room superior,2,Kultur & Natur in Bregenz,255.00€,1,203,1432,,203-1-1432,2024-05-27
+2024-07-25,2024-07-26,Double room superior,2,Overnight half board,262.50€,1,203,1024,,203-1-1024,2024-05-27
+2024-08-06,2024-08-07,Single room,1,Overnight stay without breakfast,174.00€,1,101,1026,,101-1-1026,2024-05-27
+2024-08-06,2024-08-07,Single room,1,Overnight breakfast,192.00€,1,101,1023,,101-1-1023,2024-05-27
+2024-08-06,2024-08-07,Single room,1,Non refundable Bed & Breakfast,192.00€,1,101,1141,,101-1-1141,2024-05-27
+2024-08-06,2024-08-07,Single room,1,Kultur & Natur in Bregenz,208.00€,1,101,1432,,101-1-1432,2024-05-27
+2024-08-06,2024-08-07,Single room,1,Overnight half board,215.50€,1,101,1024,,101-1-1024,2024-05-27
+2024-08-09,2024-08-10,Double room,2,Overnight stay without breakfast,188.00€,1,201,1026,,201-1-1026,2024-05-27
+2024-08-09,2024-08-10,Double room,2,Non refundable Bed & Breakfast,199.00€,1,201,1141,,201-1-1141,2024-05-27
+2024-08-09,2024-08-10,Double room,2,Overnight breakfast,206.00€,1,201,1023,,201-1-1023,2024-05-27
+2024-08-09,2024-08-10,Double room,2,Kultur & Natur in Bregenz,222.00€,1,201,1432,,201-1-1432,2024-05-27
+2024-08-09,2024-08-10,Double room,2,Overnight half board,229.50€,1,201,1024,,201-1-1024,2024-05-27
+2024-08-10,2024-08-11,Double room,2,Overnight stay without breakfast,188.00€,1,201,1026,,201-1-1026,2024-05-27
+2024-08-10,2024-08-11,Double room,2,Non refundable Bed & Breakfast,199.00€,1,201,1141,,201-1-1141,2024-05-27
+2024-08-10,2024-08-11,Double room,2,Overnight breakfast,206.00€,1,201,1023,,201-1-1023,2024-05-27
+2024-08-10,2024-08-11,Double room,2,Kultur & Natur in Bregenz,222.00€,1,201,1432,,201-1-1432,2024-05-27
+2024-08-10,2024-08-11,Double room,2,Overnight half board,229.50€,1,201,1024,,201-1-1024,2024-05-27
+2024-08-13,2024-08-14,Apartement,4,Overnight stay without breakfast,244.80€,2,603,1026,,603-1-1026,2024-05-27
+2024-08-13,2024-08-14,Apartement,4,Overnight breakfast,262.80€,2,603,1023,,603-1-1023,2024-05-27
+2024-08-13,2024-08-14,Apartement,4,Kultur & Natur in Bregenz,278.80€,2,603,1432,,603-1-1432,2024-05-27
+2024-08-13,2024-08-14,Apartement,4,Overnight half board,286.30€,2,603,1024,,603-1-1024,2024-05-27

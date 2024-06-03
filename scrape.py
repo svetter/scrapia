@@ -38,10 +38,16 @@ room_infos_all_dates = []
 
 sleep_time_base = 9 + 3 * random.random()
 
+i = 0
+num_dates_to_scrape = len(STAY_DATES)
 for date_pair in STAY_DATES:
 	if (date_pair[0] - datetime.date.today()).days < 0:
+		num_dates_to_scrape -= 1
 		continue	# skip past dates
+	else:
+		i += 1
 	
+	print("[{:02}/{:02}]".format(i, num_dates_to_scrape), end='\t')
 	print("Gathering data for " + date_pair[0].isoformat() + " to " + date_pair[1].isoformat())
 	sys.stdout.flush()
 	
@@ -58,7 +64,7 @@ for date_pair in STAY_DATES:
 	room_infos_all_dates.append((date_pair, room_info))
 	
 	sleep_time = sleep_time_base + random.gauss(3 + 2 * random.random(), 3 + 2 * random.random())
-	print("\tWaiting {sleep_time:.2f}s before the next request".format(sleep_time=sleep_time))
+	print("\t\tWaiting {sleep_time:.2f}s before the next request".format(sleep_time=sleep_time))
 	sys.stdout.flush()
 	if not use_cached_response and date_pair != STAY_DATES[len(STAY_DATES) - 1]:
 		time.sleep(sleep_time)

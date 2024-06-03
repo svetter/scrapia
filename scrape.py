@@ -19,10 +19,10 @@ import random
 import time
 import datetime
 
-from src.constants import STAY_DATES
-from src.html_extract import extract_room_data
-from src.http_request import get_html_data_method1
-from src.http_request import get_html_data_method2
+from python.constants import STAY_DATES
+from python.html_extract import extract_room_data
+from python.http_request import get_html_data_method1
+from python.http_request import get_html_data_method2
 
 
 

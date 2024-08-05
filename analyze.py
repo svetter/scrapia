@@ -312,12 +312,16 @@ for scrape_date, data_one_scrape_date in processed_data.items():
 		avg_price /= num_available_rooms
 	avg_num_available_rooms = num_available_rooms / len(STAY_DATES)
 	
+	fig2_x.append(scrape_date)
+	fig2_y1.append(avg_num_available_rooms)
 	if num_available_rooms > 0:
-		fig2_x.append(scrape_date)
-		fig2_y1.append(avg_num_available_rooms)
 		fig2_y2.append(min_price)
 		fig2_y3.append(avg_price)
 		fig2_y4.append(max_price)
+	else:
+		fig2_y2.append(fig2_y2[len(fig2_y2) - 1])
+		fig2_y3.append(fig2_y3[len(fig2_y3) - 1])
+		fig2_y4.append(fig2_y4[len(fig2_y4) - 1])
 
 # FIGURE 2: line plots for changes in availability and price
 fig2 = plt.figure()

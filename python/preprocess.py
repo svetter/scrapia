@@ -15,13 +15,11 @@
 
 import collections
 
-from python.constants import STAY_DATES
 
 
-
-def sort_data_by_start_date(data):
+def sort_data_by_start_date(data, stay_dates):
 	data_by_date = collections.OrderedDict()
-	for date in STAY_DATES:
+	for date in stay_dates:
 		data_by_date[date[0]] = []
 	
 	for line in data:
@@ -32,7 +30,7 @@ def sort_data_by_start_date(data):
 
 
 
-def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, get_price_bracket_ind, get_ticket_offset, meal_filter):
+def process_all_data(stay_dates, raw_data, num_price_brackets, num_price_brackets_filtered, get_price_bracket_ind, get_ticket_offset, meal_filter):
 	first_scrape_date = raw_data[0][1]
 	result = collections.OrderedDict()
 	# result has format: OrderedDict<scrape_date, scrape_date, data, max_num_avail, max_num_gone, max_num_avail_filtered, max_num_gone_filtered>
@@ -40,7 +38,7 @@ def process_all_data(raw_data, num_price_brackets, num_price_brackets_filtered, 
 	
 	for data_one_scrape_date, scrape_date in raw_data:
 		# in this loop, we process all data for ONE SCRAPE DATE
-		dataset_sorted = sort_data_by_start_date(data_one_scrape_date)
+		dataset_sorted = sort_data_by_start_date(data_one_scrape_date, stay_dates)
 		
 		# results for all data as map
 		processed_dataset = collections.OrderedDict()

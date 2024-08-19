@@ -19,7 +19,7 @@ import random
 import time
 import datetime
 
-from python.constants import STAY_DATES
+from python.constants import STAY_DATES_2025 as STAY_DATES
 from python.html_extract import extract_room_data
 from python.http_request import get_html_data_method1
 from python.http_request import get_html_data_method2

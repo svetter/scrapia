@@ -22,7 +22,9 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 from matplotlib.colors import LinearSegmentedColormap
 
-from python.constants import STAY_DATES
+from python.constants import STAY_DATES_2025 as STAY_DATES
+from python.constants import ticket_price_offset_2025_fr as ticket_price_offset_fr
+from python.constants import ticket_price_offset_2025_sa as ticket_price_offset_sa
 from python.csv_parse import parse_all_csv
 from python.preprocess import process_all_data
 
@@ -47,10 +49,6 @@ meal_filter = {
 	'Overnight half board':				True,
 }
 
-# offsets for ticket category 4 (95€/108€/121€)
-ticket_price_offset_fr = -95 + 108
-ticket_price_offset_sa = -95 + 121
-
 # setting for keeping tooltips centered to circle
 keep_tooltips_centered_to_circle = False
 
@@ -66,7 +64,12 @@ locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
 
 # parse all CSV data and process it
 exclude_first_scrape_date = True
-all_data = parse_all_csv('collected_results/2024', exclude_first_scrape_date)
+data_year = STAY_DATES[0][0].year
+results_dir = 'collected_results/' + str(data_year)
+all_data = parse_all_csv(results_dir, exclude_first_scrape_date)
+if len(all_data) == 0:
+	print("No data found for " + str(data_year) + ".")
+	exit()
 
 first_scrape_date	= all_data[ 0][1]
 last_scrape_date	= all_data[-1][1]
@@ -102,7 +105,7 @@ num_price_brackets_filtered	= min(math.ceil(filter_price_per_person / price_roun
 
 
 # preprocess data
-processed_data = process_all_data(all_data, num_price_brackets, num_price_brackets_filtered, get_price_bracket_ind, get_ticket_offset, meal_filter)
+processed_data = process_all_data(STAY_DATES, all_data, num_price_brackets, num_price_brackets_filtered, get_price_bracket_ind, get_ticket_offset, meal_filter)
 
 
 
@@ -248,7 +251,7 @@ for _, (start_date, data_one_start_date) in enumerate(processed_data[last_scrape
 
 # FIGURE 1: scatterplot with hotness
 fig1 = plt.figure()
-window_title = "Room availability analysis – JUFA Hotel Bregenz 2024"
+window_title = "Room availability analysis – JUFA Hotel Bregenz " + str(data_year)
 fig1_plot_title = "Available rooms below " + str(filter_price_per_person) + "€ per person by date and price"
 fig1_plot_subtitle = "Circle size shows number of rooms available. Prices are for cheapest option which includes breakfast, and are adjusted for higher ticket prices on Fr/Sa."
 plt.get_current_fig_manager().set_window_title(window_title)

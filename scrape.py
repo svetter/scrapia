@@ -69,10 +69,6 @@ for date_pair in STAY_DATES:
 	if not use_cached_response and date_pair != STAY_DATES[len(STAY_DATES) - 1]:
 		time.sleep(sleep_time)
 
-if len(room_infos_all_dates) == 0:
-	print("No data was gathered.")
-	sys.exit(0)
-
 
 
 today_str = datetime.date.today().isoformat()

@@ -66,15 +66,13 @@ def parse_csv(filepath):
 
 
 
-def parse_all_csv(path, ignore_first_file=False):
+def parse_all_csv(path):
 	result = []
 	
 	if not os.path.isdir(path):
 		return result
 	
 	filenames = sorted(os.listdir(path))
-	if ignore_first_file:
-		filenames = filenames[1:]
 	
 	for filename in filenames:
 		if filename.endswith('.csv'):

@@ -63,10 +63,9 @@ locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
 
 
 # parse all CSV data and process it
-exclude_first_scrape_date = True
 data_year = STAY_DATES[0][0].year
 results_dir = 'collected_results/' + str(data_year)
-all_data = parse_all_csv(results_dir, exclude_first_scrape_date)
+all_data = parse_all_csv(results_dir)
 if len(all_data) == 0:
 	print("No data found for " + str(data_year) + ".")
 	exit()

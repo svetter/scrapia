@@ -1,4 +1,33 @@
 Check-in date,Check-out date,Room description,Room capacity,Meals,Price,Number available,felix-id,package-id,room-id,name-param,Scrape date
+2025-07-17,2025-07-18,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-08-26
+2025-07-17,2025-07-18,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-08-26
+2025-07-17,2025-07-18,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-08-26
+2025-07-17,2025-07-18,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-08-26
+2025-07-17,2025-07-18,Double room,2,Overnight stay without breakfast,167.00€,4,201,1026,,201-1-1026,2024-08-26
+2025-07-17,2025-07-18,Double room,2,Non refundable Bed & Breakfast,178.00€,4,201,1141,,201-1-1141,2024-08-26
+2025-07-17,2025-07-18,Double room,2,Overnight breakfast,185.00€,4,201,1023,,201-1-1023,2024-08-26
+2025-07-17,2025-07-18,Double room,2,Overnight half board,208.50€,4,201,1024,,201-1-1024,2024-08-26
+2025-07-17,2025-07-18,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-08-26
+2025-07-17,2025-07-18,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-08-26
+2025-07-17,2025-07-18,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-08-26
+2025-07-17,2025-07-18,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-08-26
+2025-07-17,2025-07-18,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-08-26
+2025-07-17,2025-07-18,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-08-26
+2025-07-17,2025-07-18,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-08-26
+2025-07-17,2025-07-18,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-08-26
+2025-07-17,2025-07-18,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-08-26
+2025-07-17,2025-07-18,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-08-26
+2025-07-17,2025-07-18,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-08-26
+2025-07-17,2025-07-18,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-08-26
+2025-07-17,2025-07-18,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-08-26
+2025-07-17,2025-07-18,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-08-26
+2025-07-17,2025-07-18,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-08-26
+2025-07-17,2025-07-18,Apartement,4,Overnight stay without breakfast,273.00€,2,603,1026,,603-1-1026,2024-08-26
+2025-07-17,2025-07-18,Apartement,4,Overnight breakfast,291.00€,2,603,1023,,603-1-1023,2024-08-26
+2025-07-17,2025-07-18,Apartement,4,Overnight half board,314.50€,2,603,1024,,603-1-1024,2024-08-26
+2025-07-17,2025-07-18,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-08-26
+2025-07-17,2025-07-18,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-08-26
+2025-07-17,2025-07-18,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-08-26
 2025-07-18,2025-07-19,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-08-26
 2025-07-18,2025-07-19,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-08-26
 2025-07-18,2025-07-19,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-08-26

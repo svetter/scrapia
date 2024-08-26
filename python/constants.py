@@ -37,6 +37,7 @@ ticket_price_offset_2024_sa = -95 + 121
 
 
 STAY_DATES_2025 = [
+	(datetime.date(2025, 7, 17), datetime.date(2025, 7, 18)),
 	(datetime.date(2025, 7, 18), datetime.date(2025, 7, 19)),
 	(datetime.date(2025, 7, 19), datetime.date(2025, 7, 20)),
 	(datetime.date(2025, 7, 20), datetime.date(2025, 7, 21)),
@@ -63,6 +64,6 @@ STAY_DATES_2025 = [
 	(datetime.date(2025, 8, 17), datetime.date(2025, 8, 18))
 ]
 
-# ticket prices not yet known
-ticket_price_offset_2025_fr = 0
-ticket_price_offset_2025_sa = 0
+# offsets for ticket category 5 (75€/89€/103€)
+ticket_price_offset_2025_fr = -75 + 89
+ticket_price_offset_2025_sa = -75 + 103

@@ -1,0 +1,563 @@
+Check-in date,Check-out date,Room description,Room capacity,Meals,Price,Number available,felix-id,package-id,room-id,name-param,Scrape date
+2025-07-17,2025-07-18,Single room,1,Overnight stay without breakfast,161.70€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-17,2025-07-18,Single room,1,Non refundable Bed & Breakfast,172.30€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-17,2025-07-18,Single room,1,Overnight breakfast,179.70€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-17,2025-07-18,Single room,1,Overnight half board,203.20€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-17,2025-07-18,Double room,2,Overnight stay without breakfast,175.30€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-17,2025-07-18,Double room,2,Non refundable Bed & Breakfast,186.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-17,2025-07-18,Double room,2,Overnight breakfast,193.30€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-17,2025-07-18,Double room,2,Overnight half board,216.80€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-17,2025-07-18,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-17,2025-07-18,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-17,2025-07-18,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-17,2025-07-18,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-17,2025-07-18,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-17,2025-07-18,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-17,2025-07-18,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-17,2025-07-18,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-17,2025-07-18,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-17,2025-07-18,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-17,2025-07-18,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-17,2025-07-18,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-17,2025-07-18,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-17,2025-07-18,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-17,2025-07-18,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-17,2025-07-18,Apartement,4,Overnight stay without breakfast,273.00€,2,603,1026,,603-1-1026,2024-09-09
+2025-07-17,2025-07-18,Apartement,4,Overnight breakfast,291.00€,2,603,1023,,603-1-1023,2024-09-09
+2025-07-17,2025-07-18,Apartement,4,Overnight half board,314.50€,2,603,1024,,603-1-1024,2024-09-09
+2025-07-17,2025-07-18,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-07-17,2025-07-18,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-07-17,2025-07-18,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-07-18,2025-07-19,Single room,1,Overnight stay without breakfast,161.70€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-18,2025-07-19,Single room,1,Non refundable Bed & Breakfast,172.30€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-18,2025-07-19,Single room,1,Overnight breakfast,179.70€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-18,2025-07-19,Single room,1,Overnight half board,203.20€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-18,2025-07-19,Double room,2,Overnight stay without breakfast,175.30€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-18,2025-07-19,Double room,2,Non refundable Bed & Breakfast,186.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-18,2025-07-19,Double room,2,Overnight breakfast,193.30€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-18,2025-07-19,Double room,2,Overnight half board,216.80€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-18,2025-07-19,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-18,2025-07-19,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-18,2025-07-19,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-18,2025-07-19,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-18,2025-07-19,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-18,2025-07-19,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-18,2025-07-19,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-18,2025-07-19,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-18,2025-07-19,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-18,2025-07-19,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-18,2025-07-19,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-18,2025-07-19,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-18,2025-07-19,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-18,2025-07-19,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-18,2025-07-19,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-18,2025-07-19,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-07-18,2025-07-19,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-07-18,2025-07-19,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-07-18,2025-07-19,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-07-18,2025-07-19,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-07-18,2025-07-19,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-07-19,2025-07-20,Single room,1,Overnight stay without breakfast,161.70€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-19,2025-07-20,Single room,1,Non refundable Bed & Breakfast,172.30€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-19,2025-07-20,Single room,1,Overnight breakfast,179.70€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-19,2025-07-20,Single room,1,Overnight half board,203.20€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-19,2025-07-20,Double room,2,Overnight stay without breakfast,175.30€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-19,2025-07-20,Double room,2,Non refundable Bed & Breakfast,186.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-19,2025-07-20,Double room,2,Overnight breakfast,193.30€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-19,2025-07-20,Double room,2,Overnight half board,216.80€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-19,2025-07-20,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-19,2025-07-20,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-19,2025-07-20,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-19,2025-07-20,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-19,2025-07-20,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-19,2025-07-20,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-19,2025-07-20,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-19,2025-07-20,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-19,2025-07-20,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-19,2025-07-20,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-19,2025-07-20,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-19,2025-07-20,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-19,2025-07-20,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-19,2025-07-20,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-19,2025-07-20,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-19,2025-07-20,Apartement,4,Overnight stay without breakfast,273.00€,2,603,1026,,603-1-1026,2024-09-09
+2025-07-19,2025-07-20,Apartement,4,Overnight breakfast,291.00€,2,603,1023,,603-1-1023,2024-09-09
+2025-07-19,2025-07-20,Apartement,4,Overnight half board,314.50€,2,603,1024,,603-1-1024,2024-09-09
+2025-07-19,2025-07-20,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-07-19,2025-07-20,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-07-19,2025-07-20,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-07-22,2025-07-23,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-22,2025-07-23,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-22,2025-07-23,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-22,2025-07-23,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-22,2025-07-23,Double room,2,Overnight stay without breakfast,183.70€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-22,2025-07-23,Double room,2,Non refundable Bed & Breakfast,194.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-22,2025-07-23,Double room,2,Overnight breakfast,201.70€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-22,2025-07-23,Double room,2,Overnight half board,225.20€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-22,2025-07-23,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-22,2025-07-23,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-22,2025-07-23,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-22,2025-07-23,Double room superior,2,Overnight stay without breakfast,206.80€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-22,2025-07-23,Double room superior,2,Overnight breakfast,224.80€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-22,2025-07-23,Double room superior,2,Overnight half board,248.30€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-22,2025-07-23,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-22,2025-07-23,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-22,2025-07-23,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-22,2025-07-23,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-22,2025-07-23,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-22,2025-07-23,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-22,2025-07-23,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-22,2025-07-23,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-22,2025-07-23,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-22,2025-07-23,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-07-22,2025-07-23,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-07-22,2025-07-23,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-07-23,2025-07-24,Single room,1,Overnight stay without breakfast,169.40€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-23,2025-07-24,Single room,1,Non refundable Bed & Breakfast,179.70€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-23,2025-07-24,Single room,1,Overnight breakfast,187.40€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-23,2025-07-24,Single room,1,Overnight half board,210.90€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-23,2025-07-24,Double room,2,Overnight stay without breakfast,183.70€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-23,2025-07-24,Double room,2,Non refundable Bed & Breakfast,194.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-23,2025-07-24,Double room,2,Overnight breakfast,201.70€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-23,2025-07-24,Double room,2,Overnight half board,225.20€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-23,2025-07-24,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-23,2025-07-24,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-23,2025-07-24,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-23,2025-07-24,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-23,2025-07-24,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-23,2025-07-24,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-23,2025-07-24,Double room deluxe,2,Overnight stay without breakfast,224.40€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-23,2025-07-24,Double room deluxe,2,Overnight breakfast,242.40€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-23,2025-07-24,Double room deluxe,2,Overnight half board,265.90€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-23,2025-07-24,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-23,2025-07-24,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-23,2025-07-24,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-23,2025-07-24,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-23,2025-07-24,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-23,2025-07-24,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-23,2025-07-24,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-07-23,2025-07-24,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-07-23,2025-07-24,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-07-24,2025-07-25,Single room,1,Overnight stay without breakfast,177.10€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-24,2025-07-25,Single room,1,Non refundable Bed & Breakfast,187.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-24,2025-07-25,Single room,1,Overnight breakfast,195.10€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-24,2025-07-25,Single room,1,Overnight half board,218.60€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-24,2025-07-25,Double room,2,Overnight stay without breakfast,183.70€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-24,2025-07-25,Double room,2,Non refundable Bed & Breakfast,194.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-24,2025-07-25,Double room,2,Overnight breakfast,201.70€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-24,2025-07-25,Double room,2,Overnight half board,225.20€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-24,2025-07-25,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-24,2025-07-25,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-24,2025-07-25,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-24,2025-07-25,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-24,2025-07-25,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-24,2025-07-25,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-24,2025-07-25,Double room deluxe,2,Overnight stay without breakfast,224.40€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-24,2025-07-25,Double room deluxe,2,Overnight breakfast,242.40€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-24,2025-07-25,Double room deluxe,2,Overnight half board,265.90€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-24,2025-07-25,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-24,2025-07-25,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-24,2025-07-25,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-24,2025-07-25,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-24,2025-07-25,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-24,2025-07-25,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-24,2025-07-25,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-07-24,2025-07-25,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-07-24,2025-07-25,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-07-25,2025-07-26,Single room,1,Overnight stay without breakfast,169.40€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-25,2025-07-26,Single room,1,Non refundable Bed & Breakfast,179.70€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-25,2025-07-26,Single room,1,Overnight breakfast,187.40€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-25,2025-07-26,Single room,1,Overnight half board,210.90€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-25,2025-07-26,Double room,2,Overnight stay without breakfast,192.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-25,2025-07-26,Double room,2,Non refundable Bed & Breakfast,202.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-25,2025-07-26,Double room,2,Overnight breakfast,210.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-25,2025-07-26,Double room,2,Overnight half board,233.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-25,2025-07-26,Double room superior,2,Overnight stay without breakfast,206.80€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-25,2025-07-26,Double room superior,2,Overnight breakfast,224.80€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-25,2025-07-26,Double room superior,2,Overnight half board,248.30€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-25,2025-07-26,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-25,2025-07-26,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-25,2025-07-26,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-25,2025-07-26,Double room deluxe,2,Overnight stay without breakfast,224.40€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-25,2025-07-26,Double room deluxe,2,Overnight breakfast,242.40€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-25,2025-07-26,Double room deluxe,2,Overnight half board,265.90€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-25,2025-07-26,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-25,2025-07-26,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-25,2025-07-26,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-25,2025-07-26,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-25,2025-07-26,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-25,2025-07-26,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-25,2025-07-26,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-07-25,2025-07-26,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-07-25,2025-07-26,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-07-26,2025-07-27,Single room,1,Overnight stay without breakfast,177.10€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-26,2025-07-27,Single room,1,Non refundable Bed & Breakfast,187.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-26,2025-07-27,Single room,1,Overnight breakfast,195.10€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-26,2025-07-27,Single room,1,Overnight half board,218.60€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-26,2025-07-27,Double room,2,Overnight stay without breakfast,183.70€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-26,2025-07-27,Double room,2,Non refundable Bed & Breakfast,194.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-26,2025-07-27,Double room,2,Overnight breakfast,201.70€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-26,2025-07-27,Double room,2,Overnight half board,225.20€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-26,2025-07-27,Double room superior,2,Overnight stay without breakfast,206.80€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-26,2025-07-27,Double room superior,2,Overnight breakfast,224.80€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-26,2025-07-27,Double room superior,2,Overnight half board,248.30€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-26,2025-07-27,Double room deluxe,2,Overnight stay without breakfast,224.40€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-26,2025-07-27,Double room deluxe,2,Overnight breakfast,242.40€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-26,2025-07-27,Double room deluxe,2,Overnight half board,265.90€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-26,2025-07-27,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-26,2025-07-27,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-26,2025-07-27,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-26,2025-07-27,Family & Friends room,3,Overnight stay without breakfast,235.40€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-26,2025-07-27,Family & Friends room,3,Overnight breakfast,253.40€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-26,2025-07-27,Family & Friends room,3,Overnight half board,276.90€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-26,2025-07-27,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-26,2025-07-27,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-26,2025-07-27,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-26,2025-07-27,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-07-26,2025-07-27,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-07-26,2025-07-27,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-07-29,2025-07-30,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-29,2025-07-30,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-29,2025-07-30,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-29,2025-07-30,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-29,2025-07-30,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-29,2025-07-30,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-29,2025-07-30,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-29,2025-07-30,Double room,2,Overnight stay without breakfast,192.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-29,2025-07-30,Double room,2,Non refundable Bed & Breakfast,202.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-29,2025-07-30,Double room,2,Overnight breakfast,210.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-29,2025-07-30,Double room,2,Overnight half board,233.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-29,2025-07-30,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-29,2025-07-30,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-29,2025-07-30,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-29,2025-07-30,Double room deluxe,2,Overnight stay without breakfast,224.40€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-29,2025-07-30,Double room deluxe,2,Overnight breakfast,242.40€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-29,2025-07-30,Double room deluxe,2,Overnight half board,265.90€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-29,2025-07-30,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-29,2025-07-30,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-29,2025-07-30,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-29,2025-07-30,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-29,2025-07-30,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-29,2025-07-30,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-29,2025-07-30,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-07-29,2025-07-30,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-07-29,2025-07-30,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-07-29,2025-07-30,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-07-29,2025-07-30,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-07-29,2025-07-30,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-07-30,2025-07-31,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-07-30,2025-07-31,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-07-30,2025-07-31,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-07-30,2025-07-31,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-07-30,2025-07-31,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-07-30,2025-07-31,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-07-30,2025-07-31,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-07-30,2025-07-31,Double room,2,Overnight stay without breakfast,192.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-07-30,2025-07-31,Double room,2,Non refundable Bed & Breakfast,202.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-07-30,2025-07-31,Double room,2,Overnight breakfast,210.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-07-30,2025-07-31,Double room,2,Overnight half board,233.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-07-30,2025-07-31,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-07-30,2025-07-31,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-07-30,2025-07-31,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-07-30,2025-07-31,Double room deluxe,2,Overnight stay without breakfast,224.40€,4,205,1026,,205-1-1026,2024-09-09
+2025-07-30,2025-07-31,Double room deluxe,2,Overnight breakfast,242.40€,4,205,1023,,205-1-1023,2024-09-09
+2025-07-30,2025-07-31,Double room deluxe,2,Overnight half board,265.90€,4,205,1024,,205-1-1024,2024-09-09
+2025-07-30,2025-07-31,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-07-30,2025-07-31,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-07-30,2025-07-31,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-07-30,2025-07-31,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-07-30,2025-07-31,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-07-30,2025-07-31,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-07-30,2025-07-31,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-07-30,2025-07-31,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-07-30,2025-07-31,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-07-30,2025-07-31,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-07-30,2025-07-31,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-07-30,2025-07-31,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-01,2025-08-02,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-01,2025-08-02,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-01,2025-08-02,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-01,2025-08-02,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-01,2025-08-02,Double room,2,Overnight stay without breakfast,183.70€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-01,2025-08-02,Double room,2,Non refundable Bed & Breakfast,194.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-01,2025-08-02,Double room,2,Overnight breakfast,201.70€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-01,2025-08-02,Double room,2,Overnight half board,225.20€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-01,2025-08-02,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-01,2025-08-02,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-01,2025-08-02,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-01,2025-08-02,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-01,2025-08-02,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-01,2025-08-02,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-01,2025-08-02,Double room deluxe,2,Overnight stay without breakfast,224.40€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-01,2025-08-02,Double room deluxe,2,Overnight breakfast,242.40€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-01,2025-08-02,Double room deluxe,2,Overnight half board,265.90€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-01,2025-08-02,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-01,2025-08-02,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-01,2025-08-02,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-01,2025-08-02,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-01,2025-08-02,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-01,2025-08-02,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-01,2025-08-02,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-08-01,2025-08-02,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-08-01,2025-08-02,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-08-02,2025-08-03,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-02,2025-08-03,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-02,2025-08-03,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-02,2025-08-03,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-02,2025-08-03,Double room,2,Overnight stay without breakfast,167.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-02,2025-08-03,Double room,2,Non refundable Bed & Breakfast,178.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-02,2025-08-03,Double room,2,Overnight breakfast,185.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-02,2025-08-03,Double room,2,Overnight half board,208.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-02,2025-08-03,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-02,2025-08-03,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-02,2025-08-03,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-02,2025-08-03,Double room superior,2,Overnight stay without breakfast,206.80€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-02,2025-08-03,Double room superior,2,Overnight breakfast,224.80€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-02,2025-08-03,Double room superior,2,Overnight half board,248.30€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-02,2025-08-03,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-02,2025-08-03,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-02,2025-08-03,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-02,2025-08-03,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-02,2025-08-03,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-02,2025-08-03,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-02,2025-08-03,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-02,2025-08-03,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-02,2025-08-03,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-02,2025-08-03,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-08-02,2025-08-03,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-08-02,2025-08-03,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-08-02,2025-08-03,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-02,2025-08-03,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-02,2025-08-03,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-05,2025-08-06,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-05,2025-08-06,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-05,2025-08-06,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-05,2025-08-06,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-05,2025-08-06,Double room,2,Overnight stay without breakfast,183.70€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-05,2025-08-06,Double room,2,Non refundable Bed & Breakfast,194.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-05,2025-08-06,Double room,2,Overnight breakfast,201.70€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-05,2025-08-06,Double room,2,Overnight half board,225.20€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-05,2025-08-06,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-05,2025-08-06,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-05,2025-08-06,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-05,2025-08-06,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-05,2025-08-06,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-05,2025-08-06,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-05,2025-08-06,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-05,2025-08-06,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-05,2025-08-06,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-05,2025-08-06,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-05,2025-08-06,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-05,2025-08-06,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-05,2025-08-06,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-05,2025-08-06,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-05,2025-08-06,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-05,2025-08-06,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-08-05,2025-08-06,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-08-05,2025-08-06,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-08-05,2025-08-06,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-05,2025-08-06,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-05,2025-08-06,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-06,2025-08-07,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-06,2025-08-07,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-06,2025-08-07,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-06,2025-08-07,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-06,2025-08-07,Double room,2,Overnight stay without breakfast,183.70€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-06,2025-08-07,Double room,2,Non refundable Bed & Breakfast,194.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-06,2025-08-07,Double room,2,Overnight breakfast,201.70€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-06,2025-08-07,Double room,2,Overnight half board,225.20€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-06,2025-08-07,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-06,2025-08-07,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-06,2025-08-07,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-06,2025-08-07,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-06,2025-08-07,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-06,2025-08-07,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-06,2025-08-07,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-06,2025-08-07,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-06,2025-08-07,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-06,2025-08-07,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-06,2025-08-07,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-06,2025-08-07,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-06,2025-08-07,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-06,2025-08-07,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-06,2025-08-07,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-06,2025-08-07,Apartement,4,Overnight stay without breakfast,273.00€,2,603,1026,,603-1-1026,2024-09-09
+2025-08-06,2025-08-07,Apartement,4,Overnight breakfast,291.00€,2,603,1023,,603-1-1023,2024-09-09
+2025-08-06,2025-08-07,Apartement,4,Overnight half board,314.50€,2,603,1024,,603-1-1024,2024-09-09
+2025-08-06,2025-08-07,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-06,2025-08-07,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-06,2025-08-07,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-08,2025-08-09,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-08,2025-08-09,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-08,2025-08-09,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-08,2025-08-09,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-08,2025-08-09,Double room,2,Overnight stay without breakfast,183.70€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-08,2025-08-09,Double room,2,Non refundable Bed & Breakfast,194.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-08,2025-08-09,Double room,2,Overnight breakfast,201.70€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-08,2025-08-09,Double room,2,Overnight half board,225.20€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-08,2025-08-09,Double room superior,2,Overnight stay without breakfast,206.80€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-08,2025-08-09,Double room superior,2,Overnight breakfast,224.80€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-08,2025-08-09,Double room superior,2,Overnight half board,248.30€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-08,2025-08-09,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-08,2025-08-09,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-08,2025-08-09,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-08,2025-08-09,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-08,2025-08-09,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-08,2025-08-09,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-08,2025-08-09,Double room deluxe,2,Overnight stay without breakfast,234.60€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-08,2025-08-09,Double room deluxe,2,Overnight breakfast,252.60€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-08,2025-08-09,Double room deluxe,2,Overnight half board,276.10€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-08,2025-08-09,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-08,2025-08-09,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-08,2025-08-09,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-08,2025-08-09,Apartement,4,Overnight stay without breakfast,273.00€,1,603,1026,,603-1-1026,2024-09-09
+2025-08-08,2025-08-09,Apartement,4,Overnight breakfast,291.00€,1,603,1023,,603-1-1023,2024-09-09
+2025-08-08,2025-08-09,Apartement,4,Overnight half board,314.50€,1,603,1024,,603-1-1024,2024-09-09
+2025-08-08,2025-08-09,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-08,2025-08-09,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-08,2025-08-09,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-09,2025-08-10,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-09,2025-08-10,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-09,2025-08-10,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-09,2025-08-10,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-09,2025-08-10,Double room,2,Overnight stay without breakfast,167.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-09,2025-08-10,Double room,2,Non refundable Bed & Breakfast,178.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-09,2025-08-10,Double room,2,Overnight breakfast,185.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-09,2025-08-10,Double room,2,Overnight half board,208.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-09,2025-08-10,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-09,2025-08-10,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-09,2025-08-10,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-09,2025-08-10,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-09,2025-08-10,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-09,2025-08-10,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-09,2025-08-10,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-09,2025-08-10,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-09,2025-08-10,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-09,2025-08-10,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-09,2025-08-10,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-09,2025-08-10,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-09,2025-08-10,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-09,2025-08-10,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-09,2025-08-10,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-09,2025-08-10,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-08-09,2025-08-10,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-08-09,2025-08-10,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-08-09,2025-08-10,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-09,2025-08-10,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-09,2025-08-10,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-12,2025-08-13,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-12,2025-08-13,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-12,2025-08-13,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-12,2025-08-13,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-12,2025-08-13,Double room,2,Overnight stay without breakfast,167.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-12,2025-08-13,Double room,2,Non refundable Bed & Breakfast,178.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-12,2025-08-13,Double room,2,Overnight breakfast,185.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-12,2025-08-13,Double room,2,Overnight half board,208.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-12,2025-08-13,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-12,2025-08-13,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-12,2025-08-13,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-12,2025-08-13,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-12,2025-08-13,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-12,2025-08-13,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-12,2025-08-13,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-12,2025-08-13,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-12,2025-08-13,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-12,2025-08-13,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-12,2025-08-13,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-12,2025-08-13,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-12,2025-08-13,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-12,2025-08-13,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-12,2025-08-13,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-12,2025-08-13,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-08-12,2025-08-13,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-08-12,2025-08-13,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-08-12,2025-08-13,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-12,2025-08-13,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-12,2025-08-13,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-14,2025-08-15,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-14,2025-08-15,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-14,2025-08-15,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-14,2025-08-15,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-14,2025-08-15,Double room,2,Overnight stay without breakfast,167.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-14,2025-08-15,Double room,2,Non refundable Bed & Breakfast,178.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-14,2025-08-15,Double room,2,Overnight breakfast,185.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-14,2025-08-15,Double room,2,Overnight half board,208.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-14,2025-08-15,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-14,2025-08-15,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-14,2025-08-15,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-14,2025-08-15,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-14,2025-08-15,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-14,2025-08-15,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-14,2025-08-15,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-14,2025-08-15,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-14,2025-08-15,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-14,2025-08-15,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-14,2025-08-15,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-14,2025-08-15,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-14,2025-08-15,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-14,2025-08-15,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-14,2025-08-15,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-14,2025-08-15,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-08-14,2025-08-15,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-08-14,2025-08-15,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-08-14,2025-08-15,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-14,2025-08-15,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-14,2025-08-15,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-15,2025-08-16,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-15,2025-08-16,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-15,2025-08-16,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-15,2025-08-16,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-15,2025-08-16,Double room,2,Overnight stay without breakfast,167.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-15,2025-08-16,Double room,2,Non refundable Bed & Breakfast,178.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-15,2025-08-16,Double room,2,Overnight breakfast,185.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-15,2025-08-16,Double room,2,Overnight half board,208.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-15,2025-08-16,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-15,2025-08-16,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-15,2025-08-16,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-15,2025-08-16,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-15,2025-08-16,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-15,2025-08-16,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-15,2025-08-16,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-15,2025-08-16,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-15,2025-08-16,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-15,2025-08-16,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-15,2025-08-16,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-15,2025-08-16,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-15,2025-08-16,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-15,2025-08-16,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-15,2025-08-16,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-15,2025-08-16,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-08-15,2025-08-16,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-08-15,2025-08-16,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-08-15,2025-08-16,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-15,2025-08-16,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-15,2025-08-16,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09
+2025-08-16,2025-08-17,Single room,1,Overnight stay without breakfast,154.00€,4,101,1026,,101-1-1026,2024-09-09
+2025-08-16,2025-08-17,Single room,1,Non refundable Bed & Breakfast,165.00€,4,101,1141,,101-1-1141,2024-09-09
+2025-08-16,2025-08-17,Single room,1,Overnight breakfast,172.00€,4,101,1023,,101-1-1023,2024-09-09
+2025-08-16,2025-08-17,Single room,1,Overnight half board,195.50€,4,101,1024,,101-1-1024,2024-09-09
+2025-08-16,2025-08-17,Double room,2,Overnight stay without breakfast,167.00€,4,201,1026,,201-1-1026,2024-09-09
+2025-08-16,2025-08-17,Double room,2,Non refundable Bed & Breakfast,178.00€,4,201,1141,,201-1-1141,2024-09-09
+2025-08-16,2025-08-17,Double room,2,Overnight breakfast,185.00€,4,201,1023,,201-1-1023,2024-09-09
+2025-08-16,2025-08-17,Double room,2,Overnight half board,208.50€,4,201,1024,,201-1-1024,2024-09-09
+2025-08-16,2025-08-17,Double room superior,2,Overnight stay without breakfast,188.00€,4,203,1026,,203-1-1026,2024-09-09
+2025-08-16,2025-08-17,Double room superior,2,Overnight breakfast,206.00€,4,203,1023,,203-1-1023,2024-09-09
+2025-08-16,2025-08-17,Double room superior,2,Overnight half board,229.50€,4,203,1024,,203-1-1024,2024-09-09
+2025-08-16,2025-08-17,Double room deluxe,2,Overnight stay without breakfast,204.00€,4,205,1026,,205-1-1026,2024-09-09
+2025-08-16,2025-08-17,Double room deluxe,2,Overnight breakfast,222.00€,4,205,1023,,205-1-1023,2024-09-09
+2025-08-16,2025-08-17,Double room deluxe,2,Overnight half board,245.50€,4,205,1024,,205-1-1024,2024-09-09
+2025-08-16,2025-08-17,Family & Friends room,3,Overnight stay without breakfast,214.00€,4,301,1026,,301-1-1026,2024-09-09
+2025-08-16,2025-08-17,Family & Friends room,3,Overnight breakfast,232.00€,4,301,1023,,301-1-1023,2024-09-09
+2025-08-16,2025-08-17,Family & Friends room,3,Overnight half board,255.50€,4,301,1024,,301-1-1024,2024-09-09
+2025-08-16,2025-08-17,Family & Friends plus room,3,Overnight stay without breakfast,228.00€,4,302,1026,,302-1-1026,2024-09-09
+2025-08-16,2025-08-17,Family & Friends plus room,3,Overnight breakfast,246.00€,4,302,1023,,302-1-1023,2024-09-09
+2025-08-16,2025-08-17,Family & Friends plus room,3,Overnight half board,269.50€,4,302,1024,,302-1-1024,2024-09-09
+2025-08-16,2025-08-17,Family & Friends plus room,4,Overnight stay without breakfast,237.00€,4,402,1026,,402-1-1026,2024-09-09
+2025-08-16,2025-08-17,Family & Friends plus room,4,Overnight breakfast,255.00€,4,402,1023,,402-1-1023,2024-09-09
+2025-08-16,2025-08-17,Family & Friends plus room,4,Overnight half board,278.50€,4,402,1024,,402-1-1024,2024-09-09
+2025-08-16,2025-08-17,Apartement,4,Overnight stay without breakfast,273.00€,3,603,1026,,603-1-1026,2024-09-09
+2025-08-16,2025-08-17,Apartement,4,Overnight breakfast,291.00€,3,603,1023,,603-1-1023,2024-09-09
+2025-08-16,2025-08-17,Apartement,4,Overnight half board,314.50€,3,603,1024,,603-1-1024,2024-09-09
+2025-08-16,2025-08-17,Studio,4,Overnight stay without breakfast,273.00€,1,918,1026,,918-1-1026,2024-09-09
+2025-08-16,2025-08-17,Studio,4,Overnight breakfast,291.00€,1,918,1023,,918-1-1023,2024-09-09
+2025-08-16,2025-08-17,Studio,4,Overnight half board,314.50€,1,918,1024,,918-1-1024,2024-09-09

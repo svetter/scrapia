@@ -417,7 +417,7 @@ fig3_size_legend_handles = [plt.scatter([], [], s=scale_avail(fig3_size_legend_l
 # create size legend
 plt.legend(handles=fig3_size_legend_handles, loc='lower right', labelspacing=1.8, borderpad=1.2)
 # create color legend
-fig3_colorbar = fig1.colorbar(fig3_plot, label="Already booked", location='right', pad=0.025)
+fig3_colorbar = fig3.colorbar(fig3_plot, label="Already booked", location='right', pad=0.025)
 fig3_colorbar.ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 # format status bar coordinates
 fig3_ax.format_coord = lambda x, y: (
